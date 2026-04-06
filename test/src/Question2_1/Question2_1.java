@@ -6,7 +6,7 @@ public class Question2_1 {
 		int x,y;
 		
 		x = 1.5;
-		y = 2,5;
+		y = 2.5;
 		
 		System.out.println("xの値は"+x+"です。");
 		System.out.println("yの値は"+y+"です。");
