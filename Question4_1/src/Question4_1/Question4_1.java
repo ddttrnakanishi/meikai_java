@@ -3,10 +3,10 @@ package Question4_1;
 import java.util.Scanner;
 
 /*
- * クラス名:ensyu4_1
- * 概要    :整数値が正か負の値であるかを繰り返し調べる
- * 作成者  :中西輝
- * 作成日  :2026.4.6
+ * クラス名			:ensyu4_1
+ * 概要    			:整数値が正か負の値であるかを繰り返し調べる
+ * 作成者  			:中西輝
+ * 作成日 			 :2026.4.6
  * 関数名           :main
  * メソッドの説明   :～～
  * パラメータの説明 :なし
@@ -28,13 +28,15 @@ public class Question4_1 {
 			//変数に整数値を読み込む
 			int inputNumber = standardInput.nextInt();
 			//入力値が0より大きい場合
-			if (inputNumber>0)
+			if (inputNumber>0) {
 				//その値は正と表示する
 				System.out.println("その値は正です。");
+			}
 			//それ以外
-			else 
+			else {
 				//その値は負と表示する
 				System.out.println("その値は負です。");
+			}
 			//もう一度？1…Yes/0…Noと表示する
 			System.out.print("もう一度? 1…Yes/0…No :");
 			//
