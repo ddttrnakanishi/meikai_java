@@ -29,26 +29,26 @@ public class Question4_2 {
 		System.out.println("数あてゲーム開始!!");
 		//"10～99の数を当ててください。を表示する
 		System.out.println("10～99の数を当ててください。");
-		//変数の初期化
-		int value;{
+		//firstvalueはint型の変数
+		int firstvalue ;{
 			//繰り返し
 			do {
 				//いくつかなを表示する
 				System.out.print("いくつかな;");
 				//整数値を読み込む
-				value = standardInput.nextInt();
-				//変数numberよりも変数valueが大きい場合
-				if (value>number) {
+				firstvalue = standardInput.nextInt();
+				//変数numberよりも変数firstvalueが大きい場合
+				if (firstvalue>number) {
 					//もっと小さい数字だよ。を表示する
 					System.out.println("もっと小さい数字だよ。");
 				}
-				//変数valueよりも変numberが大きい場合
-				else if (value<number) {
+				//変数firstvalueよりも変numberが大きい場合
+				else {
 					//もっと大きい数字だよ。を表示する
 					System.out.println("もっと大きい数字だよ。");
 				}
-			//valueがnumberでは無いとき繰り返す
-			}while(value!= number);
+			//firstvalueがnumberでは無いとき繰り返す
+			}while(firstvalue!= number);
 			//正解です。を表示する
 			System.out.println("正解です。");
 

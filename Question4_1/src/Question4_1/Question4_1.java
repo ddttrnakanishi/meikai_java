@@ -19,8 +19,8 @@ public class Question4_1 {
 	public static void main(String[] args) {
 		//キーボードからの入力
 		Scanner standardInput = new Scanner(System.in);
-		//変数の初期化
-		int value ;
+		//firstvalueはint型の変数
+		int firstvalue ;
 		//繰り返し
 		do {
 			//整数値の入力を促す
@@ -32,17 +32,22 @@ public class Question4_1 {
 				//その値は正と表示する
 				System.out.println("その値は正です。");
 			}
-			//それ以外
-			else {
+			//入力値が0より小さい場合
+			else if (inputNumber<0) {
 				//その値は負と表示する
 				System.out.println("その値は負です。");
+			}
+			//それ以外
+			else {
+				//その値は0と表示する
+				System.out.println("その値は0です。");
 			}
 			//もう一度？1…Yes/0…Noと表示する
 			System.out.print("もう一度? 1…Yes/0…No :");
 			//
-			value = standardInput.nextInt();
+			firstvalue = standardInput.nextInt();
 		//1と表示される場合繰り返す
-		}while(value==1);
+		}while(firstvalue==1);
 
 	}
 
