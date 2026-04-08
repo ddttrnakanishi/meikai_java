@@ -8,7 +8,6 @@ import java.util.Scanner;
  * 作成者             :中西輝
  * 作成日              :2026.4.7
  */
-// Question4_8のクラス
 public class Question4_8 {
 	 /*
      * 関数名           :main

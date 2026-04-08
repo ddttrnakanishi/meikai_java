@@ -7,7 +7,6 @@ import java.util.Scanner;
  * 作成者             :中西輝
  * 作成日              :2026.4.7
  */
-
 public class Question4_7 {
 	  /*
      * 関数名           :main
@@ -29,7 +28,9 @@ public class Question4_7 {
 		
 		//繰り返し
 		do {
+			//iが0の場合
 			if(i == 0) {
+				//何も表示しない
 				System.out.print("");
 			}
 			//iが奇数の場合
