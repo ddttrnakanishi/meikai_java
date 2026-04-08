@@ -12,11 +12,14 @@ public class Question3_11 {
 		System.out.print("整数B:");
 		int b = stdIn.nextInt();
 		
-		if (a-b<10&&b-a<10)
-			System.out.println("それらの差は10以下です。");
+		int min = a > b ? a - b : b - a;
 		
+		if (min<10)
+			 System.out.println("それらの差は10以下です。");
+			
 		else
 			System.out.println("それらの差は11以上です。");
+ 
 
 	}
 

@@ -12,11 +12,16 @@ public class Question3_2 {
 		System.out.print("整数B:");
 		int m = stdIn.nextInt();
 		
-		if  (n%m<=0)
+		
+		if  (m==0)
+			System.out.println("約分できない。");
+		else if  (n%m<=0)
 			System.out.println("BはAの約数です。");
+		
 		
 		else
 			System.out.println("BはAの約数ではありません。");
+			
 			
 		 
 	

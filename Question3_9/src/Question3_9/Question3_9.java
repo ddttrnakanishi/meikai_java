@@ -8,16 +8,12 @@ public class Question3_9 {
 		Scanner stdIn = new Scanner(System.in);
 		
 		System.out.print("実数値:");
-		int a = stdIn.nextInt();// TODO 自動生成されたメソッド・スタブ
+		double a = stdIn.nextInt();// TODO 自動生成されたメソッド・スタブ
 		System.out.print("実数値:");
-		int b = stdIn.nextInt();
+		double b = stdIn.nextInt();
 		
-		int h ;
-		if(a<b)
-			System.out.println(b);
-		else
-			System.out.println(a);
-		
+		double max = a>b?a:b;
+		System.out.println(max);		
 		
 		
 	}

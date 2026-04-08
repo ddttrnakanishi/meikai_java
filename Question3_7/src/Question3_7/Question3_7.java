@@ -12,7 +12,7 @@ public class Question3_7 {
 
 		if (a<=0)
 			System.out.println("正ではない値が入力されました。");	
-		if (a%3==0)
+		else if (a%3==0)
 			System.out.println("その値は3で割り切れます。");
 		else if (a%3==1)
 			System.out.println("その値を3で割った余りは1です。");

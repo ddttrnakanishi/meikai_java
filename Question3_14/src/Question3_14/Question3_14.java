@@ -17,14 +17,14 @@ public class Question3_14 {
 	
 	if (a>b) {
 		h=a; l=b;
-		System.out.println("大きい法の値は"+h+"です。");
-		System.out.println("小さい法の値は"+l+"です。");
+		System.out.println("大きい値は"+h+"です。");
+		System.out.println("小さい値は"+l+"です。");
 	}
 		
 	else if (a<b) {
 		h=b; l=a;
-		System.out.println("大きい法の値は"+h+"です。");
-		System.out.println("小さい法の値は"+l+"です。");
+		System.out.println("大きい値は"+h+"です。");
+		System.out.println("小さい値は"+l+"です。");
 	}
 		
 	else 

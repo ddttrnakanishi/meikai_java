@@ -12,7 +12,7 @@ public class Question3_6 {
 		
 		if (a<0)
 			System.out.println("正ではない値が入力されました。");
-		if (a%10==0)
+		else if (a%10==0)
 			System.out.println("その値は10の倍数です。");
 		else	 if (a>0)
 			System.out.println("その値は10の倍数ではありません。");
