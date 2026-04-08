@@ -12,7 +12,7 @@ import java.util.Scanner;
  * パラメータの説明 :なし
  * 返り値           :なし
  */
-// Question4_7のクラス
+// Question4_8のクラス
 public class Question4_8 {
 	//関数ヘッダ
 	public static void main(String[] args) {
