@@ -21,26 +21,25 @@ public class Question4_7 {
 		System.out.print("何個表示しますか:");
 		//firstvalueに値を入力
 		int firstvalue = standardInput.nextInt();
-		//変数secondvalueの初期化
-		int secondvalue = 0;
+		//変数secondvalueにfirstvalueを代入
+		int secondvalue = firstvalue ;
+		
 		//繰り返し
 		do {
-			//firstvalueがsecondvalueよりも大きい場合
-			if(firstvalue>secondvalue) {
+			//secondvalueが奇数の場合
+			if(secondvalue%2==1) {
 				//*を表示する
 				System.out.print("*");
-				//secondvalueに+1をする
-				secondvalue++;
 			}
-			//firstvalueがsecondvalueよりも大きい場合
-			if(firstvalue>secondvalue) {
+			//secondvalueが偶数の場合
+			 else if (secondvalue%2==0){
 				//+を表示する
 				System.out.print("+");
-				//secondvalueに+1をする
-				secondvalue++;
 			}
-		//
-		}while(firstvalue>secondvalue);
+			//secondvalue-1
+			secondvalue--;
+		//secondvalueが0より大きい場合は繰り返す
+		}while(secondvalue>0);
 		
 
 	}
