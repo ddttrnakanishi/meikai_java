@@ -3,23 +3,26 @@ package Question4_8;
 import java.util.Scanner;
 
 /*
- * クラス名			:ensyu4_8
- * 概要    			:正の整数値を入力し、その桁数を出力する
- * 作成者 			:中西輝
- * 作成日  			:2026.4.7
- * 関数名           :main
- * メソッドの説明   :～～
- * パラメータの説明 :なし
- * 返り値           :なし
+ * クラス名            :ensyu4_7
+ * 概要                :読み込んだ値の個数だけ記号を入力するプログラム
+ * 作成者             :中西輝
+ * 作成日              :2026.4.7
  */
 // Question4_8のクラス
 public class Question4_8 {
-	//関数ヘッダ
+	 /*
+     * 関数名           :main
+     * メソッドの説明   :～～
+     * パラメータの説明 :なし
+     * 返り値           :なし
+     * 作成者             :中西輝
+     * 作成日              :2026.4.7
+     */
 	public static void main(String[] args) {
-		//キーボードで入力
+		//キーボードに入力された値を読み込むための変数を作る
 		Scanner standardInput = new Scanner(System.in);
 		
-		//変数firstvalueの宣言
+		//firstvalueはint型の変数
 		int firstvalue;
 		//繰り返し
 		do {
