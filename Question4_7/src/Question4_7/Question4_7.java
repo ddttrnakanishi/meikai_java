@@ -8,7 +8,6 @@ import java.util.Scanner;
  * 作成日              :2026.4.7
  */
 
-// Question4_7のクラス
 public class Question4_7 {
 	  /*
      * 関数名           :main
@@ -25,7 +24,7 @@ public class Question4_7 {
 		System.out.print("何個表示しますか:");
 		//ユーザーが入力した値を変数に代入
 		int inputValue = standardInput.nextInt();
-		//変数iにfirstvalueを代入
+		//変数iにinputValueを代入
 		int i = inputValue ;
 		
 		//繰り返し
@@ -39,11 +38,11 @@ public class Question4_7 {
 				System.out.print("*");
 			}
 			//iが偶数の場合
-			 else if (i % 2 == 0){
+			 else {
 				//+を表示する
 				System.out.print("+");
 			}
-			//secondvalue-1
+			//i-1
 			i--;
 		//iが0より大きい場合は繰り返す
 		}while(i > 0);
