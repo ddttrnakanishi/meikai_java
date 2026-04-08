@@ -3,7 +3,7 @@ package Question4_9;
 import java.util.Scanner;
 
 /*
- * クラス名            :ensyu4_7
+ * クラス名            :ensyu4_9
  * 概要                :読み込んだ値の個数だけ記号を入力するプログラム
  * 作成者             :中西輝
  * 作成日              :2026.4.8
