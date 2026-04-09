@@ -32,7 +32,6 @@ public class Question4_10 {
 		for(int i = 0 ; i < inputValue ; i++)	
 			//*を表示する
 			System.out.print("*");
-		
 	}
 
 
