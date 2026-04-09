@@ -3,7 +3,7 @@ package Question4_13;
 import java.util.Scanner;
 /*
  * クラス名            :ensyu4_13
- * 概要                :1から
+ * 概要                :1から inputNumberまでの値を足すプログラム
  * 作成者             :中西輝
  * 作成日              :2026.4.9
  */
