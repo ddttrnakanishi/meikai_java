@@ -43,7 +43,7 @@ public class Question4_2 {
 					System.out.println("もっと小さい数字だよ。");
 				}
 				//変数firstvalueよりも変numberが大きい場合
-				else {
+				else if (firstvalue<number) {
 					//もっと大きい数字だよ。を表示する
 					System.out.println("もっと大きい数字だよ。");
 				}

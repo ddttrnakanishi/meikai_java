@@ -19,23 +19,23 @@ public class Question4_4 {
 		Scanner standardInput = new Scanner(System.in);
 		//カウントダウンをしますを表示
 		System.out.println("カウントダウンをします。");
-		//変数xの宣言
-		int  x;
+		//変数valueXの初期化
+		int  valueX = 0;
 		//繰り返し
 		do {
 			//正の整数値:を表示
 			System.out.print("正の整数値:");
-			//xの値を入力
-			x = standardInput.nextInt();
-			//xの値が0以下である場合繰り返す
-		} while(x<=0);
+			//valueXの値を入力
+			valueX = standardInput.nextInt();
+			//valueXの値が0以下である場合繰り返す
+		} while(valueX<=0);
 
-		//xの値が-1以上の場合繰り返す
-		while(x>=-1){
-			//xの値を表示する
-			System.out.println(x);
-			//xの値から-1をする
-			x--;
+		//valueXの値が-1以上の場合繰り返す
+		while(valueX>=-1){
+			//valueXの値を表示する
+			System.out.println(valueX);
+			//valueXの値から-1をする
+			valueX--;
 		}
 
 
