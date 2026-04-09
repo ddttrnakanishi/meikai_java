@@ -21,20 +21,20 @@ public class Question4_5 {
 
 		//カウントダウンをしますを表示
 		System.out.println("カウントダウンをします。");
-		//変数valueXの初期化
-		int valueX = 0;
+		//変数valueOfXの初期化
+		int valueOfX = 0;
 		//繰り返し
 		do {
 			//正の整数値:を表示
 			System.out.print("正の整数値:");
-			//valueXの値を入力
-			valueX = standardInput.nextInt();
-		 //valueXの値が0より小さいとき繰り返し
-		}while(valueX<=0);
-		//valueXの値が0より大きい場合
-		while(valueX>=0) {
-			//valueXの値を-1してからvalueXの値を表示
-			System.out.println(--valueX);
+			//valueOfXの値を入力
+			valueOfX = standardInput.nextInt();
+		 //valueOfXの値が0より小さいとき繰り返し
+		}while(valueOfX<=0);
+		//valueOfXの値が0より大きい場合
+		while(valueOfX>=0) {
+			//valueOfXの値を-1してからvalueOfXの値を表示
+			System.out.println(--valueOfX);
 		}
 
 
