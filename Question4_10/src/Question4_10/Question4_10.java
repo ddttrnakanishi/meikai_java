@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Question4_10 {
 	/*
 	 * 関数名           :main
-	 * メソッドの説明   :～～
+	 * メソッドの説明   :～
 	 * パラメータの説明 :なし
 	 * 返り値           :なし
 	 * 作成者             :中西輝
