@@ -47,14 +47,11 @@ public class Question4_3 {
 
 		//繰り返し
 		do {
-			//minよりmaxが大きい場合
-			if (min <= max) {
-				//minの値を表示する
-				System.out.print(min);
-				//minに+1を足す
-				min += 1;
-			}
-			//minの値がmaxの値と一致するまで繰り返す
+			//minの値を表示する
+			System.out.print(min);
+			//minに+1を足す
+			min += 1;
+		//minの値がmaxの値と一致するまで繰り返す
 		}while(max >= min );
 
 	}

@@ -33,8 +33,8 @@ public class Question4_11 {
 		//変数inputNumberが0より小さい時繰り返す
 		}while(inputNumber <= 0);
 		//変数iをinputNumberから初めて1つずつ減らしながらi回繰り返す
-		  for(int i = inputNumber; i >= 0; i--)
-	            //変数iの値を表示
-	            System.out.println(i);
+		for(int i = inputNumber; i >= 0; i--)
+			//変数iの値を表示
+			System.out.println(i);
 	}
 }

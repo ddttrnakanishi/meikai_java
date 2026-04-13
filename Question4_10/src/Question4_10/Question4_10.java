@@ -29,6 +29,8 @@ public class Question4_10 {
 		for(int i = 1 ; i <= inputValue ; i++)	
 			//*を表示する
 			System.out.print("*");
+		//改行
+		System.out.println();
 	}
 }
 

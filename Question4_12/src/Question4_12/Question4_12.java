@@ -2,7 +2,7 @@ package Question4_12;
 
 import java.util.Scanner;
 /*
- * クラス名            :ensyu4_12
+ * クラス名            :Question4_12
  * 概要                :0から読み込んだ値までカウントアップするプログラム
  * 作成者             :中西輝
  * 作成日              :2026.4.9
@@ -32,14 +32,9 @@ public class Question4_12 {
 		//inputNumberが0より小さいとき繰り返す
 		}while(inputNumber <= 0);
 		//変数iを0から始めて変数iを1ずつ増やしていきinputNumber回繰り返す
-		for(int i = 0;inputNumber >= i;i++ ) {
+		for(int i = 0;i <= inputNumber;i++ ) {
 			//iの値を表示する
 			System.out.println(i);
-
 		}
-
-
-
 	}
-
 }
