@@ -32,7 +32,7 @@ public class Question4_12 {
 		//inputNumberが0より小さいとき繰り返す
 		}while(inputNumber <= 0);
 		//変数iを0から始めて変数iを1ずつ増やしていきinputNumber回繰り返す
-		for(int i = 0;i <= inputNumber;i++ ) {
+		for(int i = 0; i <= inputNumber; i++ ) {
 			//iの値を表示する
 			System.out.println(i);
 		}

@@ -26,11 +26,10 @@ public class Question4_10 {
 		//ユーザーが入力した値を変数に代入
 		inputValue = standardInput.nextInt();
 		//変数iを1から初めて1つずつ増やしながらinputValue回繰り返す
-		for(int i = 1 ; i <= inputValue ; i++)	
+		for(int i = 1; i <= inputValue; i++){
 			//*を表示する
 			System.out.print("*");
-		//改行
-		System.out.println();
+		}
 	}
 }
 
