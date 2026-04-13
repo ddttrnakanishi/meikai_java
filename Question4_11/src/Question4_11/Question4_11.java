@@ -2,7 +2,7 @@ package Question4_11;
 
 import java.util.Scanner;
 /*
- * クラス名            :ensyu4_11
+ * クラス名            :Question4_11
  * 概要                :読み込んだ値を1ずつ減らして0になるまで出力する
  * 作成者             :中西輝
  * 作成日              :2026.4.9
@@ -32,10 +32,10 @@ public class Question4_11 {
 			inputNumber = standardInput.nextInt();
 		//変数inputNumberが0より小さい時繰り返す
 		}while(inputNumber <= 0);
-		//変数iを0から初めて1つずつ減らしながらinputValue回繰り返す
-		for(int i = 0; inputNumber >= i ;inputNumber--)
-			//変数inputNumberの値を表示
-			System.out.println(inputNumber);
+		//変数iをinputNumberから初めて1つずつ減らしながらi回繰り返す
+		  for(int i = inputNumber; i >= 0; i--)
+	            //変数iの値を表示
+	            System.out.println(i);
 
 	}
 }
