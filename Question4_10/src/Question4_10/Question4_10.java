@@ -30,8 +30,8 @@ public class Question4_10 {
 			//*を表示する
 			System.out.print("*");
 		}
-		//変数inputValueが1未満の時
-		if(inputValue > 1) {
+		//変数inputValueが１以上の時
+		if(inputValue >= 1) {
 			//改行
 			System.out.println();
 		}
