@@ -36,6 +36,5 @@ public class Question4_11 {
 		  for(int i = inputNumber; i >= 0; i--)
 	            //変数iの値を表示
 	            System.out.println(i);
-
 	}
 }

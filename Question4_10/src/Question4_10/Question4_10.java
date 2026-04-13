@@ -21,22 +21,14 @@ public class Question4_10 {
 		Scanner standardInput = new Scanner(System.in);
 		//変数inputValueの初期化
 		int inputValue = 0;
-		//繰り返し
-		do {
-			//何個表示しますかを表示
-			System.out.print("何個表示しますか:");
-			//ユーザーが入力した値を変数に代入
-			inputValue = standardInput.nextInt();
-			//変数inputValueが1未満の時繰り返す
-		}while(inputValue < 1);
-
-		//変数iを0から初めて1つずつ増やしながらinputValue回繰り返す
-		for(int i = 0 ; i < inputValue ; i++)	
+		//何個表示しますかを表示
+		System.out.print("何個表示しますか:");
+		//ユーザーが入力した値を変数に代入
+		inputValue = standardInput.nextInt();
+		//変数iを1から初めて1つずつ増やしながらinputValue回繰り返す
+		for(int i = 1 ; i <= inputValue ; i++)	
 			//*を表示する
 			System.out.print("*");
 	}
-
-
-
 }
 

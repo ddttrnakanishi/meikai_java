@@ -27,9 +27,9 @@ public class Question4_3 {
 		System.out.print("整数B:");
 		//二つ目変数の値を入力する
 		int secondvalue = standardInput.nextInt();
-		//変数min,maxの宣言
-		int min,max;
-		
+		//変数min,maxの初期化
+		int min,max = 0;
+
 		//一つ目の値が二つ目の値よりも大きい場合
 		if (firstvalue >= secondvalue) {
 			//変数minにsecondvalueを代入
@@ -37,14 +37,14 @@ public class Question4_3 {
 			//変数maxにfirstvalueを代入
 			max = firstvalue;
 		}
-		 //二つ目の値が一つ目の値よりも大きい場合
+		//二つ目の値が一つ目の値よりも大きい場合
 		else {
 			//変数minにfirstvalueを代入
-			min =firstvalue;
+			min = firstvalue;
 			//変数maxにsecondvalueを代入
 			max = secondvalue;
 		}
-		
+
 		//繰り返し
 		do {
 			//minよりmaxが大きい場合
@@ -56,9 +56,6 @@ public class Question4_3 {
 			}
 			//minの値がmaxの値と一致するまで繰り返す
 		}while(max >= min );
-		
 
-		
-
-
-	}}
+	}
+}
