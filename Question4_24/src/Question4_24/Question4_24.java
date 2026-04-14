@@ -37,8 +37,8 @@ public class Question4_24 {
 				break;
 			}
 		}
-		//変数divideNumberが1の場合
-		if(divideNumber == 1) {
+		//変数divideNumberが1または変数inputValueが1の場合
+		if(divideNumber == 1 || inputValue ==1) {
 			//素数ではないと表示
 			System.out.println(inputValue +"は素数ではない");
 		}
