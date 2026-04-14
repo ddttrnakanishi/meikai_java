@@ -1,22 +1,20 @@
 package Question4_14;
 import java.util.Scanner;
 /*
- * クラス名            :ensyu4_14
+ * クラス名            :Question4_14
  * 概要                :1から inputNumberまでの値を足し式を表示するプログラム
  * 作成者             :中西輝
  * 作成日              :2026.4.9
  */
-
 public class Question4_14 {
 	/*
 	 * 関数名           :main
-	 * メソッドの説明   :～～
+	 * メソッドの説明   :メイン処理を実施する
 	 * パラメータの説明 :なし
 	 * 返り値           :なし
 	 * 作成者             :中西輝
 	 * 作成日              :2026.4.9
 	 */
-
 	public static void main(String[] args) {
 		//キーボードで入力する値を読み込む変数を作る
 		Scanner standardInput = new Scanner(System.in);
