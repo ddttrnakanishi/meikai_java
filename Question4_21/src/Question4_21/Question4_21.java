@@ -60,7 +60,7 @@ public class Question4_21 {
 		//変数iが0から始まり1ずつ増やしていきinputnumber回繰り返す
 		for(int i = 0;i <= inputNumber;i++) {
 			//変数jが0から始まり1ずつ増やしていきinputnumber回繰り返す
-			for(int j = 0;j <= inputNumber;j++) 
+			for(int j = 0;j < inputNumber;j++) 
 				//入力した値から変数iと1を引いた値がj以上の時
 				if(inputNumber - i - 1 >= j) {
 					//空白を表示
@@ -74,6 +74,5 @@ public class Question4_21 {
 			//改行
 			System.out.println();
 		}
-
 	}
 }
