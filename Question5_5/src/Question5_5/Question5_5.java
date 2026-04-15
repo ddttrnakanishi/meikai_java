@@ -18,22 +18,22 @@ public class Question5_5 {
 	 */
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
-				Scanner standardInput = new Scanner(System.in);
-				//()内の文字を表示
-				System.out.print("整数値 :");
-				//入力値1に値を代入
-				int inputValue1 = standardInput.nextInt();
-				//()内の文字を表示
-				System.out.print("整数値 :");
-				//入力値2に値を代入
-				int inputValue2 = standardInput.nextInt();
-				//()内の文字を表示
-				System.out.print("整数値 :");
-				//入力値3に値を代入
-				int inputValue3 = standardInput.nextInt();
-				//合計値に入力値1と入力値2と入力値3の足した値を代入
-				int sumValue = inputValue1+inputValue2+inputValue3;
-				//""の中の文字と合計値の値と実数値に変換した合計値から3を割った平均を表示する
-				System.out.println("合計は"+sumValue+"平均は"+(double)sumValue / 3);
+		Scanner standardInput = new Scanner(System.in);
+		//()内の文字を表示
+		System.out.print("整数値 :");
+		//入力値1に値を代入
+		int inputValue1 = standardInput.nextInt();
+		//()内の文字を表示
+		System.out.print("整数値 :");
+		//入力値2に値を代入
+		int inputValue2 = standardInput.nextInt();
+		//()内の文字を表示
+		System.out.print("整数値 :");
+		//入力値3に値を代入
+		int inputValue3 = standardInput.nextInt();
+		//合計値に入力値1と入力値2と入力値3の足した値を代入
+		int sumValue = inputValue1+inputValue2+inputValue3;
+		//""の中の文字と合計値の値と実数値に変換した合計値から3を割った平均を表示する
+		System.out.println("合計は"+sumValue+"平均は"+(double)sumValue / 3);
 	}
 }
