@@ -26,7 +26,7 @@ public class Question5_6 {
 		//変数jを0から1000まで1ずつ増やしていく
 		for(float i = 0.0F; i <= 1.0F && j <= 1000; i += 0.001F, j++) {
 			//小数点以下7桁の変数iと変数jを1000で割った値を表示
-			System.out.printf("%8.7f   %8.7f\n",i,(float)(j / 1000.0));
+			System.out.printf("%8.7f   %8.7f\n",i,(float)j / 1000.0);
 		}
 	}
 }
