@@ -1,0 +1,32 @@
+package Question6_2;
+/*
+ * クラス名            :Question6_2
+ * 概要                :int型で要素数が5の配列を作り先頭から順に5から1を代入して表示
+ * 作成者             :中西輝
+ * 作成日              :2026.4.15
+ */
+public class Question6_2 {
+	/*
+	 * 関数名           :main
+	 * メソッドの説明   :メイン処理で実施する
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者             :中西輝
+	 * 作成日              :2026.4.15
+	 */
+	public static void main(String[] args) {
+		//int型を構成要素とする配列要素数の作成
+		int [] elementNumber = new int[5];
+		//変数jを初期化
+		int j = 0;
+		/*変数iが5から始まり1ずつ引いた値が1以上になるまで繰り返す
+		 * 変数jを1ずつ増やしていく
+		 */
+		for(int i = 5; i > 0; i--, j++) {
+			//変数elementNumber[j]にiの値を代入
+			elementNumber[j] = i ;
+			//全要素の値を表示
+			System.out.println("elementNumber[" + j + "] = " +elementNumber[j]);
+		}
+	}
+}
