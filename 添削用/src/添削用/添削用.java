@@ -6,26 +6,35 @@ import java.util.Scanner;
 public class 添削用 {
 
 	public static void main(String[] args) {
-		//キーボードに入力された値を読み込むための変数を作る
-		Scanner standardInput=new Scanner(System.in);
-		//「直角三角形を表示します。」と表示
-		System.out.println("直角三角形を表示します。");
-		//「段数は：」と表示
-		System.out.print("段数は：");
-		//整数値を読み込む
-		int inputNumber=standardInput.nextInt();
-		//iがinputNumberと同じ値になるまでインクリメントする
-		for(int i =1;i<=inputNumber;i++) {
-			//twoNumberがinputNumberと同じ値になるまでインクリメントする
-			for(int twoNumber=1;twoNumber<=inputNumber;twoNumber++)
-				//(twoNumber+i)-1がinputNumberより小さい場合、空欄を表示
-				if((twoNumber+i)-1<inputNumber) 
-					System.out.print(" ");
-			//その他の場合、「*」を表示
-				else 
-					System.out.print('*');
-			System.out.println();
+		//キーボードから読み込みを行う
+				Scanner standardInput = new Scanner(System.in);
+				//変数stageNumberの初期化
+				int stageNumber = 0;
+				//実行する
+				do {
+					//"整数値："と表示する
+					System.out.print("整数値：");
+					//stageNumberに数を読み込む
+					stageNumber = standardInput.nextInt();
+					//入力した数が0以下ならばdo文を再実行する
+				}while(stageNumber <= 0);
+				//変数iを1から始めて1つずつ増やしながら入力した数の回数ループ本体を繰り返す
+				for(int i = 1; i <= stageNumber; i++) {
+					/*変数blankSpaceを1から始めて変数blankSpaceを1ずつ増やしていき
+					 * inputNumber回繰り返す
+					 */
+					for(int blankSpace = 1; blankSpace <= stageNumber -i; blankSpace++) {
+						//" "と表示する
+						System.out.print(" ");
+						/*変数jを1から始めて変数jを1ずつ増やしていき
+						変数jが段数に2をかけて-1した値より大きくなるまで繰り返す
+						 */
+					}for(int j = 1; j <= 2 * i - 1; j++) {
+						//"*"と表示する
+						System.out.print("*");
+					}
+					//改行する	
+					System.out.println();
+				}
+			}
 		}
-
-	}
-}
