@@ -25,16 +25,17 @@ public class Question4_20 {
 		do {
 			//nの値を表示
 			System.out.print("nの値:");
-			//変数inputNumberに入力した値を代入
+			//入力値に入力した値を代入
 			inputNumber = standardInput.nextInt();
-		//変数inputNumberが1未満の時繰り返す
+		//入力値が1未満の時繰り返す
 		}while(inputNumber < 1);
-		//変数iが1から始まり1ずつ増やしていきinputnumber回繰り返す
-		for(int i = 1;i <= inputNumber;i++) {
-			//変数jが1から始まり1ずつ増やしていきinputnumber回繰り返す
-			for(int j = 1;j <= inputNumber;j++) 
+		//変数iが1から始まり1ずつ増やしていき入力値の数分繰り返す
+		for(int i = 1; i <= inputNumber; i++) {
+			//変数jが1から始まり1ずつ増やしていき入力値の数分繰り返す
+			for(int j = 1; j <= inputNumber; j++) {
 				//*の表示
 				System.out.print("*");
+			}
 			//改行
 			System.out.println();
 		}

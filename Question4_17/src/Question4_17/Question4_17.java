@@ -29,19 +29,19 @@ public class Question4_17 {
 			firstNumber = standardInput.nextInt();
 		//変数firstNumberが0以下の場合繰り返す
 		}while(firstNumber <= 0);
-		//変数sumNumberの初期化
+		//変数約数の合計の初期化
 		int sumNumber = 0;
 		//変数iが1から始まり1ずつ増やしたときfirstNumber回繰り返す
-		for(int i = 1;i <= firstNumber;i++) {
+		for(int i = 1;i <= firstNumber; i++) {
 			//変数firstNumberをiで割ったときの余りが0の場合
 			if(firstNumber % i == 0) {
 				//変数iの値を表示
 				System.out.println(i);
-				//変数sumNumberに+1をする
-				sumNumber ++;
+				//変数約数の合計に+1をする
+				sumNumber++;
 			}
 		}
-		//約数はsumNumber個です。と表示
+		//約数は約数の合計個です。と表示
 		System.out.println("約数は"+sumNumber+"個です。");
 	}
 }

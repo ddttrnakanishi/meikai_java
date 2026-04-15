@@ -23,28 +23,21 @@ public class Question4_16 {
 		int displayNumber = 0;
 		//繰り返す
 		do {
-		//何個*を表示しますか:を表示
-		System.out.print("何個*を表示しますか:");
-		//変数displayNumberに値を入力する
-		displayNumber = standardInput.nextInt();
-		//0未満の時繰り返す
-	}while(displayNumber < 0);
-		//1未満の時
-		if (displayNumber < 1) {
-			//何も表示しない
-			System.out.println();
-		}
+			//何個*を表示しますか:を表示
+			System.out.print("何個*を表示しますか:");
+			//変数displayNumberに値を入力する
+			displayNumber = standardInput.nextInt();
+			//0未満の時繰り返す
+		}while(displayNumber < 0);
 		//変数iを1から始めて変数iを1ずつ増やしていきdisplayNumber回繰り返す
 		for(int i = 1 ; i <= displayNumber ;i++) {
 			//*を表示
 			System.out.print("*");
 			//変数i割る5の余りが0の場合
 			if (i % 5 == 0){
-			//改行する
-			System.out.println()
-;			}
+				//改行する
+				System.out.println();			
+			}
 		}
-			
-
-}
+	}
 }

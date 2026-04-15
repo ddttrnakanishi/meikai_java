@@ -66,11 +66,15 @@ public class Question4_27 {
 		if(breakNumber == 1) {
 			//正解です。を表示
 			System.out.println("正解です。");
-			//それ以外
-		}else{
+		}
+		//変数breakNumberが0の時
+		else if (breakNumber == 0) {
+			//不正解です。を表示
+			System.out.println("不正解です。");
 			//答えは（displayNumberの値）です。を表示
 			System.out.println("答えは"+displayNumber+"です。");
 		}
+		
 	}
 }
 

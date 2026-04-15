@@ -19,9 +19,9 @@ public class Question4_19 {
 	public static void main(String[] args) {
 		//キーボードで入力した値を読み込む変数を作る
 		Scanner standardInput = new Scanner(System.in);
-		//変数onceAgainの初期化
+		//もう一度繰り返すかを管理する値の初期化
 		int onceAgain = 0;
-		//変数whatMonthの初期化
+		//ユーザーが入力した月の値の初期化
 		int whatMonth = 0;
 		//繰り返し
 		do {
@@ -29,9 +29,9 @@ public class Question4_19 {
 			do {
 				//季節を求めます。\n何月ですか:を表示
 				System.out.print("季節を求めます。\n何月ですか:");
-				//変数whatMonthに入力した値を代入
+				//ユーザーが入力した月の値に入力した値を代入
 				whatMonth = standardInput.nextInt();
-			//入力した値が1以下または12以上の時繰り返す
+			//入力した値が1未満または12より大きい時繰り返す
 			}while(whatMonth < 1 && whatMonth > 12);
 			//5以下または3以上の時
 			if(whatMonth >= 3 && whatMonth <= 5) {
@@ -55,9 +55,9 @@ public class Question4_19 {
 			}
 			//もう一度？1…yes/0…no : と表示
 			System.out.print("もう一度？1…yes/0…no : ");
-			//変数onceAgainに入力した値を代入
+			//もう一度繰り返すかを管理する値に入力した値を代入
 			onceAgain = standardInput.nextInt();
-		//変数onceAgainが1の時繰り返す
+		//もう一度繰り返すかを管理する値が1の時繰り返す
 		}while(onceAgain == 1);
 	}
 }
