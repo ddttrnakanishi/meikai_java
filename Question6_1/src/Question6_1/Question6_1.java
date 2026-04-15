@@ -1,7 +1,7 @@
 package Question6_1;
 
 /*
- * クラス名            :Question5_6
+ * クラス名            :Question6_1
  * 概要                :double型で要素数が5の配列を作り全要素の値を表示
  * 作成者             :中西輝
  * 作成日              :2026.4.15
