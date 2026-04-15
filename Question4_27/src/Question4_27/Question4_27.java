@@ -34,7 +34,12 @@ public class Question4_27 {
 		int  timeNumber = standardInput.nextInt();
 		//変数answerNumberを初期化
 		int answerNumber = 0;
-		//変数breakNumberを初期化
+		/*
+		 * 変数breakNumberを初期化
+		 * breakNumberは下記の値をとる
+		 * 正解：breakNumberが1になる
+		 * 正解していない：breakNumberは0
+		 */
 		int breakNumber = 0;
 		//変数をiをtimeNumberから始めて変数iを1ずつ減らしていき1以下になるまで繰り返す
 		for(int i = timeNumber; i >= 1; i--) {
@@ -74,7 +79,6 @@ public class Question4_27 {
 			//答えは（displayNumberの値）です。を表示
 			System.out.println("答えは"+displayNumber+"です。");
 		}
-		
 	}
 }
 
