@@ -16,8 +16,8 @@ public class Question6_1 {
 	 * 作成日              :2026.4.15
 	 */
 	public static void main(String[] args) {
-		//int型を構成要素とする配列要素数の作成
-		int [] elementNumber = new int[5];
+		//double型を構成要素とする配列要素数の作成
+		double [] elementNumber = new double[5];
 		//elementNumber[1]に10を代入
 		elementNumber[1] = 10;
 		//elementNumber[2]に20を代入
