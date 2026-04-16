@@ -5,7 +5,7 @@ import java.util.Scanner;
 /*
  * クラス名            :Question6_4
  * 概要                :縦向きの棒グラフを表示
- * 作成者             :中西輝
+ * 作成者             　:中西輝
  * 作成日              :2026.4.15
  */
 public class Question6_4 {
@@ -14,8 +14,8 @@ public class Question6_4 {
 	 * メソッドの説明   :メイン処理で実施する
 	 * パラメータの説明 :なし
 	 * 返り値           :なし
-	 * 作成者             :中西輝
-	 * 作成日              :2026.4.15
+	 * 作成者           :中西輝
+	 * 作成日           :2026.4.15
 	 */
 	public static void main(String[] args) {
 		//ランダムな数を入れる変数を作る

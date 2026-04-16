@@ -22,7 +22,7 @@ public class Question5_3 {
 	System.out.println("logicalValue = true" + logicalValue );
 	//論理値にfalseを代入
 	logicalValue = false;
-	//""内の文字と論理値に代入された値を表示
+	//""内の文字と論理値に代入された値を表示　
 	System.out.print("logicalValue = false" + logicalValue);
 	}
 }
