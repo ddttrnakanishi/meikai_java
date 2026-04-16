@@ -1,7 +1,7 @@
 package Question5_3;
 
 /*
- * クラス名            :Question5_3
+ * クラス名            :Question5_
  * 概要                :trueやfalseを代入して値を表示する
  * 作成者             :中西輝
  * 作成日              :2026.4.15
