@@ -36,8 +36,8 @@ public class Question6_10 {
 			arrayNumber[j] = randomNumber.nextInt(10);
 			//変数jが配列の1番目の値以外の時と0以外の時
 			if(j != arrayNumber[0] && j != 0) {
-				//ランダム出した値と一個前の値が同じ時繰り返す
-				while(arrayNumber[j] == arrayNumber[j - 1]) {
+			//ランダム出した値と一個前の値が同じ時繰り返す
+			while(arrayNumber[j] == arrayNumber[j - 1]) {
 					//ランダム出した値と一個前の値が同じ時
 					if(arrayNumber[j] == arrayNumber[j - 1]) {
 						//arrayNumber[j]に0-9のランダムな数を代入
@@ -54,6 +54,7 @@ public class Question6_10 {
 			//ランダムに出力された値を表示
 			System.out.print(arrayNumber[j] + " ");
 		}
+		//""内の文字を表示して改行
 		System.out.println("}");
 
 	}
