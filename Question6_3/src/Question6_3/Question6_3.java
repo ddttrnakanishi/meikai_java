@@ -8,14 +8,14 @@ package Question6_3;
 public class Question6_3 {
 	/*
 	 * 関数名           :main
-	 * メソッドの説明   :メイン処理で実施する
+	 * メソッドの説明   :メイン処理
 	 * パラメータの説明 :なし
 	 * 返り値           :なし
 	 * 作成者             :中西輝
 	 * 作成日              :2026.4.15
 	 */
 	public static void main(String[] args) {
-		//double型を構成要素とする配列要素数の作成
+		//double型を構成要素型とする配列の作成
 		double [] elementNumber = new double[5];
 		//変数jを初期化
 		int j = 0;

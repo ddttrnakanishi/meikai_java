@@ -9,14 +9,14 @@ package Question6_1;
 public class Question6_1 {
 	/*
 	 * 関数名           :main
-	 * メソッドの説明   :メイン処理で実施する
+	 * メソッドの説明   :メイン処理
 	 * パラメータの説明 :なし
 	 * 返り値           :なし
 	 * 作成者             :中西輝
 	 * 作成日              :2026.4.15
 	 */
 	public static void main(String[] args) {
-		//double型を構成要素とする配列要素数の作成
+		//double型を構成要素型とし、構成要素数が5の配列の宣言
 		double [] elementNumber = new double[5];
 		//elementNumber[1]に10を代入
 		elementNumber[1] = 10;
@@ -27,11 +27,15 @@ public class Question6_1 {
 		//elementNumber[4]にelementNumber[1]の値の4倍の値を代入
 		elementNumber[4] = elementNumber[2] * 4;
 		
-		//全要素の値を表示
+		//要素の値を表示
 		System.out.println("elementNumber[" + 0 + "] = " + elementNumber[0]);
+		//要素の値を表示
 		System.out.println("elementNumber[" + 1 + "] = " + elementNumber[1]);
+		//要素の値を表示
 		System.out.println("elementNumber[" + 2 + "] = " + elementNumber[2]);
+		//要素の値を表示
 		System.out.println("elementNumber[" + 3 + "] = " + elementNumber[3]);
+		//要素の値を表示
 		System.out.println("elementNumber[" + 4 + "] = " + elementNumber[4]);
 	}
 }

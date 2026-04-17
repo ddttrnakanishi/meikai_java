@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class Question6_4 {
 	/*
 	 * 関数名           :main
-	 * メソッドの説明   :メイン処理で実施する
+	 * メソッドの説明   :メイン処理
 	 * パラメータの説明 :なし
 	 * 返り値           :なし
 	 * 作成者           :中西輝
@@ -26,8 +26,8 @@ public class Question6_4 {
 		System.out.print("要素数:");
 		//変数入力値に入力した値を代入
 		int inputNumber = standardInput.nextInt();
-		//int型を構成要素とする配列要素数の作成
-		int[]elementNumber = new int[inputNumber];
+		//int型を構成要素型とする配列の作成
+		int[] elementNumber = new int[inputNumber];
 		//変数iが0から始まり1ずつ増やしていき入力値よりも多くなるまで繰り返す
 		for(int i = 0; i < inputNumber; i++) {
 			//変数elementNumber[i]に0-9までのランダム値に1を足した値をを代入
