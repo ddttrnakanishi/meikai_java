@@ -3,7 +3,7 @@ package Question6_13;
 import java.util.Scanner;
 /*
  * クラス名            :Question6_13
- * 概要                :縦向きの棒グラフを表示
+ * 概要                :配列Aの全要素を配列Bに対して逆順にコピーするプログラム
  * 作成者             　:中西輝
  * 作成日              :2026.4.17
  */
