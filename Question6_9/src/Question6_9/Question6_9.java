@@ -32,11 +32,8 @@ public class Question6_9 {
 		for (int i = 0; i < elementNumber; i++) {
 			//1から10までのランダムのランダム数をindexNumber[i]に代入
 			indexNumber[i] = randomNumber.nextInt(10)+1;
-		}
-		//変数iが0から始まり1ずつ増やしていき入力した値より大きくなるまで繰り返す
-		for(int i = 0; i < elementNumber; i++) {
 			//""の中の文字と変数iの値とindexNumber[i]の値を表示して改行
-			System.out.println("elementNumber"+"[" + i + "]" +"=" + indexNumber[(i)]);
+			System.out.println("elementNumber" + "[" + i + "]" + "=" + indexNumber[i]);
 		}
 	}
 }

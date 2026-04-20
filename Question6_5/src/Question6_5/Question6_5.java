@@ -32,21 +32,18 @@ public class Question6_5 {
 			//elementNumber[i]に入力した値を代入
 			elementNumber[i] = standardInput.nextInt();
 		}
+		//""の中の文字を表示
+		System.out.print("a = {");
 		//変数iが1から始まり1ずつ増やしていき入力値以上になるまで繰り返す
 		for(int i = 1; i <= inputNumber; i++) {
-			//変数iが1ならば
-			if(i == 1) {
-				//()内の文字と要素数から1を引いた値を表示
-				System.out.print("a = {" + elementNumber[i - 1] + ", ");
-			}
-			//変数iが入力値より小さいならば
-			else if(i < inputNumber) {
+			//変数iの値が入力した値より小さいとき
+			if(i < inputNumber) {
 				//()内の文字と要素数から1を引いた値を表示
 				System.out.print(elementNumber[i - 1] + ", ");
 			}
 			//それ以外
 			else {
-				//()内の文字と要素数から1を引いた値を表示
+				//()内の文字と要素数から1を引いた値を表示して改行
 				System.out.println(elementNumber[i - 1] + "}");
 			}
 		}

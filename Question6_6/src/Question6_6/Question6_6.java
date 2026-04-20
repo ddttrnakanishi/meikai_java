@@ -19,10 +19,15 @@ public class Question6_6 {
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
+		int peopleNumber = 0;
+		//繰り返し
+		do {
 		//()の中の文字を表示
 		System.out.print("人数は？ :");	
 		//人数をキーボードで入力する
-		int peopleNumber = standardInput.nextInt();
+		peopleNumber = standardInput.nextInt();
+		//人数が0以下の時繰り返す
+		}while(peopleNumber <= 0);
 		//int型を構成要素とする配列要素数の作成
 		int[] scoreNumber = new int[peopleNumber];
 		//人数と""の中の文字を表示して改行
@@ -37,12 +42,10 @@ public class Question6_6 {
 		/*　最高値に一人目の点数を代入
 		 *  最低値に一人目の点数を代入
 		 *  合計値に一人目の点数を代入
-		 *  平均値に一人目の点数を代入
 		 */ 
 		int maxValue = scoreNumber[0];
 		int mixValue = scoreNumber[0];
 		int sumValue = scoreNumber[0];
-		int averageValue = scoreNumber[0];
 		//変数iを1から始めて1ずつ増やしていき人数の値になるまで繰り返す
 		for(int i = 1; i < peopleNumber; i++) {
 			//合計値にi人目の点数を足す
@@ -59,6 +62,6 @@ public class Question6_6 {
 			}
 		}
 		//""中の文とsumValueの値,sumValueの値から人数を割った値,maxValueの値,mixValueの値を表示して改行
-		System.out.println("合計点は" + sumValue + "平均点は" + (double)sumValue / peopleNumber + "最高点は" + maxValue + "最低点は" + mixValue + "です。" );
+		System.out.println("合計点は" + sumValue + "\n平均点は" + (double)sumValue / peopleNumber + "\n最高点は" + maxValue + "\n最低点は" + mixValue + "です。" );
 	}
 }

@@ -46,28 +46,32 @@ public class Question6_7 {
 		System.out.print("探す数値 :");
 		//探す値をキーボードで入力
 		int keyNumber = standardInput.nextInt();
-		/* 変数iの初期化
-		 * 変数最後の値を初期化
-		 */
-		int i = 0;
-		int endNumber = 0;
+		//変数最後の値を初期化
+		int endNumber = -1;
 		//変数iが0から始まり1ずつ増やしていき12より大きくなるまで繰り返す
-		for(i = 0; i < elementNumber; i++) {
+		for(int i = elementNumber -1 ; 0 <= elementNumber; i--) {
 			//ランダムに出力された値と探す値が同じ時
 			if(arrayNumber[i] == keyNumber) {
-				//最後の値に変数iの値を代入
+				//最後の値に変数iを代入
 				endNumber = i;
+				//飛び出す
+				break;
+			}
+			//それ以外
+			else {
+				//飛び出す
+				break;
 			}
 		}
-		//ランダムに出力された値と探す値が同じ時
-		if(arrayNumber[endNumber] == keyNumber) {
-			//""の中の文字とendNumberの値を表示して改行
-			System.out.println("それはarrayNumber[" + endNumber + "]にあります。");
+		//最後の値が-1の時
+		if(endNumber == -1) {
+			//""の中の文字を表示して改行
+			System.out.println("それはありません。");
 		}
 		//それ以外
 		else {
-			//""の中の文字を表示して改行
-			System.out.println("それはありません。");
+			//""の中の文字とendNumberの値を表示して改行
+			System.out.println("それはarrayNumber[" + endNumber + "]にあります。");
 		}
 	}
 }
