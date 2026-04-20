@@ -33,13 +33,13 @@ public class Question6_10 {
 		//変数jが0から始まり1ずつ増やしていき1入力値より大きくなるまで繰り返す
 		for (j = 0; j < elementNumber; j++) {
 			//1から10までのランダムのランダム数をarrayNumber[j]に代入
-			arrayNumber[j] = randomNumber.nextInt(11) + 1;
+			arrayNumber[j] = randomNumber.nextInt(10) + 1;
 			//変数jが配列の1番目の値以外の時と0以外の時
 			if( j != 0) {
 				//ランダム出した値と一個前の値が同じ時繰り返す
 				while(arrayNumber[j] == arrayNumber[j - 1]) {
-					//arrayNumber[j]に0-9のランダムな数を代入
-					arrayNumber[j] = randomNumber.nextInt(11) + 1;
+					//arrayNumber[j]に1から10のランダムな数を代入
+					arrayNumber[j] = randomNumber.nextInt(10) + 1;
 				}
 			}
 		}
