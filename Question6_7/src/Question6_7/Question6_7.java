@@ -48,17 +48,12 @@ public class Question6_7 {
 		int keyNumber = standardInput.nextInt();
 		//変数最後の値を初期化
 		int endNumber = -1;
-		//変数iが0から始まり1ずつ増やしていき12より大きくなるまで繰り返す
-		for(int i = elementNumber -1 ; 0 <= elementNumber; i--) {
+		//変数iが12から始まり1ずつ減らしていき0まで繰り返す
+		for(int i = elementNumber -1 ; 0 < i; i--) {
 			//ランダムに出力された値と探す値が同じ時
 			if(arrayNumber[i] == keyNumber) {
 				//最後の値に変数iを代入
 				endNumber = i;
-				//飛び出す
-				break;
-			}
-			//それ以外
-			else {
 				//飛び出す
 				break;
 			}
