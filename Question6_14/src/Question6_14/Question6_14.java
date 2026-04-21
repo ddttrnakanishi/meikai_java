@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 /*
  * クラス名            :Question6_14
- * 概要                :縦向きの棒グラフを表示
+ * 概要                :月を1-12の数値として表示してその英語表現を入力させるプログラム
  * 作成者             　:中西輝
  * 作成日              :2026.4.17
  */
@@ -23,7 +23,7 @@ public class Question6_14 {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
 		//String型を構成要素とする配列要素数の作成
-		String[] MONTH_NUNBER1 = {
+		final String[] MONTH_NUNBER1 = {
 				"January","February","March","April","May","June","July",
 				"August","September","October","November","December"};
 		//""の中の文字を表示して改行
@@ -33,13 +33,13 @@ public class Question6_14 {
 		//繰り返す
 		while(true) {
 			//変数answerMonthに0-11のランダムな数を代入
-			int answerMonth = randomMonth.nextInt(12);
+			int answerMonth = randomMonth.nextInt(MONTH_NUNBER1.length);
 			//記憶した値とランダムに出された値が同じとき
 			if(memoryNumber == answerMonth) {
 				//記憶した値とランダムに出された値が同じとき繰り返す
 				while(memoryNumber == answerMonth) {
-					//arrayNumber[j]に0-9のランダムな数を代入
-					answerMonth = randomMonth.nextInt(12);
+					//answerMonthに0-11のランダムな数を代入
+					answerMonth = randomMonth.nextInt(MONTH_NUNBER1.length);
 				}
 			}
 			//ランダムに出力された値に+1した値と""の中の文字表示
