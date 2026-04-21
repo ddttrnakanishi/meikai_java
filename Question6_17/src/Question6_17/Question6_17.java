@@ -20,38 +20,38 @@ public class Question6_17 {
 		//キーボードで入力する値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
 		//int型を構成要素型とする配列を構成要素型とする配列の宣言
-		final int [][] resultMatrix = new int[2][6];
+		final int [][] RESULT_MATRIX = new int[2][6];
 		//String型を構成要素型とする配列の宣言
-		final String[] SUBJECTSCORE = {"国語","数学"};
+		final String[] SUBJECT_SCORE = {"国語","数学"};
 		//変数iを0から始めて1ずつ増やしていき2になるまで繰り返す(科目)
-		for(int i = 0; i < 2; i++) {
+		for(int i = 0; i < RESULT_MATRIX.length; i++) {
 			//変数jを0から始めて1ずつ増やしていき6になるまで繰り返す(人数)
-			for(int j = 0; j < 6; j++) {
-				//""の中の文字と配列SUBJECTSCOREがiの時の文字と変数iと変数jの値を表示
-				System.out.print(j + 1 + "人目の" + SUBJECTSCORE[i] + "resultMatrix["+ i +"]"+"["+ j +"] =" );
-				//resultMatrix[i][j]に値を入力
-				resultMatrix[i][j] = standardInput.nextInt();
+			for(int j = 0; j < RESULT_MATRIX[i].length; j++) {
+				//""の中の文字と配列SUBJECT_SCOREがiの時の文字と変数iと変数jの値を表示
+				System.out.print(j + 1 + "人目の" + SUBJECT_SCORE[i] + "RESULT_MATRIX["+ i +"]"+"["+ j +"] =" );
+				//RESULT_MATRIX[i][j]に値を入力
+				RESULT_MATRIX[i][j] = standardInput.nextInt();
 			}
 		}
 		//改行
 		System.out.println();
 		//変数iを0から始めて1ずつ増やしていき2になるまで繰り返す(科目)
-		for(int i = 0; i < 2; i++) {
+		for(int i = 0; i < RESULT_MATRIX.length; i++) {
 			int sumSubject = 0;
 			//変数jを0から始めて1ずつ増やしていき6になるまで繰り返す(人数)
-			for(int j = 0; j < 6; j++) {
+			for(int j = 0; j < RESULT_MATRIX[i].length; j++) {
 				//科目ごとの全員の合計を計算
-				sumSubject += resultMatrix[i][j];
+				sumSubject += RESULT_MATRIX[i][j];
 			}
-			//""の中の文字と配列SUBJECTSCOREがiの時の文字と科目ごとの平均を計算し表示して改行
-			System.out.println(SUBJECTSCORE[i] + "の平均は" + (double)sumSubject / 6);
+			//""の中の文字と配列SUBJECT_SCOREがiの時の文字と科目ごとの平均を計算し表示して改行
+			System.out.println(SUBJECT_SCORE[i] + "の平均は" + (double)sumSubject / 6);
 		}
 		//変数iを0から始めて1ずつ増やしていき1になるまで繰り返す(科目)
 		for(int i = 0; i < 1; i++) {
 			//変数jを0から始めて1ずつ増やしていき6になるまで繰り返す(人数)
 			for(int j = 0; j < 6; j++) {
 				//""の中の文字と1人ずつ２科目の平均を表示して改行
-				System.out.println(j + 1 + "人目の平均" + (double)(resultMatrix[i][j] + resultMatrix[i + 1][j]) / 2);	
+				System.out.println(j + 1 + "人目の平均" + (double)(RESULT_MATRIX[i][j] + RESULT_MATRIX[i + 1][j]) / 2);	
 			}
 		}
 	}
