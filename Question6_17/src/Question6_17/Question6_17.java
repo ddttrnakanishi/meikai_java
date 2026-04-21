@@ -20,7 +20,7 @@ public class Question6_17 {
 		//キーボードで入力する値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
 		//int型を構成要素型とする配列を構成要素型とする配列の宣言
-		int [][] resultMatrix = new int[2][6];
+		final int [][] resultMatrix = new int[2][6];
 		//String型を構成要素型とする配列の宣言
 		final String[] SUBJECTSCORE = {"国語","数学"};
 		//変数iを0から始めて1ずつ増やしていき2になるまで繰り返す(科目)
