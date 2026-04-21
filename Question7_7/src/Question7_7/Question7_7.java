@@ -25,6 +25,21 @@ public class Question7_7 {
 		}
 	}
 	/*
+	 * 関数名           :putStars
+	 * メソッドの説明   :putCharsを呼び出す
+	 * パラメータの説明 :段数
+	 * 返り値           :なし
+	 * 作成者           :中西輝
+	 * 作成日           :2026.4.21
+	 */
+	static void putStars(int stageNumber) {
+		//段数が0以上の時繰り返す
+		while(stageNumber -- > 0) {
+		//*を1個表示
+		putChars('*', 1);
+	}
+	}
+	/*
 	 * 関数名           :main
 	 * メソッドの説明   :メイン処理
 	 * パラメータの説明 :なし
@@ -43,8 +58,8 @@ public class Question7_7 {
 		int stageNumber = standardInput.nextInt();
 		//変数iが1から始まり1ずつ増やしていき段数分繰り返す
 		for(int i = 1; i <= stageNumber; i++) {
-			//*をi個表示
-			putChars('*', i);
+			//putStars(i)を呼び出す
+			putStars(i);
 			//改行
 			System.out.println();	
 		}
