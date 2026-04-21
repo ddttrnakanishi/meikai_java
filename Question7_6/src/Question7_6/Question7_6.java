@@ -3,7 +3,7 @@ package Question7_6;
 import java.util.Scanner;
 /*
  * クラス名            :Question7_6
- * 概要                :引数mで指定された月の季節を表示するメソッドprintSeasonを表示する
+ * 概要                :引数monthNumberで指定された月の季節を表示するメソッドprintSeasonを表示する
  * 作成者             　:中西輝
  * 作成日              :2026.4.21
  */
@@ -16,24 +16,24 @@ public class Question7_6 {
 	 * 作成者           :中西輝
 	 * 作成日           :2026.4.21
 	 */
-	static void printSeason(int m) {
-		//mが3,4,5のどれかの時
-		if(m == 3 || m == 4 || m == 5) {
+	static void printSeason(int monthNumber) {
+		//monthNumberが3,4,5のどれかの時
+		if(monthNumber == 3 || monthNumber == 4 || monthNumber == 5) {
 			//""の中の文字を表示して改行
 			System.out.println("春");
 		}
-		//mが6,7,8のどれかの時
-		else if(m == 6 || m == 7 || m == 8) {
+		//monthNumberが6,7,8のどれかの時
+		else if(monthNumber == 6 || monthNumber == 7 || monthNumber == 8) {
 			//""の中の文字を表示して改行
 			System.out.println("夏");
 		}
-		//mが9,10,11のどれかの時
-		else if(m == 9 || m == 10 || m == 11) {
+		//monthNumberが9,10,11のどれかの時
+		else if(monthNumber == 9 || monthNumber == 10 || monthNumber == 11) {
 			//""の中の文字を表示して改行
 			System.out.println("秋");
 		}
-		//mが12,1,2のどれかの時
-		else if(m == 12 || m == 1 || m == 2) {
+		//monthNumberが12,1,2のどれかの時
+		else if(monthNumber == 12 || monthNumber == 1 || monthNumber == 2) {
 			//""の中の文字を表示して改行
 			System.out.println("冬");
 		}
