@@ -9,7 +9,7 @@ package Question7_5;
 public class Question7_5 {
 	/*
 	 * 関数名           :main
-	 * メソッドの説明   :メイン処理とmedianNumber処理
+	 * メソッドの説明   :メイン処理とhello処理
 	 * パラメータの説明 :なし
 	 * 返り値           :なし
 	 * 作成者           :中西輝
