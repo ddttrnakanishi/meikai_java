@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 /*
  * クラス名 :Question6_15
- * 概要 :縦向きの棒グラフを表示
+ * 概要 :曜日を表示してその英語表現を入力させるプログラム
  * 作成者 　:中西輝
  * 作成日 :2026.4.18
  */
