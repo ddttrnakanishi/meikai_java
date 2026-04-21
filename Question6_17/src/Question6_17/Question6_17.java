@@ -49,7 +49,7 @@ public class Question6_17 {
 		//変数iを0から始めて1ずつ増やしていき1になるまで繰り返す(科目)
 		for(int i = 0; i < 1; i++) {
 			//変数jを0から始めて1ずつ増やしていき6になるまで繰り返す(人数)
-			for(int j = 0; j < 6; j++) {
+			for(int j = 0; j < RESULT_MATRIX[i].length; j++) {
 				//""の中の文字と1人ずつ２科目の平均を表示して改行
 				System.out.println(j + 1 + "人目の平均" + (double)(RESULT_MATRIX[i][j] + RESULT_MATRIX[i + 1][j]) / 2);	
 			}
