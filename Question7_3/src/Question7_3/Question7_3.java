@@ -9,10 +9,10 @@ import java.util.Scanner;
  */
 public class Question7_3 {
 	/*
-	 * 関数名           :main
-	 * メソッドの説明   :メイン処理とmedianNumber処理
-	 * パラメータの説明 :なし
-	 * 返り値           :なし
+	 * 関数名           :medianNumber
+	 * メソッドの説明   :三つの値の中央値を求める
+	 * パラメータの説明 :入力値1-3
+	 * 返り値           :中央値
 	 * 作成者           :中西輝
 	 * 作成日           :2026.4.21
 	 */
@@ -43,6 +43,14 @@ public class Question7_3 {
 		//返却
 		return medianNumber;
 	}
+	/*
+	 * 関数名           :main
+	 * メソッドの説明   :メイン処理
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者           :中西輝
+	 * 作成日           :2026.4.21
+	 */
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);

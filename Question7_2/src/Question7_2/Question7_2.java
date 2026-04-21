@@ -9,10 +9,10 @@ import java.util.Scanner;
  */
 public class Question7_2 {
 	/*
-	 * 関数名           :main
-	 * メソッドの説明   :メイン処理とminNumber処理
-	 * パラメータの説明 :なし
-	 * 返り値           :なし
+	 * 関数名           :minNumber
+	 * メソッドの説明   :最小値を決める
+	 * パラメータの説明 :入力値1-3
+	 * 返り値           :最小値
 	 * 作成者           :中西輝
 	 * 作成日           :2026.4.21
 	 */
@@ -32,7 +32,14 @@ public class Question7_2 {
 		//返却
 		return minNumber;
 	}
-
+	/*
+	 * 関数名           :main
+	 * メソッドの説明   :メイン処理
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者           :中西輝
+	 * 作成日           :2026.4.21
+	 */
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);

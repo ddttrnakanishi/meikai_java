@@ -9,14 +9,13 @@ import java.util.Scanner;
  */
 public class Question7_1 {
 	/*
-	 * 関数名           :main
-	 * メソッドの説明   :メイン処理とsignOf処理
-	 * パラメータの説明 :なし
-	 * 返り値           :なし
+	 * 関数名           :sumOf
+	 * メソッドの説明   :sumOfの値が正か負か0かを確かめる
+	 * パラメータの説明 :入力値
+	 * 返り値           :代入された値
 	 * 作成者           :中西輝
 	 * 作成日           :2026.4.21
 	 */
-
 	static int signOf(int inputNumber) {
 		//変数signOfの初期化
 		int signOf = 0;
@@ -38,6 +37,14 @@ public class Question7_1 {
 		//返却
 		return signOf;
 	}
+	/*
+	 * 関数名           :main
+	 * メソッドの説明   :メイン処理
+	 * パラメータの説明 :なし
+	 * 返り値           :なし
+	 * 作成者           :中西輝
+	 * 作成日           :2026.4.21
+	 */
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in); 
