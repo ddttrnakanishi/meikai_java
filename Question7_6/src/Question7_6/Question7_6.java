@@ -18,17 +18,17 @@ public class Question7_6 {
 	 */
 	static void printSeason(int monthNumber) {
 		//monthNumberが3,4,5のどれかの時
-		if(monthNumber == 3 || monthNumber == 4 || monthNumber == 5) {
+		if(monthNumber >= 3 && monthNumber <= 5) {
 			//""の中の文字を表示して改行
 			System.out.println("春");
 		}
 		//monthNumberが6,7,8のどれかの時
-		else if(monthNumber == 6 || monthNumber == 7 || monthNumber == 8) {
+		else if(monthNumber >= 6 && monthNumber <= 8) {
 			//""の中の文字を表示して改行
 			System.out.println("夏");
 		}
 		//monthNumberが9,10,11のどれかの時
-		else if(monthNumber == 9 || monthNumber == 10 || monthNumber == 11) {
+		else if(monthNumber >= 9 && monthNumber <= 11) {
 			//""の中の文字を表示して改行
 			System.out.println("秋");
 		}
