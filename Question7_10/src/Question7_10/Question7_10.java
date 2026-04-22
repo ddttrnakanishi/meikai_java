@@ -28,7 +28,7 @@ public class Question7_10 {
 			System.out.print("もう一度？<Yes…1/No…0> : ");
 			//0,1を入力
 			onceAgain = standardInput.nextInt();
-		//0,1以外の場合繰り返す
+			//0,1以外の場合繰り返す
 		}while(onceAgain != 0 && onceAgain != 1);
 		//1であればtrue、0であればfalseを返却
 		return onceAgain == 1;
@@ -46,7 +46,7 @@ public class Question7_10 {
 		Random randomNumber = new Random();
 		//""の中の文字を表示して改行
 		System.out.println("暗記力トレーニング！！");
-		//繰り返し
+		
 		do {
 			//三桁の値を代入
 			int randomNumber1 = randomNumber.nextInt(900) + 100;
@@ -54,64 +54,99 @@ public class Question7_10 {
 			int randomNumber2 = randomNumber.nextInt(900) + 100;
 			//三桁の値を代入
 			int randomNumber3 = randomNumber.nextInt(900) + 100;
-			//trueである場合繰り返す
-			while(true) {
-				//0-3のランダムな値を代入
-				int questionNumber = randomNumber.nextInt(4);
-				//0の場合
-				if(questionNumber == 0) {
+		//0-3のランダムな値を代入
+		int questionNumber = randomNumber.nextInt(4);
+		//答えを初期化
+		int answerNumber = 1;
+		//三つの値の計算結果を初期化
+		int allAnswer = 0;
+			//0-3の値のcaseを行う
+			switch(questionNumber){
+			//0の時
+			case 0:
+				//答えが一致しない場合繰り返す
+				while(answerNumber != allAnswer) {
 					//三つの値と""の中の文字を表示
-					System.out.print(randomNumber1 + " + " + randomNumber2 + " + " + randomNumber3 + " = ");
+					System.out.print(randomNumber1 + "+" + randomNumber2 + "+" + randomNumber3 + " = ");
 					//答えを入力
-					int answerNumber = standardInput.nextInt();
+					answerNumber = standardInput.nextInt();
+					//計算結果を代入
+					allAnswer = randomNumber1 + randomNumber2 + randomNumber3;
 					//入力値と計算結果が同じとき
-					if(answerNumber == randomNumber1 + randomNumber2 + randomNumber3) {
+					if(answerNumber == allAnswer) {
 						//飛び出す
 						break;
 					}
+					//""の中の文字を表示して改行。
+					System.out.println("違いますよ！！");
 				}
-				//1の場合
-				else if(questionNumber == 1) {
+				//飛び出す
+				break;
+				//1の時
+			case 1:
+				////答えが一致しない場合繰り返す
+				while(answerNumber != allAnswer) {
 					//三つの値と""の中の文字を表示
-					System.out.print(randomNumber1 + " + " + randomNumber2 + " - " + randomNumber3 + " = ");
+					System.out.print(randomNumber1 + "+" + randomNumber2 + "-" + randomNumber3 + " = ");
 					//答えを入力
-					int answerNumber = standardInput.nextInt();
+					answerNumber = standardInput.nextInt();
+					//計算結果を代入
+					allAnswer = randomNumber1 + randomNumber2 - randomNumber3;
 					//入力値と計算結果が同じとき
-					if(answerNumber == randomNumber1 + randomNumber2 - randomNumber3) {
+					if(answerNumber == allAnswer) {
 						//飛び出す
 						break;
 					}
+					//""の中の文字を表示して改行。
+					System.out.println("違いますよ！！");
 				}
-				//2の場合
-				else if(questionNumber == 2) {
+				//飛び出す
+				break;
+				//2の時
+			case 2:
+				////答えが一致しない場合繰り返す
+				while(answerNumber!= allAnswer) {
 					//三つの値と""の中の文字を表示
-					System.out.print(randomNumber1 + " - " + randomNumber2 + " + " + randomNumber3 + " = ");
+					System.out.print(randomNumber1 + "-" + randomNumber2 + "+" + randomNumber3 + " = ");
 					//答えを入力
-					int answerNumber = standardInput.nextInt();
+					answerNumber = standardInput.nextInt();
+					//計算結果を代入
+					allAnswer = randomNumber1 - randomNumber2 - randomNumber3;
 					//入力値と計算結果が同じとき
-					if(answerNumber == randomNumber1 - randomNumber2 + randomNumber3) {
+					if(answerNumber == allAnswer) {
 						//飛び出す
 						break;
 					}
+					//""の中の文字を表示して改行。
+					System.out.println("違いますよ！！");
 				}
-				//それ以外
-				else {
+				//飛び出す
+				break;
+				//3の時
+			case 3:
+				////答えが一致しない場合繰り返す
+				while(answerNumber!= allAnswer) {
 					//三つの値と""の中の文字を表示
-					System.out.print(randomNumber1 + " - " + randomNumber2 + " - " + randomNumber3 + " = ");
+					System.out.print(randomNumber1 + "-" + randomNumber2 + "-" + randomNumber3 + " = ");
 					//答えを入力
-					int answerNumber = standardInput.nextInt();
+					answerNumber = standardInput.nextInt();
+					//計算結果を代入
+					allAnswer = randomNumber1 - randomNumber2 - randomNumber3;
 					//入力値と計算結果が同じとき
-					if(answerNumber == randomNumber1 - randomNumber2 - randomNumber3) {
+					if(answerNumber == allAnswer) {
 						//飛び出す
 						break;
 					}
+					//""の中の文字を表示して改行。
+					System.out.println("違いますよ！！");
 				}
-				//""の中の文字を表示して改行
-				System.out.println("違いますよ！！");
+				//飛び出す
+				break;
 			}
-		//返却値がtrueの場合繰り返す
+		//trueの場合は繰り返す
 		}while(confirmRtry());
 	}
 }
+
 
 
