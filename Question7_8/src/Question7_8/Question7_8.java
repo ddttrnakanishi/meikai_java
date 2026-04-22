@@ -3,8 +3,7 @@ package Question7_8;
 import java.util.Random;
 /*
  * クラス名            :Question7_8
- * 概要                :'*'を連続表示するメソッドputStarsを内部でメソッドputCharsを
- * 　　　　　　　　　　　呼び出すことによって表示を行う
+ * 概要                :乱数を生成し表示する
  * 作成者             　:中西輝
  * 作成日              :2026.4.21
  */
