@@ -8,8 +8,9 @@ import java.util.Scanner;
  * 作成日               :2026.4.22
  */
 public class Question7_11 {
+	final static int FIXED_NUMBER = 2;
 	/*
-	 * 関数名           　:siftNumber
+	 * 関数名           　:shiftNumber
 	 * メソッドの説明   　:2のべき乗の乗算の値を出し同じことを確認
 	 * パラメータの説明　 :シフト数と整数
 	 * 返り値          　 :なし
@@ -17,39 +18,39 @@ public class Question7_11 {
 	 * 作成日          　 :2026.4.22
 	 */
 
-	static void siftNumber(int siftCount, int inputNumber) {
+	static void shiftNumber(int shiftCount, int inputNumber) {
 		//結果の値に入力値を代入
 		int resultNumber = inputNumber;
 		//変数iを1から始めて1ずつ増やしていきシフトの数になるまで繰り返す
-		for(int i = 1; i <= siftCount; i++) {
+		for(int i = 1; i <= shiftCount; i++) {
 			//結果の値に2をかける
-			resultNumber *= 2;
+			resultNumber *= FIXED_NUMBER;
 		}
 		//""の中の文字と計算結果を表示して改行
 		System.out.println("入力値の2のべき乗で乗算" + resultNumber);
 		//""の中の文字と計算結果とシフトした数を表示して改行
-		System.out.println(resultNumber + "と" + (inputNumber << siftCount) + "は同じ。");
+		System.out.println(resultNumber + "と" + (inputNumber << shiftCount) + "は同じ。");
 	}
 	/*
-	 * 関数名           　:siftNumber2
+	 * 関数名           　:shiftNumber2
 	 * メソッドの説明   　:2のべき乗の除算の値を出し同じことを確認
 	 * パラメータの説明　 :シフト数と整数
 	 * 返り値          　 :なし
 	 * 作成者          　 :中西輝
 	 * 作成日          　 :2026.4.22
 	 */
-	static void siftNumber2(int siftCount, int inputNumber) {
+	static void shiftNumber2(int shiftCount, int inputNumber) {
 		//結果の値に入力値を代入
 		int resultNumber = inputNumber;
 		//変数iを1から始めて1ずつ増やしていきシフトの数になるまで繰り返す
-		for(int i = 1; i <= siftCount; i++) {
+		for(int i = 1; i <= shiftCount; i++) {
 			//結果の値を2で割る
-			resultNumber /= 2;
+			resultNumber /= FIXED_NUMBER;
 		}
 		//""の中の文字と計算結果を表示して改行
 		System.out.println("入力値の2のべき乗で除算" + resultNumber);
 		//""の中の文字と計算結果とシフトした数を表示して改行
-		System.out.println(resultNumber + "と" + (inputNumber >> siftCount) + "は同じ。");
+		System.out.println(resultNumber + "と" + (inputNumber >> shiftCount) + "は同じ。");
 	}
 	/*
 	 * 関数名           　:main
@@ -69,10 +70,10 @@ public class Question7_11 {
 		//""の中の文字を表示
 		System.out.print("シフトするビット数 :");
 		//シフトする数を入力
-		int siftCount = standardInput.nextInt();
-		//siftNumberメソッドの呼び出し
-		siftNumber( siftCount,  inputNumber);
-		//siftNumber2メソッドの呼び出し
-		siftNumber2( siftCount,  inputNumber);
+		int shiftCount = standardInput.nextInt();
+		//shiftNumberメソッドの呼び出し
+		shiftNumber( shiftCount,  inputNumber);
+		//shiftNumber2メソッドの呼び出し
+		shiftNumber2( shiftCount,  inputNumber);
 	}
 }
