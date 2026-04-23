@@ -3,7 +3,7 @@ package Question7_13;
 import java.util.Scanner;
 /*
  * クラス名             :shiftNumberuestion7_13
- * 概要                 :整数を右にnビット回転した値と左にnビット回転した値を表示
+ * 概要                 :入力した整数のビットと指定したビット目を1,0,反転したビットを表示
  * 作成者             　:中西輝
  * 作成日               :2026.4.23
  */
