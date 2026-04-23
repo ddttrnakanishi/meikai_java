@@ -3,7 +3,7 @@ package Question7_15;
 import java.util.Scanner;
 /*
  * クラス名             :Question7_15
- * 概要                 :配列aの全要素を求めるメソッドの作成
+ * 概要                 :配列arrayNumberの全要素を求めるメソッドの作成
  * 作成者             　:中西輝
  * 作成日               :2026.4.23
  */
