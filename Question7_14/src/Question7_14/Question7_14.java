@@ -26,11 +26,11 @@ public class Question7_14 {
 		//整数値を入力
 		int integerValue = standardInput.nextInt();
 		//""の中の文字を表示
-		System.out.print("シフトする数 :");
+		System.out.print("最下位はどこか :");
 		//シフトする数を代入
 		int shiftNumber = standardInput.nextInt();
 		//""の中の文字を表示
-		System.out.print("最下位はどこか :");
+		System.out.print("シフトする数 :");
 		//シフトする数を代入
 		int piecesNumber = standardInput.nextInt();
 		//返却値を受けとる
@@ -55,7 +55,7 @@ public class Question7_14 {
 		System.out.println();
 		//変数iを32から始めて1ずつ減らしていき0になるまで繰り返す
 		for(int i = 31; i >= 0; i--) {
-			//rRotate返却値の値が1の時は1をそうでないときは0を表示
+			//setN返却値の値が1の時は1をそうでないときは0を表示
 			System.out.print(((setN(integerValue,shiftNumber,piecesNumber) >>> i & 1) == 1) ? '1':'0');
 		}
 		//改行
