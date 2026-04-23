@@ -60,11 +60,9 @@ public class Question7_12 {
 		if(shiftNumber < 0) {
 			//lRotateの回転を行う
 			return lRotate(integerValue,-shiftNumber);
-
 		}
-	
-			/*rigehtShiftに入力した整数値のビット数を右にshiftNumber分ずらしたビット数と
-			 * 入力した整数値のビット数を左に32からshiftNumberの値を引いた分ずらしたビット数を
+			/*rigehtShiftに入力した整数値のビット数を右にshiftNumber分シフトしたビット数と
+			 * 入力した整数値のビット数を左に32からshiftNumberの値を引いた分シフトしたビット数を
 			 *論理和し求められたビット数を代入
 			 */
 			rigehtShift = (integerValue >>> shiftNumber) | (integerValue << 32 - shiftNumber);
@@ -84,19 +82,16 @@ public class Question7_12 {
 	static int lRotate(int integerValue, int shiftNumber) {
 		//変数leftShiftを初期化
 		int leftShift = 0;
-
 		//シフトする値がマイナスの時
 		if(shiftNumber < 0) {
 			//rRotateの回転を行う
 			return rRotate(integerValue, -shiftNumber);
 		}
-		
-			/*leftShiftに入力した整数値のビット数を左にshiftNumber分ずらしたビット数と
-			 * 入力した整数値のビット数を右に32からshiftNumberの値を引いた分ずらしたビット数を
+			/*leftShiftに入力した整数値のビット数を左にshiftNumber分シフトしたビット数と
+			 * 入力した整数値のビット数を右に32からshiftNumberの値を引いた分シフトしたビット数を
 			 *論理和し求められたビット数を代入
 			 */
 			leftShift = (integerValue << shiftNumber) | (integerValue >>> 32 - shiftNumber);
-		
 		//leftShiftを返却
 		return leftShift;
 	}

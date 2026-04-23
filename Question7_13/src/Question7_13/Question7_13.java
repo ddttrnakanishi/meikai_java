@@ -52,7 +52,7 @@ public class Question7_13 {
 		System.out.println();
 		//変数iを32から始めて1ずつ減らしていき0になるまで繰り返す
 		for(int i = 31; i >= 0; i--) {
-			//rRotate返却値の値が1の時は1をそうでないときは0を表示
+			//set返却値の値が1の時は1をそうでないときは0を表示
 			System.out.print(((set(integerValue,shiftNumber) >>> i & 1) == 1) ? '1':'0');
 		}
 		//改行
