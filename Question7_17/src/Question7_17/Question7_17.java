@@ -54,7 +54,7 @@ public class Question7_17 {
 	 * メソッドの説明 　:要素の値を配列の末尾から見ていき一致したら返却しない場合-1を返却	 
 	 * パラメータの説明　 :配列と探す値	 
 	 * 返り値 　 :iの値、-1	 
-	 * 作成者 　 :中西輝	 
+	 * 作成者 　 :中西輝
 	 * 作成日 　 :2026.4.23		 
 	 */
 	static int linearSearchR(int []arrayNumber, int keyNumber) {

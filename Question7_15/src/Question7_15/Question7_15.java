@@ -31,7 +31,7 @@ public class Question7_15 {
 			System.out.print("arrayNumber[" + i + "} = ");
 			//全要素の値を入力
 			arrayNumber[i] = standardInput.nextInt();
-		}
+		} 
 		//""の中の文字とsumOfメソッドの結果受け取り表示して改行
 		System.out.println("合計は :" + sumOf(arrayNumber));
 	}
