@@ -22,10 +22,16 @@ public class Question7_19 {
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
-		//""の中の文字を表示
-		System.out.print("要素数 :");
-		//要素数を入力
-		int inputNumber = standardInput.nextInt();
+		//inputNumberの初期化
+		int inputNumber = 0;
+		//繰り返し
+		do {
+			//""の中の文字を表示
+			System.out.print("要素数 :");
+			//要素数を入力
+			inputNumber  = standardInput.nextInt();
+			//elementsNumberが0以下の場合繰り返す
+		}while(inputNumber <= 0);
 		//入力値の分だけ整数を入れられる配列を作る
 		int[] arrayNumber = new int [inputNumber]; 
 		//変数iを0から始めて1ずつ増やしていき入力値になるまで繰り返す
