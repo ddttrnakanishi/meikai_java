@@ -65,7 +65,7 @@ public class Question7_20 {
 		}
 		//arrayNumber[要素数から-1]の値と""の中の文字を表示して改行
 		System.out.println(arrayNumber[inputNumber - FINAL_VALUE] + "}");
-		//aryRmvメソッドの結果を表示
+		//aryRmvメソッドの処理を行う
 		aryIns(arrayNumber, idx, integerNumber);
 	}
 	/*	
