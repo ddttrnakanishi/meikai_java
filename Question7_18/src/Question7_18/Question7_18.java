@@ -61,7 +61,7 @@ public class Question7_18 {
 	 */
 	static void aryRmv(int[]arrayNumber, int idx) {
 		//変数iを削除する値から始めて1ずつ増やしていき要素数から-1した値になるまで繰り返す
-		for(int i = idx; i < arrayNumber.length -FINAL_VALUE; i++) {
+		for(int i = idx; i < arrayNumber.length - FINAL_VALUE; i++) {
 			//arrayNumber[i]にarrayNumber[i+1]した値を代入
 			arrayNumber[i] = arrayNumber[i + FINAL_VALUE];
 		}
