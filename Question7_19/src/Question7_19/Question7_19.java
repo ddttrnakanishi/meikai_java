@@ -13,7 +13,7 @@ public class Question7_19 {
 	/*	
 	 *  関数名 　        :main	
 	 *  メソッドの説明 　:要素数、各要素の値、削除する場所、削除する個数
-	 *  				  を入力しaryRmvNの結果を表示する	
+	 *  				  を入力しaryRmvNの処理を行う
 	 *  パラメータの説明 :なし	 
 	 *  返り値 　        :なし	 
 	 *  作成者 　        :中西輝	 
@@ -35,12 +35,18 @@ public class Question7_19 {
 			//配列[i]の値を入力
 			arrayNumber[i] = standardInput.nextInt();
 		}
+		//idxの初期化
+		int idx = 0;
+		//繰り返し
+		do {
+			//""の中の文字を表示
+			System.out.print("削除を始める場所 :");
+			//削除する場所を入力する
+			idx  = standardInput.nextInt();
+			//要素値-1以上の時繰り返す
+		}while(inputNumber - FINAL_VALUE <= idx);
 		//""の中の文字を表示
-		System.out.print("削除を始める場所 :");
-		//削除する場所を入力する
-		int idx = standardInput.nextInt();
-		//""の中の文字を表示
-		System.out.print("削除する個数");
+		System.out.print("削除する個数 :");
 		//削除する個数を入力する
 		int n = standardInput.nextInt();
 		//""の中の文字を表示
@@ -52,19 +58,25 @@ public class Question7_19 {
 		}
 		//arrayNumber[要素数から-1]の値と""の中の文字を表示して改行
 		System.out.println(arrayNumber[inputNumber - FINAL_VALUE] + "}");
-		//aryRmvメソッドの結果を表示
+		//aryRmvメソッドの処理を行う
 		aryRmvN(arrayNumber, idx, n);
 	}
 	/*	
 	 *  関数名 　          :aryRmvN
 	 *  メソッドの説明 　　:削除する値より後ろの全要素を入力した個数分前方にずらす、
 	 *  					その結果をもとにずらした結果を表示
+	 *  					nullの場合null以外を入力してくださいと表示
 	 *  パラメータの説明　 : 配列、削除する場所、削除する個数
 	 *  返り値 　 　　　　 :なし	 
 	 *  作成者 　          :中西輝	 
 	 *  作成日 　          :2026.4.24	 
 	 */
-	static void aryRmvN(int[]arrayNumber, int idx, int n) {
+	public static void aryRmvN(int[]arrayNumber, int idx, int n) {
+		//arrayNumberがnullの場合
+		if(arrayNumber == null) {
+			//""の中の文字を表示して改行
+			System.out.println("null以外を入力してください");
+		}
 		/*変数iを削除を始める値から始めて1ずつ増やしていき要素数から削除する個数を
 		 * 引いた値になるまで繰り返す
 		 */
