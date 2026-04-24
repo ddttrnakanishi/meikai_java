@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class Question7_20 {	
 	//クラス全体で使える変数FINAL_VALUEに1を代入
 	private final static int FINAL_VALUE = 1;
+	//クラス全体で使える変数FINAL_VALUETWOに2を代入
 	private final static int FINAL_VALUETWO = 2;
 	/*	
 	 *  関数名 　        :main	
