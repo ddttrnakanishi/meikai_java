@@ -65,21 +65,22 @@ public class Question7_21 {
 	/*	
 	 *  関数名 　        :aryExchng	
 	 *  メソッドの説明 　:二つの配列が等しくない場合小さいほうの要素数分の要素を交換する
-	 *  				  nullの場合null以外を入力してくださいと表示
+	 *  				  nullの場合null以外を入力してくださいと表示し返却
 	 *  パラメータの説明 :配列A、配列B
 	 *  返り値 　        :なし	 
 	 *  作成者 　        :中西輝	 
 	 *  作成日 　        :2026.4.24	 
 	 */
-	private static void aryExchng(int[] arrayNumberA, int[] arrayNumberB) {
+	public static void aryExchng(int[] arrayNumberA, int[] arrayNumberB) {
 		//arrayNumberAまたはarrayNumberBがnullの場合
-		if(arrayNumberA == null && arrayNumberB == null) {
+		if(arrayNumberA == null || arrayNumberB == null) {
 			//""の中の文字を表示して改行
 			System.out.println("null以外を入力してください");
+			return ;
 		}
 		//boxNumberの初期化
 		int boxNumber = 0;
-		//配列Aと配列Bの要素数が違うとき
+		//配列Aと配列Bの要素の値が違うとき
 		if(arrayNumberA  != arrayNumberB) {
 			//要素数が要素数2より大きい場合
 			if(inputNumber > inputNumberTwo) {
@@ -114,6 +115,8 @@ public class Question7_21 {
 			}
 			//それ以外
 			else {
+				//""の中の文字を表示
+				System.out.print("{");
 				//変数iを0から始めて1ずつ増やしていき配列Aの要素数分繰り返す
 				for(int i = 0; i < arrayNumberA.length; i++) {
 					//boxNumberにarrayNumberA[i]の値を代入
@@ -140,11 +143,6 @@ public class Question7_21 {
 				//arrayNumber[要素数-1]の値と""の中の文字を表示して改行
 				System.out.println(arrayNumberB[arrayNumberB.length - FINAL_VALUE] + "}");
 			}
-		}
-		//配列Aと配列Bの要素数が同じとき
-		if(arrayNumberA  == arrayNumberB) {
-			//""の中の文字を表示して改行
-			System.out.println("二つの配列は等しいです");
 		}
 	}
 }
