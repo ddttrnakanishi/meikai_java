@@ -30,7 +30,7 @@ public class Question7_18 {
 		//変数iを0から始めて1ずつ増やしていき入力値になるまで繰り返す
 		for(int i = 0; i < inputNumber; i++) {
 			//""の中の文字とiの値を表示
-			System.out.print("arrayNumber [" + i + "} =");
+			System.out.print("arrayNumber [" + i + "] =");
 			//配列[i]の値を入力
 			arrayNumber[i] = standardInput.nextInt();
 		}
