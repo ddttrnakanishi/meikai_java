@@ -19,10 +19,16 @@ public class Question7_15 {
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
-		//""の中の文字を表示
-		System.out.print("要素数 :");
-		//要素数を入力
-		int elementsNumber = standardInput.nextInt();
+		//elementsNumberの初期化
+		int elementsNumber = 0;
+		//繰り返し
+		do {
+			//""の中の文字を表示
+			System.out.print("要素数 :");
+			//要素数を入力
+			elementsNumber = standardInput.nextInt();
+			//elementsNumberが0以下の場合繰り返す
+		}while(elementsNumber <= 0);
 		//配列の作成
 		int[] arrayNumber = new int [elementsNumber];
 		//変数iが1から始まり1ずつ増やしていき要素数を超えるまで繰り返す
@@ -37,13 +43,18 @@ public class Question7_15 {
 	}
 	/*
 	 * 関数名           　:sumOf
-	 * メソッドの説明   　:要素の数だけ繰り返し、合計の算出
+	 * メソッドの説明   　:要素の数だけ繰り返し、合計の算出、nullの場合は-1を返却する	
 	 * パラメータの説明　 :配列arrayNumber
 	 * 返り値          　 :合計値
 	 * 作成者          　 :中西輝
 	 * 作成日          　 :2026.4.23	
 	 */
 	static int sumOf(int[] arrayNumber) {
+		//arrayNumberがnullの場合
+		if(arrayNumber == null) {
+			//返却
+			return -1;
+		}
 		//合計値を初期化
 		int sumNumber = 0;
 		//変数iが1から始まり1ずつ増やしていき要素の数分繰り返す

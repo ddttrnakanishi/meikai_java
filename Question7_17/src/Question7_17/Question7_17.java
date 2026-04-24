@@ -19,12 +19,18 @@ public class Question7_17 {
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
-		//""の中の文字を表示
-		System.out.print("要素数 :");
-		//要素数を入力
-		int inputNumber = standardInput.nextInt();
+		//inputNumberの初期化
+		int inputNumber = 0;
+		//繰り返し
+		do {
+			//""の中の文字を表示
+			System.out.print("要素数 :");
+			//要素数を入力
+			inputNumber = standardInput.nextInt();
+			//inputNumberが0以下の場合繰り返す
+		}while(inputNumber <= 0);
 		//入力値の分だけ整数を入れられる配列を作る
-		int[] arrayNumber = new int [inputNumber]; 
+		int[] arrayNumber = null; 
 		//変数iを0から始めて1ずつ増やしていき入力値になるまで繰り返す
 		for(int i = 0; i < inputNumber; i++) {
 			//""の中の文字とiの値を表示
@@ -51,13 +57,19 @@ public class Question7_17 {
 	}
 	/*	 
 	 * 関数名 　:linearSearchR	 
-	 * メソッドの説明 　:要素の値を配列の末尾から見ていき一致したら返却しない場合-1を返却	 
+	 * メソッドの説明 　:要素の値を配列の末尾から見ていき一致したら返却しない場合-1を返却
+	 * 					nullの場合は-1を返却する	 
 	 * パラメータの説明　 :配列と探す値	 
 	 * 返り値 　 :iの値、-1	 
 	 * 作成者 　 :中西輝
 	 * 作成日 　 :2026.4.23		 
 	 */
 	static int linearSearchR(int []arrayNumber, int keyNumber) {
+		//arrayNumberがnullの場合
+		if(arrayNumber == null) {
+			//返却
+			return -1;
+		}
 		//変数iを配列の末尾の-1から始めて1ずつ減らしていき0になるまで繰り返す
 		for(int i = arrayNumber.length -1 ; i >= 0; i--) {
 			//探す値と配列[i]の値が同じ時

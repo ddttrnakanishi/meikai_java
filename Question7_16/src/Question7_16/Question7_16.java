@@ -19,10 +19,16 @@ public class Question7_16 {
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
-		//""の中の文字を表示
-		System.out.print("要素数 :");
-		//要素数を入力
-		int inputNumber = standardInput.nextInt();
+		//inputNumberの初期化
+		int inputNumber = 0;
+		//繰り返し
+		do {
+			//""の中の文字を表示
+			System.out.print("要素数 :");
+			//要素数を入力
+			inputNumber = standardInput.nextInt();
+			//inputNumberが0以下の場合繰り返す
+		}while(inputNumber <= 0);
 		//配列の作成
 		int[] arrayNumber = new int[inputNumber];
 		//変数iを0から初めて1ずつ増やしていき要素数の価まで繰り返す
@@ -44,6 +50,11 @@ public class Question7_16 {
 	 * 作成日          　 :2026.4.23	
 	 */
 	static int minOf(int[] arrayNumber) {
+		//arrayNumberがnullの場合
+		if(arrayNumber == null) {
+			//返却
+			return -1;
+		}
 		//最小値に[0]の要素の値を代入
 		int minNumber = arrayNumber[0];
 		//変数iが1から始まり1ずつ増やしていき要素の数分繰り返す
