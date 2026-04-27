@@ -48,11 +48,12 @@ public class Question7_25 {
 		int  deletePiece = standardInput.nextInt();
 		//arraySrchIdxの結果を元に配列を作成
 		int[] returnArray = arrayRmvOfN(arrayNumber,deletePlace,deletePiece);
-		//返却値が0の場合
-		if(returnArray.length == 0) {
+		//返却値がnullの場合
+		if(returnArray == null) {
 			//""の中の文字を表示して改行
-			System.out.println("消す場所が存在しないです");
+			System.out.println("不正の入力です");
 		}
+		
 		//それ以外
 		else {
 			//""の中の文字を表示
@@ -70,7 +71,7 @@ public class Question7_25 {
 	 *  関数名 　       :arrayRmvOfN
 	 *  メソッドの説明 　:要素数、全要素の値、消す場所、消す個数を入力しarrayRmvOfNの処理を元に結果を表示する
 	 *  パラメータの説明 :配列、消す場所、消す個数より新しい配列の作成
-	 *  				nullの場合、消す場所の値より要素数の値が小さい時かどちらかが負の値の場合は0を返却
+	 *  				nullの場合、消す場所の値より要素数の値が小さい時かどちらかが負の値の場合、要素数が1の場合nullを返却
 	 *  返り値 　       :配列0、消す場所、消す個数 
 	 *  作成者 　       :中西輝	 
 	 *  作成日 　       :2026.4.25	 
@@ -81,12 +82,17 @@ public class Question7_25 {
 			//""の中の文字を表示して改行
 			System.out.println("null以外を入力してください");
 			//返却
-			return new int[0];
+			return null;
 		}
 		//消す場所の値より要素数の値が小さい時かどちらかが負の値の時
 		if(deletePlace >= arrayNumber.length || deletePlace < 0|| deletePiece < 0) {
 			//返却
-			return new int[0];
+			return null;
+		}
+		//要素数が1の時
+		if(arrayNumber.length == 1) {
+			//返却
+			return null;
 		}
 		//消す場所の値と個数の合計値がarrayNumberの要素数より大きい場合
 		if(deletePlace + deletePiece > arrayNumber.length) {

@@ -46,8 +46,8 @@ public class Question7_24 {
 		int deletePlace  = standardInput.nextInt();
 		//arraySrchIdxの結果を元に配列を作成
 		int[] returnArray = arrayRmvOf(arrayNumber,deletePlace);
-		//返却値が0の場合
-		if(returnArray.length == 0) {
+		//返却値がarrayNumberの要素数の場合
+		if(returnArray.length == arrayNumber.length) {
 			//""の中の文字を表示して改行
 			System.out.println("消す場所が存在しないです");
 		}
@@ -67,9 +67,9 @@ public class Question7_24 {
 	/*	
 	 *  関数名 　       :arrayRmvOf	
 	 *  メソッドの説明 　:元の配列arrayNumberの中で消す場所を起点として左にシフトした配列を作成する
-	 *  				nullの場合、一致している値がない場合は0を返却
+	 *  				nullの場合null、一致している値がない場合は要素数がarrayNumberのnewArrayを返却
 	 *  パラメータの説明 :配列、消す場所の値
-	 *  返り値 　       :配列newArray、要素数0の配列
+	 *  返り値 　       :配列newArray、null
 	 *  作成者 　       :中西輝	 
 	 *  作成日 　       :2026.4.25	 
 	 */
@@ -79,15 +79,15 @@ public class Question7_24 {
 			//""の中の文字を表示して改行
 			System.out.println("null以外を入力してください");
 			//返却
-			return new int[0];
+			return null;
 		}
 		//消す場所の値より要素数の値が小さい時か負の値の時
 		if(deletePlace >= arrayNumber.length || deletePlace < 0) {
+			//配列arrayNumberの分だけの配列を作る
+			int[] newArray = new int [arrayNumber.length ];
 			//返却
-			return new int[0];
+			return newArray;
 		}
-		//それ以外
-		else {
 			//配列arrayNumber-1の分だけの配列を作る
 			int[] newArray = new int [arrayNumber.length - FINAL_VALUE];
 			//変数iを0から始めて1ずつ増やしていきnewArrayの要素数になるまで繰り返す
@@ -107,5 +107,3 @@ public class Question7_24 {
 			return newArray;
 		}
 	}
-}
-
