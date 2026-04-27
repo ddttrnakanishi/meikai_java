@@ -80,69 +80,67 @@ public class Question7_21 {
 		}
 		//boxNumberの初期化
 		int boxNumber = 0;
-		//配列Aと配列Bの要素の値が違うとき
-		if(arrayNumberA  != arrayNumberB) {
-			//要素数が要素数2より大きい場合
-			if(inputNumber > inputNumberTwo) {
-				//変数iを0から始めて1ずつ増やしていき配列Bの要素数分繰り返す
-				for(int i = 0; i < arrayNumberB.length; i++) {
-					//boxNumberにarrayNumberA[i]の値を代入
-					boxNumber = arrayNumberA[i];
-					//arrayNumberA[i]にarrayNumberB[i]を代入
-					arrayNumberA[i] = arrayNumberB[i];
-					//arrayNumberB[i]にboxNumberを代入
-					arrayNumberB[i] = boxNumber;
-				}
-				//""の中の文字を表示
-				System.out.print("{");
-				//変数iを0から始めて1ずつ増やしていき要素数から-1を引いた値になるまで繰り返す
-				for(int i = 0; i < arrayNumberA.length - FINAL_VALUE; i++) {
-					//arrayNumber[i]の値と""の中の文字を表示
-					System.out.print(arrayNumberA[i] + ", ");	
-				}
-				//arrayNumber[要素数-1]の値と""の中の文字を表示して改行
-				System.out.println(arrayNumberA[arrayNumberA.length - FINAL_VALUE] + "}");
-				//""の中の文字を表示
-				System.out.print("{");
-				//変数iを0から始めて1ずつ増やしていき要素数から-1を引いた値になるまで繰り返す
-				for(int i = 0; i < arrayNumberB.length - FINAL_VALUE; i++) {
-					//arrayNumber[i]の値と""の中の文字を表示
-					System.out.print(arrayNumberB[i] + ", ");	
-				}
-				//arrayNumber[要素数-1]の値と""の中の文字を表示して改行
-				System.out.println(arrayNumberB[arrayNumberB.length - FINAL_VALUE] + "}");
+		//要素数が要素数2より大きい場合
+		if(inputNumber > inputNumberTwo) {
+			//変数iを0から始めて1ずつ増やしていき配列Bの要素数分繰り返す
+			for(int i = 0; i < arrayNumberB.length; i++) {
+				//boxNumberにarrayNumberA[i]の値を代入
+				boxNumber = arrayNumberA[i];
+				//arrayNumberA[i]にarrayNumberB[i]を代入
+				arrayNumberA[i] = arrayNumberB[i];
+				//arrayNumberB[i]にboxNumberを代入
+				arrayNumberB[i] = boxNumber;
+			}
+			//""の中の文字を表示
+			System.out.print("{");
+			//変数iを0から始めて1ずつ増やしていき要素数から-1を引いた値になるまで繰り返す
+			for(int i = 0; i < arrayNumberA.length - FINAL_VALUE; i++) {
+				//arrayNumber[i]の値と""の中の文字を表示
+				System.out.print(arrayNumberA[i] + ", ");	
+			}
+			//arrayNumber[要素数-1]の値と""の中の文字を表示して改行
+			System.out.println(arrayNumberA[arrayNumberA.length - FINAL_VALUE] + "}");
+			//""の中の文字を表示
+			System.out.print("{");
+			//変数iを0から始めて1ずつ増やしていき要素数から-1を引いた値になるまで繰り返す
+			for(int i = 0; i < arrayNumberB.length - FINAL_VALUE; i++) {
+				//arrayNumber[i]の値と""の中の文字を表示
+				System.out.print(arrayNumberB[i] + ", ");	
+			}
+			//arrayNumber[要素数-1]の値と""の中の文字を表示して改行
+			System.out.println(arrayNumberB[arrayNumberB.length - FINAL_VALUE] + "}");
 
+		}
+		//それ以外
+		else {
+			//""の中の文字を表示
+			System.out.print("{");
+			//変数iを0から始めて1ずつ増やしていき配列Aの要素数分繰り返す
+			for(int i = 0; i < arrayNumberA.length; i++) {
+				//boxNumberにarrayNumberA[i]の値を代入
+				boxNumber = arrayNumberA[i];
+				//arrayNumberA[i]にarrayNumberB[i]を代入
+				arrayNumberA[i] = arrayNumberB[i];
+				//arrayNumberB[i]にboxNumberを代入
+				arrayNumberB[i] = boxNumber;
 			}
-			//それ以外
-			else {
-				//""の中の文字を表示
-				System.out.print("{");
-				//変数iを0から始めて1ずつ増やしていき配列Aの要素数分繰り返す
-				for(int i = 0; i < arrayNumberA.length; i++) {
-					//boxNumberにarrayNumberA[i]の値を代入
-					boxNumber = arrayNumberA[i];
-					//arrayNumberA[i]にarrayNumberB[i]を代入
-					arrayNumberA[i] = arrayNumberB[i];
-					//arrayNumberB[i]にboxNumberを代入
-					arrayNumberB[i] = boxNumber;
-				}
-				//変数iを0から始めて1ずつ増やしていき要素数から-1を引いた値になるまで繰り返す
-				for(int i = 0; i < arrayNumberA.length - FINAL_VALUE; i++) {
-					//arrayNumber[i]の値と""の中の文字を表示
-					System.out.print(arrayNumberA[i] + ", ");	
-				}
-				//arrayNumber[要素数-1]の値と""の中の文字を表示して改行
-				System.out.println(arrayNumberA[arrayNumberA.length - FINAL_VALUE] + "}");
-				//""の中の文字を表示
-				System.out.print("{");
-				//変数iを0から始めて1ずつ増やしていき要素数から-1を引いた値になるまで繰り返す
-				for(int i = 0; i < arrayNumberB.length - FINAL_VALUE; i++) {
-					//arrayNumber[i]の値と""の中の文字を表示
-					System.out.print(arrayNumberB[i] + ", ");	
-				}
-				//arrayNumber[要素数-1]の値と""の中の文字を表示して改行
-				System.out.println(arrayNumberB[arrayNumberB.length - FINAL_VALUE] + "}");
+			//変数iを0から始めて1ずつ増やしていき要素数から-1を引いた値になるまで繰り返す
+			for(int i = 0; i < arrayNumberA.length - FINAL_VALUE; i++) {
+				//arrayNumber[i]の値と""の中の文字を表示
+				System.out.print(arrayNumberA[i] + ", ");	
 			}
+			//arrayNumber[要素数-1]の値と""の中の文字を表示して改行
+			System.out.println(arrayNumberA[arrayNumberA.length - FINAL_VALUE] + "}");
+			//""の中の文字を表示
+			System.out.print("{");
+			//変数iを0から始めて1ずつ増やしていき要素数から-1を引いた値になるまで繰り返す
+			for(int i = 0; i < arrayNumberB.length - FINAL_VALUE; i++) {
+				//arrayNumber[i]の値と""の中の文字を表示
+				System.out.print(arrayNumberB[i] + ", ");	
+			}
+			//arrayNumber[要素数-1]の値と""の中の文字を表示して改行
+			System.out.println(arrayNumberB[arrayNumberB.length - FINAL_VALUE] + "}");
 		}
 	}
 }
+
