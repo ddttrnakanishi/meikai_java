@@ -85,25 +85,30 @@ public class Question7_24 {
 		if(deletePlace >= arrayNumber.length || deletePlace < 0) {
 			//配列arrayNumberの分だけの配列を作る
 			int[] newArray = new int [arrayNumber.length ];
-			//返却
-			return newArray;
-		}
-			//配列arrayNumber-1の分だけの配列を作る
-			int[] newArray = new int [arrayNumber.length - FINAL_VALUE];
 			//変数iを0から始めて1ずつ増やしていきnewArrayの要素数になるまで繰り返す
-			for(int i = 0; i < newArray.length ; i++) {
-				//消す場所の値がiより大きい場合
-				if(deletePlace > i) {
-					//newArray[i]にarrayNumber[i]の値を代入
-					newArray[i] = arrayNumber[i];
-				}
-				//それ以外
-				else {
-					//newArray[i]にarrayNumber[i+1]の値を代入
-					newArray[i] = arrayNumber[i + FINAL_VALUE];
-				}
+			for(int i = 0; i < arrayNumber.length; i++) {
+				//newArray[i]にarrayNumber[i]の値を代入
+				newArray[i] = arrayNumber[i];
 			}
 			//返却
 			return newArray;
 		}
+		//配列arrayNumber-1の分だけの配列を作る
+		int[] newArray = new int [arrayNumber.length - FINAL_VALUE];
+		//変数iを0から始めて1ずつ増やしていきnewArrayの要素数になるまで繰り返す
+		for(int i = 0; i < newArray.length ; i++) {
+			//消す場所の値がiより大きい場合
+			if(deletePlace > i) {
+				//newArray[i]にarrayNumber[i]の値を代入
+				newArray[i] = arrayNumber[i];
+			}
+			//それ以外
+			else {
+				//newArray[i]にarrayNumber[i+1]の値を代入
+				newArray[i] = arrayNumber[i + FINAL_VALUE];
+			}
+		}
+		//返却
+		return newArray;
 	}
+}
