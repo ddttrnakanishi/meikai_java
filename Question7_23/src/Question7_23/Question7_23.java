@@ -93,24 +93,24 @@ public class Question7_23 {
 			//返却
 			return new int[0];
 		}
-			//配列countNumberの分だけの配列を作る
-			int[] newArray = new int[countNumber];
-			//newCountを初期化
-			int newCount = 0;
-			//変数iを0から始めて1ずつ増やしていき要素数になるまで繰り返す
-			for(int i = 0; i < arrayNumber.length; i++) {
-				//arrayNumber[i]とcallNumberの値が同じ時
-				if (arrayNumber[i] == callNumber) {
-					//newArray[newCount]にiの値を代入
-					newArray[newCount] = i;
-					//newCount+1
-					newCount++;
-				}
+		//配列countNumberの分だけの配列を作る
+		int[] newArray = new int[countNumber];
+		//newCountを初期化
+		int newCount = 0;
+		//変数iを0から始めて1ずつ増やしていき要素数になるまで繰り返す
+		for(int i = 0; i < arrayNumber.length; i++) {
+			//arrayNumber[i]とcallNumberの値が同じ時
+			if (arrayNumber[i] == callNumber) {
+				//newArray[newCount]にiの値を代入
+				newArray[newCount] = i;
+				//newCount+1
+				newCount++;
 			}
-			//返却
-			return newArray;
 		}
+		//返却
+		return newArray;
 	}
+}
 
 
 
