@@ -5,65 +5,42 @@ import java.util.Scanner;
 public class 添削用 {
 
 	
-	public static int sum0f(int[] a) {
-		//aの値がnullの場合は以下の処理を行う
-		if(a == null) {
-			//noAcceptに-1を代入する。
-			int noAccept = -1;
-			//その値を返却する。
-			return noAccept;
+	static int sumOf(int[] arrayName) {
+		//変数sumValueの初期化
+		int sumValue = 0;
+		//変数iが0から始めて1ずつ増やしていき配列の回数繰り返す
+		for (int i = 0; i < arrayName.length; i++) {
+			//要素の値をsumValueに加算する
+			sumValue += arrayName[i];
 		}
-		//合計値を格納するsumScoreを0で初期化する
-		int sumScore = 0;
-		//iの値がaの構成要素数未満の間、iの値を増加させながら繰り返し実行する。
-		for(int i = 0; i < a.length; i++) {
-			//iの値に応じたインデックスにある要素の値をsumScoreに加算する
-			sumScore += a[i];
-		}
-		//最後に値を返却する。
-		return sumScore;
-
+		//合計値を返却する
+		return sumValue;
 	}
-
 	/**
 	 * 関数名           :main
-	 * メソッドの説明   :最初に処理を行い、他の関数の処理の結果の受け渡しを行う。
+	 * メソッドの説明   :配列の要素数を入力し要素に値を代入して合計を表示する
 	 * パラメータの説明 :なし
 	 * 返り値           :なし
-	 * 作成者           :川野晟慶
-	 * 作成日           :2026/4/22
+	 * 作成者           :玉澤一輝
+	 * 作成日           :2026.4.23
 	 */
 	public static void main(String[] args) {
-		//新しい標準入力ストリームを作成する。
+		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
-		//scoreRangeを0で初期化する。
-		int scoreRange = 0;
-		//以下の文を実行する。
-		do{
-			//配列の範囲の入力を促す文を表示する。
-			System.out.print("配列の範囲:");	
-			//読み込んだ値でscoreRangeを初期化する。
-			scoreRange = standardInput.nextInt();
+		//"要素数："を表示する
+		System.out.print("要素数：");
+		//変数elementNumberに入力した値を代入する
+		int elementNumber = standardInput.nextInt();
+		// 指定された要素数で配列を作成する
+		int []arrayNumber = new int[elementNumber];
+		//変数iが0から始めて1ずつ増やしていき要素の数繰り返す
+		for (int i = 0; i < elementNumber; i++) {
+			//"arrayNumber[i]：""を表示する
+			System.out.print("arrayNumber[" + i + "]：");
+			//arrayNumber[i]に入力した値を代入する
+			arrayNumber[i] = standardInput.nextInt();
 		}
-		//0未満のあいだはdo文の中をループする。
-		while(scoreRange < 0); 
-		//allRangeは、scoreRangeの範囲の配列を参照する配列変数となる。
-		int[] allRange = new int[scoreRange];
-		//iの値が配列本体の要素数未満のあいだは、値を増加させながら繰り返し実行する。
-		for(int i = 0; i < allRange.length; i++) {
-			//何番目の要素を記入するか示す文を表示する。
-			System.out.print(i + "番目の要素：");
-			//iの値に応じたインデックスに、読み込んだ値を入れて構成要素にする。
-			allRange[i] = standardInput.nextInt();
-		}
-		//全要素を合計した値を表示する
-		System.out.println("全要素の合計は" + sum0f(allRange));
-
-		//nullの処理。
-		sum0f(null);
-
-
+		//"全要素の合計はsumOf(arrayNumber)です。"を表示して改行する
+		System.out.println("全要素の合計は" + sumOf(arrayNumber) + "です。");
 	}
-
-
 }
