@@ -103,7 +103,7 @@ public class Question7_33 {
 			//変数jが0から始まり1ずつ増やしていきarrayNumberTwoの要素数になるまで繰り返す
 			for(int j = 0; j < arrayNumberTwo[i].length; j++) {
 				//各要素を表示する
-				System.out.printf("%-7d  ",arrayNumberTwo[i][j]);
+				System.out.printf("%-11d  ",arrayNumberTwo[i][j]);
 			}
 			//改行
 			System.out.println();
