@@ -79,8 +79,8 @@ public class Question7_26 {
 	 *  関数名 　       :arrayInsOfN
 	 *  メソッドの説明 　:配列arrayNumberの要素arrayNumber[idx]に整数を挿入し返却する
 	 *  パラメータの説明 :配列arrayNumber、整数を挿入する場所、整数
-	 *  				nullの場合、挿入する場所の値より要素数の値が小さい時かどちらかが負の値の時0を返却
-	 *  返り値 　       :配列0、配列newArray
+	 *  				nullの場合、挿入する場所の値より要素数の値が小さい時かどちらかが負の値の時nullを返却
+	 *  返り値 　       :null、配列newArray
 	 *  作成者 　       :中西輝	 
 	 *  作成日 　       :2026.4.26
 	 */
