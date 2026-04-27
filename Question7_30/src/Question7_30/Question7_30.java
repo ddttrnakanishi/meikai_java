@@ -73,11 +73,8 @@ public class Question7_30 {
 			//bを返却
 			return b;
 		}
-		//それ以外
-		else {
-			//aを返却
-			return a;
-		}
+		//aを返却
+		return a;
 	}
 	/*	
 	 *  関数名 　        :min	
@@ -121,20 +118,17 @@ public class Question7_30 {
 			//返却
 			return 0 ;
 		}
-		//それ以外
-		else {
-			//minArrayにarrayNumber[0]を代入
-			int minArray = arrayNumber[0];
-			//変数iを1から始めて1ずつ増やしていきarrayNumberの要素数になるまで繰り返す
-			for(int i = 1; i < arrayNumber.length; i++) {
-				//minArrayがarrayNumber[i]より大きい場合
-				if(minArray > arrayNumber[i]) {
-					//minArrayにarrayNumber[i]を代入
-					minArray = arrayNumber[i];
-				}
+		//minArrayにarrayNumber[0]を代入
+		int minArray = arrayNumber[0];
+		//変数iを1から始めて1ずつ増やしていきarrayNumberの要素数になるまで繰り返す
+		for(int i = 1; i < arrayNumber.length; i++) {
+			//minArrayがarrayNumber[i]より大きい場合
+			if(minArray > arrayNumber[i]) {
+				//minArrayにarrayNumber[i]を代入
+				minArray = arrayNumber[i];
 			}
-			//minArrayを返却
-			return minArray;
 		}
+		//minArrayを返却
+		return minArray;
 	}
 }
