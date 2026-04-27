@@ -113,7 +113,4 @@ public class Question7_31 {
 		//返却
 		return inputValue1;
 	}
-
-
-
 }
