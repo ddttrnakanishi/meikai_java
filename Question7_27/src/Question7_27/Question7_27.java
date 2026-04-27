@@ -133,18 +133,16 @@ public class Question7_27 {
 			//返却
 			return false;
 		}
-		//それ以外
-		else {
-			//変数iを0から始めて1ずつ増やしていきarrayNumberOneの要素数の値になるまで繰り返す
-			for(int i = 0; i < arrayNumberOne.length; i++) {
-				//変数jを0から始めて1ずつ増やしていきarrayNumberOneの要素数の値になるまで繰り返す
-				for(int j = 0; j < arrayNumberOne[i].length; j++) {
-					//arrayNumberOne[i][j]とarrayNumberTwo[i][j]を足した値をarrayNumberThree[i][j]に代入
-					arrayNumberThree[i][j] = arrayNumberOne[i][j] + arrayNumberTwo[i][j];
-				}
+
+		//変数iを0から始めて1ずつ増やしていきarrayNumberOneの要素数の値になるまで繰り返す
+		for(int i = 0; i < arrayNumberOne.length; i++) {
+			//変数jを0から始めて1ずつ増やしていきarrayNumberOneの要素数の値になるまで繰り返す
+			for(int j = 0; j < arrayNumberOne[i].length; j++) {
+				//arrayNumberOne[i][j]とarrayNumberTwo[i][j]を足した値をarrayNumberThree[i][j]に代入
+				arrayNumberThree[i][j] = arrayNumberOne[i][j] + arrayNumberTwo[i][j];
 			}
-			//返却
-			return true;
 		}
+		//返却
+		return true;
 	}
 }

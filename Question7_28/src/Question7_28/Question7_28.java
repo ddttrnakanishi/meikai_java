@@ -15,7 +15,7 @@ public class Question7_28 {
 	/*	
 	 *  関数名 　        :main	
 	 *  メソッドの説明 　:配列の行数と列数を入力し全要素の値も入力したのちaddMatrixの処理を行いその結果を元に
-	 *  			　　加算した結果を表示する
+	 *  			　　加算した結果を受け取り表示する
 	 *  パラメータの説明 :なし	 
 	 *  返り値 　        :なし	 
 	 *  作成者 　        :中西輝	 
@@ -76,7 +76,7 @@ public class Question7_28 {
 	 *  メソッドの説明 　:arrayNumberOneとarrayNumberTwoの和である配列returnArray作成し返却する
 	 *  			　　nullの場合nullを返却しそれ以外を入力するような表示をする
 	 *  パラメータの説明 :配列arrayNumber
-	 *  返り値 　        :null、copyArray
+	 *  返り値 　        :null、 returnArray
 	 *  作成者 　        :中西輝	 
 	 *  作成日 　        :2026.4.26 
 	 */
