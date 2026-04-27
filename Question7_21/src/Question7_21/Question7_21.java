@@ -80,8 +80,8 @@ public class Question7_21 {
 		}
 		//boxNumberの初期化
 		int boxNumber = 0;
-		//要素数が要素数2より大きい場合
-		if(inputNumber > inputNumberTwo) {
+		//arrayNumberAの要素数がarrayNumberBの要素数より大きい場合
+		if(arrayNumberA.length > arrayNumberB.length) {
 			//変数iを0から始めて1ずつ増やしていき配列Bの要素数分繰り返す
 			for(int i = 0; i < arrayNumberB.length; i++) {
 				//boxNumberにarrayNumberA[i]の値を代入

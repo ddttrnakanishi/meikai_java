@@ -64,7 +64,7 @@ public class Question7_23 {
 	/*	
 	 *  関数名 　       :arraySrchIdx	
 	 *  メソッドの説明 　:呼び出す値と一致している場合その個数に応じた配列を作成する
-	 *  				nullの場合、一致している値がない場合は0を返却
+	 *  				nullの場合null、一致している値がない場合は0を返却
 	 *  パラメータの説明 :配列、呼び出す値
 	 *  返り値 　       :配列newArray、要素数0の配列
 	 *  作成者 　       :中西輝	 
@@ -76,7 +76,7 @@ public class Question7_23 {
 			//""の中の文字を表示して改行
 			System.out.println("null以外を入力してください");
 			//返却
-			return new int[0];
+			return null;
 		}
 		//countNumberの初期化
 		int countNumber = 0;
@@ -93,8 +93,6 @@ public class Question7_23 {
 			//返却
 			return new int[0];
 		}
-		//それ以外
-		else {
 			//配列countNumberの分だけの配列を作る
 			int[] newArray = new int[countNumber];
 			//newCountを初期化
@@ -113,7 +111,7 @@ public class Question7_23 {
 			return newArray;
 		}
 	}
-}
+
 
 
 
