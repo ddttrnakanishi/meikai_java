@@ -1,7 +1,7 @@
 package Question9_1;
 /*
  * クラス名            :Human
- * 概要                :コンストラクタの設定,フィールドの値を取得するゲッタと設定するセッタの作成
+ * 概要                :コンストラクタの設定,フィールドの値を取得するゲッタの作成
  * 作成者             :中西輝
  * 作成日              :2026.4.28
  */
@@ -15,7 +15,7 @@ public class Human {
 	/*
 	 * コンストラクタ   :Human
 	 * コンストラクタの説明   :クラスのインスタンスが生成される際のコンストラクタを作成
-	 *					 フィールドの値を取得するゲッタと設定するセッタの作成
+	 *					 フィールドの値を取得するゲッタの作成
 	 * パラメータの説明 :文字型の名前、double型の身長、double型の体重
 	 * 作成者             :中西輝
 	 * 作成日              :2026.4.28
@@ -34,11 +34,6 @@ public class Human {
 	double getHeightInformation() { return heightInformation; }
 	//体重を取得
 	double getWeightInformation() { return weightInformation; }
-	//名前を設定
-	void setNameInformation() { this.nameInformation = nameInformation; }
-	//名前を設定
-	void setHeightInformation() { this.heightInformation = heightInformation; }
-	//名前を設定
-	void setWeightInformation() { this.weightInformation = weightInformation; }
+	
 }
 
