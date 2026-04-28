@@ -7,7 +7,7 @@ package Question9_1;
  */
 public class Human {
 	//名前を表すString型のnameInformationを初期化
-	private  String nameInformation;
+	private  String nameInformation = null;
 	//身長を表すdouble型のheightInformationを初期化
 	private double heightInformation = 0;
 	//体重を表すdouble型のweightInformationを初期化
