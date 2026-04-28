@@ -7,14 +7,14 @@ package Question8_2;
  * 作成日              :2026.4.28
  */
 public class Car {
-	//何年から乗っているかを表すint型のNewOrOld
-	private static int NewOrOld;
+	//何年から乗っているかを表すint型のNewOrOldを初期化
+	private static int NewOrOld = 0;
 	//色を表すString型のcolour
 	private static String colour;
-	//製造年を表すint型のModelYear
-	private static int ModelYear;
-	//ナンバーを表すint型のNumber
-	private static int Number;
+	//製造年を表すint型のModelYearを初期化
+	private static int ModelYear = 0;
+	//ナンバーを表すint型のNumberを初期化
+	private static int Number = 0;
 	/*
 	 * コンストラクタ   :Car
 	 * メソッドの説明   :クラスのインスタンスが生成される際のコンストラクタを作成

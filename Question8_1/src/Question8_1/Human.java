@@ -6,12 +6,12 @@ package Question8_1;
  * 作成日              :2026.4.28
  */
 public class Human{
-	//名前を表すString型のnameInformation
+	//名前を表すString型のnameInformationを初期化
 	private static String nameInformation;
-	//身長を表すdouble型のheightInformation
-	private static double heightInformation;
-	//体重を表すdouble型のweightInformation
-	private static double weightInformation;
+	//身長を表すdouble型のheightInformationを初期化
+	private static double heightInformation = 0;
+	//体重を表すdouble型のweightInformationを初期化
+	private static double weightInformation = 0;
 	/*
 	 * コンストラクタ   :Human
 	 * メソッドの説明   :クラスのインスタンスが生成される際のコンストラクタを作成
