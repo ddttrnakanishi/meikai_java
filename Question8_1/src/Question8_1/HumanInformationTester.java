@@ -27,14 +27,26 @@ public class HumanInformationTester {
 		System.out.print("名前は :");
 		//nameInformationの文字を入力
 		String nameInformation = standardInput.next();
-		//""の中の文字を表示
-		System.out.print("身長は :");
-		//heightInformationの値を入力
-		double heightInformation = standardInput.nextDouble();
-		//""の中の文字を表示
-		System.out.print("体重は :");
-		//weightInformationの値を入力
-		double weightInformation = standardInput.nextDouble();
+		//heightInformationの初期化
+		double heightInformation;
+		//繰り返し
+		do {
+			//""の中の文字を表示
+			System.out.print("身長は :");
+			//heightInformationの値を入力
+			heightInformation = standardInput.nextDouble();
+			//heightInformationが0未満の時繰り返し
+		}while(heightInformation < 0);
+		//weightInformationの初期化
+		double weightInformation;
+		//繰り返し
+		do {
+			//""の中の文字を表示
+			System.out.print("体重は :");
+			//weightInformationの値を入力
+			weightInformation = standardInput.nextDouble();
+			//weightInformationが0未満の時繰り返し
+		}while(weightInformation < 0);
 		//入力した値をもとにクラスHuman型のmyInformationを作成
 		Human myInformation = new Human(nameInformation, heightInformation, weightInformation);
 		//myInformationの情報をputInformationに沿い表示

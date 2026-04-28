@@ -7,11 +7,11 @@ package Question8_1;
  */
 public class Human{
 	//名前を表すString型のnameInformationを初期化
-	private static String nameInformation;
+	private String nameInformation;
 	//身長を表すdouble型のheightInformationを初期化
-	private static double heightInformation = 0;
+	private double heightInformation = 0;
 	//体重を表すdouble型のweightInformationを初期化
-	private static double weightInformation = 0;
+	private double weightInformation = 0;
 	/*
 	 * コンストラクタ   :Human
 	 * メソッドの説明   :クラスのインスタンスが生成される際のコンストラクタを作成
@@ -35,7 +35,7 @@ public class Human{
 	 * 作成者             :中西輝
 	 * 作成日              :2026.4.28
 	 */
-	public static void putInformation() {
+	public void putInformation() {
 		//""の中の文字と名前の文字を表示して改行
 		System.out.println("名前 :" + nameInformation);
 		//""の中の文字と身長の値を表示して改行
