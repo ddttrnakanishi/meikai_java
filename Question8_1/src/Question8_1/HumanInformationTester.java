@@ -12,7 +12,7 @@ public class HumanInformationTester {
 	/*
 	 * 関数名           :main
 	 * メソッドの説明   :各情報の入力と入力した値をもとにクラスHuman型のmyInformationを作成し
- * 						putInformationの情報を表示
+	 * 						putInformationの情報を表示
 	 * パラメータの説明 :なし
 	 * 返り値           :なし
 	 * 作成者           :中西輝
@@ -37,7 +37,7 @@ public class HumanInformationTester {
 		double weightInformation = standardInput.nextDouble();
 		//入力した値をもとにクラスHuman型のmyInformationを作成
 		Human myInformation = new Human(nameInformation, heightInformation, weightInformation);
-		//putInformationの情報をputInformationに沿い表示
+		//myInformationの情報をputInformationに沿い表示
 		myInformation.putInformation();
 	}
 }
