@@ -5,7 +5,7 @@ package Question8_1;
  * 作成者             :中西輝
  * 作成日              :2026.4.28
  */
-class Human{
+public class Human{
 	//名前を表すString型のnameInformation
 	private static String nameInformation;
 	//身長を表すdouble型のheightInformation
