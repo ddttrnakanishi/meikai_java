@@ -18,7 +18,7 @@ public class test428 {
 	 * 返り値           :なし
 	 * 作成者             :中西輝
 	 * 作成日              :2026.4.28
-	 */
+	 */　
 	public static void main(String[] args) {
 		//int型の構成要素型の二次元配列の作成
 		int[][] sales = {
