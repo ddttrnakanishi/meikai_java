@@ -18,7 +18,7 @@ public class test428 {
 	 * 返り値           :なし
 	 * 作成者             :中西輝
 	 * 作成日              :2026.4.28
-	 */　
+	 */
 	public static void main(String[] args) {
 		//int型の構成要素型の二次元配列の作成
 		int[][] sales = {
@@ -29,8 +29,6 @@ public class test428 {
 		String[] storeNames = {"店舗A", "店舗B", "店舗C"};
 		//string型の構成要素型の一次元配列の作成
 		String[] dayNumber = {"Day1", "Day2", "Day3", "Day4"};
-		//sumSalesの初期化
-		int sumSales = 0;
 		//avelageSalesの初期化
 		int avelageSales = 0;
 		//hightSalesの初期化
@@ -41,6 +39,8 @@ public class test428 {
 		String hightDay = "Day1";
 		//変数iを0から始めて1ずつ増やしていきsalesの行分繰り返す
 		for(int i = 0; i < sales.length; i++) {
+			//sumSalesの初期化
+			int sumSales = 0;
 			//clearDayの初期化
 			int clearDay = 0;
 			//変数jを0から始めて1ずつ増やしていきsalesの列分繰り返す

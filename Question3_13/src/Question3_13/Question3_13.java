@@ -16,9 +16,9 @@ public class Question3_13 {
 	
 	int o = a;
 	
-	if (o>=b) o=b;
-	if (o<=c) o=c;
-	if (o>=a) o=a;
+	if (a>b&&b>c||c>b&&b>a) o=b;
+	if (b<c&&a>c||a<c&&c>b) o=c;
+	
 		System.out.println("中央値は"+o+"である。");
 	
 	
