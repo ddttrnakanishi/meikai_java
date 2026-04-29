@@ -28,12 +28,33 @@ public class Human {
 		//フィールドに仮引数の値を代入
 		this.weightInformation = weightInformation;
 	}
-	//名前を取得
-	String getNameInformation() { return nameInformation; }
-	//身長を取得
-	double getHeightInformation() { return heightInformation; }
-	//体重を取得
-	double getWeightInformation() { return weightInformation; }
-	
+	/*
+	関数名　　：getNameInformation
+	メソッド　：名前を取得
+	パラメータ：なし
+	返り値　　：nameInformation
+	作成者　　：中西輝
+	日付　　　：2026/04/28
+	 */
+	public String getNameInformation() { return nameInformation; }
+	/*
+	関数名　　：getHeightInformation
+	メソッド　：身長を取得
+	パラメータ：なし
+	返り値　　：heightInformation
+	作成者　　：中西輝
+	日付　　　：2026/04/28
+	 */
+	public double getHeightInformation() { return heightInformation; }
+	/*
+	関数名　　：getWeightInformation
+	メソッド　：体重を取得
+	パラメータ：なし
+	返り値　　：weightInformation
+	作成者　　：中西輝
+	日付　　　：2026/04/28
+	 */
+	public double getWeightInformation() { return weightInformation; }
+
 }
 
