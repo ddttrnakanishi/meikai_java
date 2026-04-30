@@ -22,7 +22,7 @@ public class PeriodTester {
 		//""の中の文字を表示して改行
 		System.out.println("期間を入力してください");
 		//startYearの初期化
-		int startYear;
+		int startYear = 0;
 		//繰り返し
 		do {
 			//""の中の文字を表示
@@ -32,7 +32,7 @@ public class PeriodTester {
 			//startYearが0未満の時繰り返し
 		}while(startYear <= 0);
 		//startMonthの初期化
-		int startMonth;
+		int startMonth = 0;
 		//繰り返し
 		do {
 			//""の中の文字を表示
@@ -42,7 +42,7 @@ public class PeriodTester {
 			//startMonthが0未満、12より大きい時繰り返し
 		}while(startMonth <= 0 || startMonth > 12);
 		//startDateの初期化
-		int startDate;
+		int startDate = 0;
 		//繰り返し
 		do {
 			//""の中の文字を表示
@@ -56,7 +56,7 @@ public class PeriodTester {
 		System.out.println();
 
 		//finYearの初期化
-		int finYear;
+		int finYear = 0;
 		//繰り返し
 		do {
 			//""の中の文字を表示
@@ -66,7 +66,7 @@ public class PeriodTester {
 			//finYearが0未満、開始年より前の年の時繰り返し
 		}while(finYear <= 0 || startYear > finYear);
 		//finMonthの初期化
-		int finMonth;
+		int finMonth = 0;
 		//繰り返し
 		do {
 			//""の中の文字を表示
@@ -76,7 +76,7 @@ public class PeriodTester {
 			//finMonthが0未満、12より大きい時、開始年と同じ年かつ開始月が終了月よりも大きい時繰り返し
 		}while(finMonth <= 0 || finMonth > 12 || startYear == finYear && startMonth > finMonth);
 		//finDateの初期化
-		int finDate;
+		int finDate = 0;
 		//繰り返し
 		do {
 			//""の中の文字を表示
@@ -91,7 +91,7 @@ public class PeriodTester {
 
 		//""の中の文字と開始日の値と曜日を表示して改行
 		System.out.println("開始日は :" + myDay.getfrom().toString());
-		//""の中の文字と誕生日の値と曜日を表示して改行
+		//""の中の文字と終了日の値と曜日を表示して改行
 		System.out.println("終了日は :" + myDay.getto().toString());
 	}
 }
