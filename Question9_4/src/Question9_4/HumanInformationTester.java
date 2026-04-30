@@ -52,8 +52,8 @@ public class HumanInformationTester {
 			System.out.print("誕生年は :");
 			//birthdayYearの値を入力
 			birthdayYear = standardInput.nextInt();
-			//birthdayYearが0未満、31より大きい時繰り返し
-		}while(birthdayYear < 0 && birthdayYear > 31);
+			//birthdayYearが0未満の時繰り返し
+		}while(birthdayYear <= 0);
 		//birthdayMonthの初期化
 		int birthdayMonth;
 		//繰り返し
@@ -63,7 +63,7 @@ public class HumanInformationTester {
 			//birthdayMonthの値を入力
 			birthdayMonth = standardInput.nextInt();
 			//birthdayMonthが0未満、12より大きい時繰り返し
-		}while(birthdayMonth < 0 && birthdayMonth > 12);
+		}while(birthdayMonth <= 0 || birthdayMonth > 12);
 		//birthdayDateの初期化
 		int birthdayDate;
 		//繰り返し
@@ -73,7 +73,7 @@ public class HumanInformationTester {
 			//birthdayDateの値を入力
 			birthdayDate = standardInput.nextInt();
 			//birthdayDateが0未満、31より大きい時繰り返し
-		}while(birthdayDate < 0 && birthdayDate > 31);
+		}while(birthdayDate <= 0 || birthdayDate > 31);
 		//入力した値をもとにクラスHuman型のmyInformationを作成
 		human myInformation = new human(nameInformation, heightInformation, weightInformation, new Day(birthdayYear,birthdayMonth,birthdayDate));
 
