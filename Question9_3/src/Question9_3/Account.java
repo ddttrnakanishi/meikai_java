@@ -57,14 +57,14 @@ public class Account {
 		return no;
 	}
 	/*
-	 * 関数名　　：getbalance
+	 * 関数名　　：getBalance
 	 * メソッド　：預金残高を取得するためのメソッド
 	 * パラメータ：なし
 	 * 返り値　　：balance
 	 * 作成者　　 :中西輝
 	 * 日付　　　：2026/04/29
 	 */
-	public long getbalance() {
+	public long getBalance() {
 		//返却
 		return balance;
 	}
