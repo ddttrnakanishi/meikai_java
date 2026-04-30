@@ -41,6 +41,7 @@ public class Account {
 	 * 日付　　　：2026/04/29
 	 */
 	public String getName() {
+		//返却
 		return name;
 	}
 	/*
@@ -52,6 +53,7 @@ public class Account {
 	 * 日付　　　：2026/04/29
 	 */
 	public String getNo() {
+		//返却
 		return no;
 	}
 	/*
@@ -63,6 +65,7 @@ public class Account {
 	 * 日付　　　：2026/04/29
 	 */
 	public long getbalance() {
+		//返却
 		return balance;
 	}
 	/*
@@ -74,6 +77,7 @@ public class Account {
 	 * 日付　　　：2026/04/29
 	 */
 	public void deposit(long k) {
+		//預金残高にkの値を足す
 		balance += k;
 	}
 	/*
@@ -85,6 +89,7 @@ public class Account {
 	 * 日付　　　：2026/04/29
 	 */
 	public void withdraw(long k) {
+		//預金残高からkの値を引く
 		balance -= k;
 	}
 	/*
@@ -96,6 +101,7 @@ public class Account {
 	 * 日付　　　：2026/04/29
 	 */
 	public Day getaccountOpening() {
+		//返却
 		return new Day(accountOpening);
 	}
 }

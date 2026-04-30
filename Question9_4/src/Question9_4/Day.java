@@ -105,7 +105,7 @@ public class Day {
 			作成者　　 :中西輝
 			日付　　　：2026/04/29
 		 */
-		public void setYear() { int year; } { this.year = year; }
+		public void setYear( int year ) { this.year = year; }
 		/*
 			関数名　　：setMonth
 			メソッド　：月を設定するためのメソッド
@@ -115,7 +115,7 @@ public class Day {
 			作成者　　 :中西輝
 			日付　　　：2026/04/29
 		 */
-		public void setMonth() { int month; } { this.month = month; }
+		public void setMonth( int month ) { this.month = month; }
 		/*
 			関数名　　：setDate
 			メソッド　：日を設定するためのメソッド
@@ -125,7 +125,7 @@ public class Day {
 			作成者　　 :中西輝
 			日付　　　：2026/04/29
 		 */
-		public void setDate() { int date; } { this.date = date; }
+		public void setDate( int date ) { this.date = date; }
 		/*
 			関数名　　：set
 			メソッド　：年を設定するためのメソッド
