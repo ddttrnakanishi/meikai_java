@@ -30,7 +30,7 @@ public class AccountTester {
 		//""の中の文字を表示しgetNoの処理結果を表示して改行
 		System.out.println("　口座番号 :" + adachi.getNo());
 		//""の中の文字を表示しgetbalanceの処理結果を表示して改行
-		System.out.println("　預金残高 :" + adachi.getbalance());
+		System.out.println("　預金残高 :" + adachi.getBalance());
 		//""の中の文字を表示しgetaccountOpeningの処理をしtoStringの指定された文字で表示して改行
 		System.out.println("　口座開設日 :" + adachi.getaccountOpening().toString());
 
@@ -41,7 +41,7 @@ public class AccountTester {
 		//""の中の文字を表示しgetNoの処理結果を表示して改行
 		System.out.println("　口座番号 :" + nakata.getNo());
 		//""の中の文字を表示しgetbalanceの処理結果を表示して改行
-		System.out.println("　預金残高 :" + nakata.getbalance());
+		System.out.println("　預金残高 :" + nakata.getBalance());
 		//""の中の文字を表示しgetaccountOpeningの処理をしtoStringの指定された文字で表示して改行
 		System.out.println("　口座開設日 :" + nakata.getaccountOpening().toString());
 	}
