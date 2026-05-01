@@ -12,7 +12,7 @@ public class ExIdTester {
 	 * パラメータの説明 :なし
 	 * 返り値           :なし
 	 * 作成者           :中西輝
-	 * 作成日           :2026.4.230
+	 * 作成日           :2026.4.30
 	 */
 	public static void main(String[] args) {
 		//ExIdクラスの識別番号の作成
