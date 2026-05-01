@@ -90,8 +90,8 @@ public class PeriodTester {
 		Period myDay = new Period(new Day(startYear, startMonth, startDate), new Day(finYear, finMonth, finDate));
 
 		//""の中の文字と開始日の値と曜日を表示して改行
-		System.out.println("開始日は :" + myDay.getfrom().toString());
+		System.out.println("開始日は :" + myDay.getstartDate().toString());
 		//""の中の文字と終了日の値と曜日を表示して改行
-		System.out.println("終了日は :" + myDay.getto().toString());
+		System.out.println("終了日は :" + myDay.getendDate().toString());
 	}
 }

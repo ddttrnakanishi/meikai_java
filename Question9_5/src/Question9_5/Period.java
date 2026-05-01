@@ -6,10 +6,10 @@ package Question9_5;
  * 作成日              :2026.4.30
  */
 public class Period {
-	//開始日を表すDayクラス型のfromを初期化
-	private Day from;
-	//終了日を表すDayクラス型のtoを初期化
-	private Day to;
+	//開始日を表すDayクラス型のstartDateを初期化
+	private Day startDate;
+	//終了日を表すDayクラス型のendDateを初期化
+	private Day endDate;
 	/*
 	 * コンストラクタ         :Period
 	 * コンストラクタの説明   :クラスのインスタンスが生成される際のコンストラクタを作成
@@ -17,34 +17,34 @@ public class Period {
 	 * 作成者                 :中西輝
 	 * 作成日                 :2026.4.30
 	 */
-	public Period(Day from, Day to) {
+	public Period(Day startDate, Day endDate) {
 		//フィールドに仮引数の日付のコピーを代入
-		this.from = new Day(from);
+		this.startDate = new Day(startDate);
 		//フィールドに仮引数の日付のコピーを代入
-		this.to = new Day(to);
+		this.endDate = new Day(endDate);
 	}
 	/*
-	 * 関数名　　：getfrom
+	 * 関数名　　：getstartDate
 	 * メソッド　：日付を取得するためのメソッド
 	 * パラメータ：なし
 	 * 返り値　　：日付
 	 * 作成者　　 :中西輝
 	 * 日付　　　：2026/04/30
 	 */
-	public Day getfrom() {
+	public Day getstartDate() {
 		//返却
-		return new Day(from);
+		return new Day(startDate);
 	}
 	/*
-	 * 関数名　　：getto
+	 * 関数名　　：getendDate
 	 * メソッド　：日付を取得するためのメソッド
 	 * パラメータ：なし
 	 * 返り値　　：日付
 	 * 作成者　　 :中西輝
 	 * 日付　　　：2026/04/30
 	 */
-	public Day getto() {
+	public Day getendDate() {
 		//返却
-		return new Day(to);
+		return new Day(endDate);
 	}
 }
