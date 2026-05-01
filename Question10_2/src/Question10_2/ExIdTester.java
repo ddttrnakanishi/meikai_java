@@ -20,7 +20,7 @@ public class ExIdTester {
 		//""の中の文字とnumberOneの返却値を表示して改行
 		System.out.println("numberOneの識別番号 :" + numberOne.getInstanceCounter());
 		ExId.changeNumber();
-		//ExIdクラスの識別番号の作成0
+		//ExIdクラスの識別番号の作成
 		ExId numberTwo = new ExId();
 		//""の中の文字とnumberTwoの返却値を表示して改行
 		System.out.println("numberTwoの識別番号 :" + numberTwo.getInstanceCounter());
