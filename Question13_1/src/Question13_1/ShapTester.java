@@ -5,7 +5,7 @@ import java.util.Scanner;
  * クラス名            :ShapTester
  * 概要                :入力した番号の配列の図形を入力した値の分だけの図形を表示する
  * 作成者              :中西輝
- * 作成日              :2026.5.12
+ * 作成日              :2026.5.12 
  */
 public class ShapTester {
 	//キーボードで入力した値を入れる変数を作る

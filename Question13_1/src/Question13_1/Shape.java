@@ -3,7 +3,7 @@ package Question13_1;
  * クラス名            :Shape
  * 概要                :図形の概念を表す抽象クラス
  * 作成者              :中西輝
- * 作成日              :2026.5.12
+ * 作成日              :2026.5.12 
  */
 public abstract class Shape {
 	/*

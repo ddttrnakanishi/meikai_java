@@ -3,7 +3,7 @@ package Question13_1;
  * クラス名      :Point
  * 概要          :点を表すクラス
  * 作成者        :中西輝
- * 作成日        :2026.5.12
+ * 作成日        :2026.5.12 
  */
 public  class Point extends Shape {
 	/*

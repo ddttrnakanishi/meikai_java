@@ -25,7 +25,7 @@ public abstract class AbstLine extends Shape{
 	 * パラメータ：なし
 	 * 返り値　　：length
 	 * 作成者　　：中西輝
-	 * 作成日    ：2026.5.12
+	 * 作成日    ：2026.5.12 
 	 */
 	public int getLength() {
 		//返却
