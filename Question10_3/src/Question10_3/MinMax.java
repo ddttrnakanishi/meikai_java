@@ -1,39 +1,12 @@
 package Question10_3;
-
-import java.util.Scanner;
 /*
  * クラス名            :MinMax
- * 概要                :コンストラクタの設定とMixMaxTesterで入力された値を基にそれぞれのメソッドで最小値や最大値を求め返却する
+ * 概要                :MixMaxTesterで入力された値を基にそれぞれのメソッドで最小値や最大値を求め返却する
  * 作成者             :中西輝
  * 作成日              :2026.5.1
  */
 public class MinMax {
 
-	//名前を表すint型のinputNumberOneを初期化
-	private int inputNumberOne;
-	//身長を表すint型のinputNumberTwoを初期化
-	private int inputNumberTwo = 0;
-	//体重を表すint型のinputNumberThreeを初期化
-	private int inputNumberThree = 0;
-	//配列を表すint型のarrayNumberを初期化
-	private int[] arrayNumber;
-	/*
-	 * コンストラクタ         :MinMax
-	 * コンストラクタの説明   :クラスのインスタンスが生成される際のコンストラクタを作成
-	 * パラメータの説明       :入力値１、入力値２、入力値３、要素数
-	 * 作成者                 :中西輝
-	 * 作成日                 :2026.5.1
-	 */
-	public MinMax(int inputNumberOne, int inputNumberTwo, int inputNumberThree, int[]  arrayNumber){
-		//フィールドに仮引数の値を代入
-		this.inputNumberOne = inputNumberOne;
-		//フィールドに仮引数の値を代入
-		this.inputNumberTwo = inputNumberTwo;
-		//フィールドに仮引数の値を代入
-		this.inputNumberThree = inputNumberThree;
-		//フィールドに仮引数の配列の要素数のコピーを代入
-		this.arrayNumber = arrayNumber;
-	}
 	/*
 	 * 関数名　　：minDoubleMin
 	 * メソッド　：最小値を取得するためのメソッド
@@ -52,12 +25,11 @@ public class MinMax {
 			//返却
 			return minNumber;
 		}
-		//それ以外
-		else {
+	
 			//返却
 			return minNumber;
-		}
 	}
+	
 	/*
 	 * 関数名　　：minTriple
 	 * メソッド　：最小値を取得するためのメソッド
@@ -83,12 +55,11 @@ public class MinMax {
 			//返却
 			return minNumber;
 		}
-		//それ以外
-		else {
+		
 			//返却
 			return minNumber;
 		}
-	}
+
 	/*
 	 * 関数名　　：minArray
 	 * メソッド　：配列の最小値を取得するためのメソッド
@@ -98,15 +69,6 @@ public class MinMax {
 	 * 日付　　　：2026.5.1
 	 */
 	public static int minArray(int[] arrayNumber) {
-		//キーボードで入力した値を入れる変数を作る
-		Scanner standardInput = new Scanner(System.in);
-		//変数iを0から始めて1ずつ増やしていきarrayNumberの要素数になるまで繰り返す
-		for(int i = 0; i < arrayNumber.length; i++) {
-			//""の中の文字とiの値を表示
-			System.out.print("arrayNumber[" + i + "] = ");
-			//arrayNumber[i]の値を代入
-			arrayNumber[i] = standardInput.nextInt();
-		}
 		//minArrayにarrayNumber[0]の値を代入
 		int minArray = arrayNumber[0];
 		//変数iを1から始めて1ずつ増やしていきarrayNumberの要素数になるまで繰り返す
@@ -121,6 +83,52 @@ public class MinMax {
 		return minArray;
 
 	}
+	/*
+	 * 関数名　　：minArray
+	 * メソッド　：配列の最大値を取得するためのメソッド
+	 * パラメータ：配列arrayNumber
+	 * 返り値　　：配列の最大値
+	 * 作成者　　：中西輝
+	 * 日付　　　：2026.5.1
+	 */
+	public static int maxArray(int[] arrayNumber) {
+		//maxArrayにarrayNumber[0]の値を代入
+		int maxArray = arrayNumber[0];
+		//変数iを1から始めて1ずつ増やしていきarrayNumberの要素数になるまで繰り返す
+		for(int i = 1; i < arrayNumber.length; i++) {
+			// arrayNumber[i]よりmaxArrayの値が小さいとき
+			if(maxArray < arrayNumber[i]) {
+				//maxArrayにarrayNumber[i]の値を代入
+				maxArray = arrayNumber[i];
+			}
+		}
+		//返却
+		return maxArray;
+
+	}
+	/*
+	 * 関数名　　：minDoubleMin
+	 * メソッド　：最小値を取得するためのメソッド
+	 * パラメータ：入力値１、入力値２
+	 * 返り値　　：最小値
+	 * 作成者　　 :中西輝
+	 * 日付　　　：2026.5.1
+	 */
+	public static int maxDoubleMax(int inputNumberOne, int inputNumberTwo) {
+		//maxNumberを入力値１で初期化
+		int maxNumber = inputNumberOne;
+		//maxNumberより入力値２が大きいとき
+		if(maxNumber < inputNumberTwo) {
+			//maxNumberに入力値２を代入
+			maxNumber = inputNumberTwo;
+			//返却
+			return maxNumber;
+		}
+		
+			//返却
+			return maxNumber;
+		}
+	
 	/*
 	 * 関数名　　：maxNumber
 	 * メソッド　：最大値を取得するためのメソッド
@@ -146,11 +154,10 @@ public class MinMax {
 			//返却
 			return maxNumber;
 		}
-		//それ以外
-		else {
+		
 			//返却
 			return maxNumber;
 		}
 	}
-}
+
 

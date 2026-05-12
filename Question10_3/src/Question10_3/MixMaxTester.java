@@ -1,5 +1,6 @@
 package Question10_3;
 
+import java.util.Random;
 import java.util.Scanner;
 /*
  * クラス名            :MixMaxTester
@@ -19,6 +20,8 @@ public class MixMaxTester {
 	public static void main(String[] args) {
 		//キーボードで入力した値を入れる変数を作る
 		Scanner standardInput = new Scanner(System.in);
+		//ランサムな値を入れる変数を作る
+		Random randmNumber = new Random();
 		//""の中の文字を表示して改行
 		System.out.println("値を入力してください");
 		//""の中の文字を表示
@@ -45,14 +48,21 @@ public class MixMaxTester {
 		}while(elementNumber <= 0);
 		//入力した値が要素数の配列の作成
 		int[] arrayNumber = new int[elementNumber];
-		//入力した値をもとにクラスMixMax型のanserValueを作成
-		MinMax anserValue = new MinMax(inputNumberOne, inputNumberTwo,inputNumberThree, arrayNumber);
+		//変数iを0から始めて1ずつ増やしていき要素数になるまで繰り返す
+		for(int i = 0; i < elementNumber; i++) {
+			//要素iに0-9のランダムな値を代入
+			arrayNumber[i] = randmNumber.nextInt(10); 
+		}
 		//""の中の文字と配列の最小値を表示して改行
 		System.out.println("配列arrayNumberの最小値は" + MinMax.minArray(arrayNumber) );
+		//""の中の文字と配列の最大値を表示して改行
+		System.out.println("配列arrayNumberの最大値は" + MinMax.maxArray(arrayNumber) );
 		//""の中の文字とa,bの最小値を表示して改行
 		System.out.println("a,bの最小値は" + MinMax.minDoubleMin(inputNumberOne, inputNumberTwo));
 		//""の中の文字とa,b,cの最小値を表示して改行
 		System.out.println("a,b,cの最小値は" + MinMax.minTriple(inputNumberOne, inputNumberTwo, inputNumberThree));
+		//""の中の文字とa,bの最大値を表示して改行
+		System.out.println("a,bの最大値は" + MinMax.maxDoubleMax(inputNumberOne, inputNumberTwo));
 		//""の中の文字とa,b,cの最大値を表示して改行
 		System.out.println("a,b,cの最大値は" + MinMax.maxNumber(inputNumberOne, inputNumberTwo, inputNumberThree));
 	}
