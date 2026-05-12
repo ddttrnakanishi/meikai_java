@@ -44,10 +44,14 @@ public class ExId {
 		int answerNumber = standardInput.nextInt();
 		//1の場合
 		if(answerNumber == 1) {
+			//繰り返し
+			do {
 			//""の中の文字を表示
 			System.out.print("いくつに変更しますか？");
 			//変更する値を入力
 			pulusNumber = standardInput.nextInt();
+			//0以下の場合
+			}while(pulusNumber <= 0);
 		}
 	}
 	/*
