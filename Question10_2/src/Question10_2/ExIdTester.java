@@ -32,8 +32,11 @@ public class ExIdTester {
 			ExId numberOne = new ExId();
 			//""の中の文字とnumberOneの返却値を表示して改行
 			System.out.println("number" + i + "の識別番号 :" + numberOne.getInstanceCounter());
+			//最後のループではない場合のみ、以下の処理を行う
+		    if (i < howMany) {
 			//インスタンスを生成
 			ExId.changeNumber();
+			}
 		}
 	}
 }

@@ -11,9 +11,9 @@ public class ExId {
 	//キーボードで入力した値を入れる変数を作る
 	static Scanner standardInput = new Scanner(System.in);
 	//クラス変数の初期化
-	private static int classCounter = 1;
+	private static int classCounter = 0;
 	//クラス変数の初期化
-	private static int pulusNumber = 0;
+	private static int pulusNumber = 1;
 	//インスタンス変数の初期化
 	private  int instanceCounter = 0;
 	/*
