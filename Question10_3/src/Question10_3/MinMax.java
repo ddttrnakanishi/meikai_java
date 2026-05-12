@@ -63,6 +63,7 @@ public class MinMax {
 	/*
 	 * 関数名　　：minArray
 	 * メソッド　：配列の最小値を取得するためのメソッド
+	 * 			 ：引数がnullであれば異常終了する
 	 * パラメータ：配列arrayNumber
 	 * 返り値　　：配列の最小値
 	 * 作成者　　：中西輝
@@ -86,6 +87,7 @@ public class MinMax {
 	/*
 	 * 関数名　　：minArray
 	 * メソッド　：配列の最大値を取得するためのメソッド
+	 * 　　　　　：引数がnullであれば異常終了する
 	 * パラメータ：配列arrayNumber
 	 * 返り値　　：配列の最大値
 	 * 作成者　　：中西輝
