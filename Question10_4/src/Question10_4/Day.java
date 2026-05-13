@@ -82,7 +82,7 @@ public class Day {
 	 */
 	public Day(int year) { 
 		//フィールドに年を設定
-		this.year = year;
+		this.year = NUMBER_ONE;
 		//フィールドに1を設定
 		this.month = NUMBER_ONE;
 		//フィールドに1を設定
@@ -106,6 +106,8 @@ public class Day {
 			//フィールドに年を設定
 			this.year = year;
 		}
+		//フィールドに年を設定
+		this.year = year;
 		//月が1未満の場合
 		if(month < MIN_MONTH) {
 			//月を1に設定
@@ -125,6 +127,7 @@ public class Day {
 	 * コンストラクタ   	　:Day
 	 * コンストラクタの説明   :同一クラス内のコンストラクトの呼び出し。
 	 * 						　;クラスのインスタンスが生成される際のコンストラクタを作成。
+	 * 						　;年の値が0以下の時は1に強制的にする。
 	 * 						  ;月の値が1未満の時は1を12より大きい時は12に強制的にする。
 	 * 						  ;月ごとの最大日数を算出する。 
 	 * パラメータの説明 	　:年,月,日
@@ -132,6 +135,13 @@ public class Day {
 	 * 作成日             　　:2026.5.7
 	 */
 	public Day(int year, int month, int date) {
+		//年が0以下の場合
+		if(year <= NUMBER_ZERO) {
+			//年を1に設定
+			year = NUMBER_ONE;
+			//フィールドに年を設定
+			this.year = year;
+		}
 		//フィールドに年を設定
 		this.year = year;
 		//月が1未満の場合
@@ -394,22 +404,22 @@ public class Day {
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
-	public static void comparingDate(Day d1, Day d2) {
-		//d1とd2の値が全て同じ場合
-		if (d1.isSame(d2)) {
+	public static void comparingDate(Day dayOne, Day dayTwo) {
+		//dayOneとdayTwoの値が全て同じ場合
+		if (dayOne.isSame(dayTwo)) {
 			//""の中の文字を表示
 			System.out.println("2つの日付は同じです。");
 		}
-		//d1がd2の日付のより前の場合
-		if (d1.isBefore(d2)) {
+		//dayOneがdayTwoの日付のより前の場合
+		if (dayOne.isBefore(dayTwo)) {
 			//""の中の文字と日付を表示
-			System.out.println(d1 + " は " + d2 + " より前です。");
+			System.out.println(dayOne + " は " + dayTwo + " より前です。");
 
 		}
-		//d1がd2の日付のより後の場合
-		if (d1.isAfter(d2)) {
+		//dayOneがdayTwoの日付のより後の場合
+		if (dayOne.isAfter(dayTwo)) {
 			//""の中の文字と日付を表示
-			System.out.println(d1 + " は " + d2 + " より後です。");
+			System.out.println(dayOne + " は " + dayTwo + " より後です。");
 		}
 	}
 	/*
@@ -541,83 +551,83 @@ public class Day {
 	 * 関数名　　：advanceTheDateDay
 	 * メソッド　：advanceTheDateを基に新しいインスタンスを返却するメソッド
 	 * パラメータ：なし
-	 * 返り値　　：d
+	 * 返り値　　：newDay
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
 	public Day advanceTheDateDay() { 
 		//コピーを作成し新たなインスタンスを生成する
-		Day d = new Day(this);
+		Day newDay = new Day(this);
 		//作成したインスタンスの日付を用いてadvanceTheDateの処理を行う
-		d.advanceTheDate();
+		newDay.advanceTheDate();
 		//返却
-		return d; 
+		return newDay; 
 	}
 	/*
 	 * 関数名　　：setBackDateDay
 	 * メソッド　：setBackDateを基に新しいインスタンスを返却するメソッド
 	 * パラメータ：なし
-	 * 返り値　　：d
+	 * 返り値　　：newDay
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
 	public Day setBackDateDay() { 
 		//コピーを作成し新たなインスタンスを生成する
-		Day d = new Day(this); 
+		Day newDay = new Day(this); 
 		//作成したインスタンスの日付を用いてsetBackDateの処理を行う
-		d.setBackDate(); 
+		newDay.setBackDate(); 
 		//返却
-		return d;
+		return newDay;
 	}
 	/*
 	 * 関数名　　：afterDay
 	 * メソッド　：afterDateを基に新しいインスタンスを返却するメソッド
 	 * パラメータ：進める日にち
-	 * 返り値　　：d
+	 * 返り値　　：newDay
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
 	public Day afterDay(int afterDay) { 
 		//コピーを作成し新たなインスタンスを生成する
-		Day d = new Day(this); 
+		Day newDay = new Day(this); 
 		//作成したインスタンスの日付を用いてafterDayの値の数だけafterDateの処理を行う
-		d.afterDate(afterDay); 
+		newDay.afterDate(afterDay); 
 		//返却
-		return d; 
+		return newDay; 
 	}
 	/*
 	 * 関数名　　：beforeDay
 	 * メソッド　：beforeDateを基に新しいインスタンスを返却するメソッド
 	 * パラメータ：戻す日にち
-	 * 返り値　　：d
+	 * 返り値　　：newDay
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
 	public Day beforeDay(int beforeDay) { 
 		//コピーを作成し新たなインスタンスを生成する
-		Day d = new Day(this); 
+		Day newDay = new Day(this); 
 		//作成したインスタンスの日付を用いてbeforeDayの値の数だけbeforeDateの処理を行う
-		d.beforeDate(beforeDay);
+		newDay.beforeDate(beforeDay);
 		//返却
-		return d; 
+		return newDay; 
 	}
 	/*
 	 * 関数名　　：getDaysInMonth
 	 * メソッド　：2月の場合は閏年か確認したのち月末の値を返却する
 	 * 　　　　　：月ごとの月末の値を返却
-	 * パラメータ：y,m
+	 * パラメータ：年、月
 	 * 返り値　　：29,月ごとの月末の値
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
-	private int getDaysInMonth(int y, int m) {
+	private int getDaysInMonth(int yearNumber, int monthNumber) {
 		//月が2月の時かつ閏年の場合
-		if (m == TWO_MONTH && isLeap(y)) {
+		if (monthNumber == TWO_MONTH && isLeap(yearNumber)) {
 			//月末を29日にし返却
 			return FEB_LEAP_DAYS;
 		}
 		//月ごとの月末を返却
-		return DAYS_IN_MONTHS[m - NUMBER_ONE];
+		return DAYS_IN_MONTHS[monthNumber - NUMBER_ONE];
 	}
 	/*
 	 * 関数名　　：dayOfYear
