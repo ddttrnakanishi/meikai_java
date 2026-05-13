@@ -45,15 +45,15 @@ public class DayTester {
 		//""の中の文字と実行した日付をleftDaysInYearメソッドで処理しその返却値を表示して改行
 		System.out.println("年内の残り日数：" + todayDate.leftDaysInYear() + "日");
 		//クラスメソッドで「実行した日」と「入力した日」を比較する
-		Day.compare(todayDate, targetDay);
+		Day.comparingDate(todayDate, targetDay);
 		//""の中の文字を表示
 		System.out.print("何日後の日付を調べますか：");
 		//日にちを入力
 		int dayLater = standardInput.nextInt();
-		//""の中の文字と実行した日付をsucceedingDayメソッドで処理しその返却値を表示して改行
-		System.out.println("明日の日付：" + todayDate.succeedingDay());
-		//""の中の文字と実行した日付をprecedingDayメソッドで処理しその返却値を表示して改行
-		System.out.println("昨日の日付：" + todayDate.precedingDay());
+		//""の中の文字と実行した日付をadvanceTheDateDayメソッドで処理しその返却値を表示して改行
+		System.out.println("明日の日付：" + todayDate.advanceTheDateDay());
+		//""の中の文字と実行した日付をsetBackDateDayメソッドで処理しその返却値を表示して改行
+		System.out.println("昨日の日付：" + todayDate.setBackDateDay());
 		//入力した日にちと""の中の文字と実行した日付をafterDayメソッドで処理しその返却値を表示して改行
 		System.out.println(dayLater + "日後の日付：" + todayDate.afterDay(dayLater));
 		//入力した日にちと""の中の文字と実行した日付をbeforeDayメソッドで処理しその返却値を表示して改行

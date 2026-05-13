@@ -42,6 +42,8 @@ public class Day {
 	private static final int DAYS_IN_LEAP_YEAR   = 366;
 	//全体で使えるfinal変数FEB_LEAP_DAYSの作成
 	private static final int FEB_LEAP_DAYS       = 29;
+	//全体で使えるfinal変数NUMBER_ZEROの作成
+	private static final int NUMBER_ZERO   = 0;
 	//全体で使えるfinal変数NUMBER_ONEの作成
 	private static final int NUMBER_ONE   = 1;
 	//全体で使えるfinal変数ONE_MONTHの作成
@@ -90,14 +92,20 @@ public class Day {
 	 * コンストラクタ   	　:Day
 	 * コンストラクタの説明   :同一クラス内のコンストラクトの呼び出し。
 	 * 						　;クラスのインスタンスが生成される際のコンストラクタを作成。
+	 * 						　;年の値が0以下の時は1に強制的にする。
 	 * 						  ;月の値が1未満の時は1を12より大きい時は12に強制的にする。
 	 * パラメータの説明 	　:年,月
 	 * 作成者             　　:中西輝
 	 * 作成日             　　:2026.5.7
 	 */
 	public Day(int year, int month) { 
-		//フィールドに年を設定
-		this.year = year;
+		//年が0以下の場合
+		if(year <= NUMBER_ZERO) {
+			//年を1に設定
+			year = NUMBER_ONE;
+			//フィールドに年を設定
+			this.year = year;
+		}
 		//月が1未満の場合
 		if(month < MIN_MONTH) {
 			//月を1に設定
@@ -260,7 +268,7 @@ public class Day {
 	 * 関数名　　：isLeap
 	 * メソッド　：このインスタンスが保持する年が閏年かどうかを判定します。
 	 * パラメータ：なし
-	 * 返り値　　：true
+	 * 返り値　　：自身の保持する年が閏年であればtrueそれ以外false
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
@@ -295,7 +303,7 @@ public class Day {
 	/*
 	 * 関数名　　：isSame
 	 * メソッド　：日付が一致しているかを確認するメソッド
-	 * パラメータ：d
+	 * パラメータ：年,月,日
 	 * 返り値　　：全てが一致したときだけその値を返却
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
@@ -307,7 +315,7 @@ public class Day {
 	/*
 	 * 関数名　　：isBefore
 	 * メソッド　：前の日付かを確認するメソッド
-	 * パラメータ：d
+	 * パラメータ：年,月,日
 	 * 返り値　　：true,false
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
@@ -344,7 +352,7 @@ public class Day {
 	/*
 	 * 関数名　　：isAfter
 	 * メソッド　：後の日付かを確認するメソッド
-	 * パラメータ：d
+	 * パラメータ：年,月,日
 	 * 返り値　　：true,false
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
@@ -379,14 +387,14 @@ public class Day {
 
 	}
 	/*
-	 * 関数名　　：compare
+	 * 関数名　　：comparingDate
 	 * メソッド　：比較しその結果を表示するメソッド
-	 * パラメータ：d1,d2
+	 * パラメータ：実行日の日付,入力した日付
 	 * 返り値　　：なし
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
-	public static void compare(Day d1, Day d2) {
+	public static void comparingDate(Day d1, Day d2) {
 		//d1とd2の値が全て同じ場合
 		if (d1.isSame(d2)) {
 			//""の中の文字を表示
@@ -405,7 +413,7 @@ public class Day {
 		}
 	}
 	/*
-	 * 関数名　　：succeed
+	 * 関数名　　：advanceTheDate
 	 * メソッド　：日付を一日進めるメソッド
 	 *           ；月ごとの月末の日ではない場合一日進める
 	 * 			 ；月末であり12月より前の日付の場合は月に+1して日は1にする
@@ -415,7 +423,7 @@ public class Day {
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
-	public void succeed() {
+	public void advanceTheDate() {
 		//月ごとの月末の日ではない場合
 		if (date < getDaysInMonth(year, month)) {
 			//一日進める
@@ -443,7 +451,7 @@ public class Day {
 
 	}
 	/*
-	 * 関数名　　：precede
+	 * 関数名　　：setBackDate
 	 * メソッド　：日付を一日戻すメソッド
 	 *           ；一日ではない場合一日戻す
 	 * 			 ；一月ではない場合月を-1して月ごとの月末の日を代入
@@ -453,7 +461,7 @@ public class Day {
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
-	public void precede() {
+	public void setBackDate() {
 		//一日ではない場合
 		if (date > MIN_DATE) {
 			//一日戻す
@@ -480,91 +488,91 @@ public class Day {
 		}
 	}
 	/*
-	 * 関数名　　：after
+	 * 関数名　　：afterDate
 	 * メソッド　：入力した分だけ日付を進めるメソッド
-	 *           ；マイナスの値が入力された場合beforeメソッドの内容で処理を行う
-	 * 			 ；入力した分だけsucceedメソッドの処理を行う
-	 * パラメータ：なし
+	 *           ；マイナスの値が入力された場合beforeDateメソッドの内容で処理を行う
+	 * 			 ；入力した分だけadvanceTheDateメソッドの処理を行う
+	 * パラメータ：進める日にち
 	 * 返り値　　：なし
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
-	public void after(int afterDay) {
+	public void afterDate(int afterDay) {
 		//進める日にちがマイナスの場合
 		if (afterDay < 0) {
-			//beforeのメソッドの内容で行う
-			before(-afterDay);
+			//beforeDateのメソッドの内容で行う
+			beforeDate(-afterDay);
 		}
 		//それ以外
 		else {
 			//変数iを0から始めて1ずつ増やしていきafterDayになるまで繰り返す
 			for (int i = 0; i < afterDay; i++) {
-				//succeedメソッドの処理を行う
-				succeed();
+				//advanceTheDateメソッドの処理を行う
+				advanceTheDate();
 			}
 		}
 	}
 	/*
-	 * 関数名　　：before
+	 * 関数名　　：beforeDate
 	 * メソッド　：入力した分だけ日付を戻すメソッド
-	 *           ；マイナスの値が入力された場合afterメソッドの内容で処理を行う
-	 * 			 ；入力した分だけsucceedメソッドの処理を行う
-	 * パラメータ：なし
+	 *           ；マイナスの値が入力された場合afterDateメソッドの内容で処理を行う
+	 * 			 ；入力した分だけsetBackDateメソッドの処理を行う
+	 * パラメータ：戻す日にち
 	 * 返り値　　：なし
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
-	public void before(int beforeDay) {
+	public void beforeDate(int beforeDay) {
 		//戻す日にちがマイナスの場合
 		if (beforeDay < 0) {
-			//afterのメソッドの内容で行う
-			after(-beforeDay);
+			//afterDateのメソッドの内容で行う
+			afterDate(-beforeDay);
 		}
 		//それ以外
 		else {
 			//変数iを0から始めて1ずつ増やしていきbeforeDayになるまで繰り返す
 			for (int i = 0; i < beforeDay; i++) {
-				//precedeメソッドの処理を行う
-				precede();
+				//setBackDateメソッドの処理を行う
+				setBackDate();
 			}
 		}
 	}
 	/*
-	 * 関数名　　：succeedingDay
-	 * メソッド　：succeedを基に新しいインスタンスを返却するメソッド
+	 * 関数名　　：advanceTheDateDay
+	 * メソッド　：advanceTheDateを基に新しいインスタンスを返却するメソッド
 	 * パラメータ：なし
 	 * 返り値　　：d
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
-	public Day succeedingDay() { 
+	public Day advanceTheDateDay() { 
 		//コピーを作成し新たなインスタンスを生成する
 		Day d = new Day(this);
-		//作成したインスタンスの日付を用いてsucceedの処理を行う
-		d.succeed();
+		//作成したインスタンスの日付を用いてadvanceTheDateの処理を行う
+		d.advanceTheDate();
 		//返却
 		return d; 
 	}
 	/*
-	 * 関数名　　：precedingDay
-	 * メソッド　：precedeを基に新しいインスタンスを返却するメソッド
+	 * 関数名　　：setBackDateDay
+	 * メソッド　：setBackDateを基に新しいインスタンスを返却するメソッド
 	 * パラメータ：なし
 	 * 返り値　　：d
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
 	 */
-	public Day precedingDay() { 
+	public Day setBackDateDay() { 
 		//コピーを作成し新たなインスタンスを生成する
 		Day d = new Day(this); 
-		//作成したインスタンスの日付を用いてprecedeの処理を行う
-		d.precede(); 
+		//作成したインスタンスの日付を用いてsetBackDateの処理を行う
+		d.setBackDate(); 
 		//返却
 		return d;
 	}
 	/*
 	 * 関数名　　：afterDay
-	 * メソッド　：afterを基に新しいインスタンスを返却するメソッド
-	 * パラメータ：なし
+	 * メソッド　：afterDateを基に新しいインスタンスを返却するメソッド
+	 * パラメータ：進める日にち
 	 * 返り値　　：d
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
@@ -572,15 +580,15 @@ public class Day {
 	public Day afterDay(int afterDay) { 
 		//コピーを作成し新たなインスタンスを生成する
 		Day d = new Day(this); 
-		//作成したインスタンスの日付を用いてafterDayの値の数だけafterの処理を行う
-		d.after(afterDay); 
+		//作成したインスタンスの日付を用いてafterDayの値の数だけafterDateの処理を行う
+		d.afterDate(afterDay); 
 		//返却
 		return d; 
 	}
 	/*
 	 * 関数名　　：beforeDay
-	 * メソッド　：beforeを基に新しいインスタンスを返却するメソッド
-	 * パラメータ：なし
+	 * メソッド　：beforeDateを基に新しいインスタンスを返却するメソッド
+	 * パラメータ：戻す日にち
 	 * 返り値　　：d
 	 * 作成者　　；中西輝
 	 * 日付　　　：2026.5.7
@@ -588,8 +596,8 @@ public class Day {
 	public Day beforeDay(int beforeDay) { 
 		//コピーを作成し新たなインスタンスを生成する
 		Day d = new Day(this); 
-		//作成したインスタンスの日付を用いてbeforeDayの値の数だけbeforeの処理を行う
-		d.before(beforeDay);
+		//作成したインスタンスの日付を用いてbeforeDayの値の数だけbeforeDateの処理を行う
+		d.beforeDate(beforeDay);
 		//返却
 		return d; 
 	}
