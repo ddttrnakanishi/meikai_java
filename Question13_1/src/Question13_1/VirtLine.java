@@ -1,6 +1,6 @@
 package Question13_1;
 /*
- * クラス名      :HorzLine
+ * クラス名      :VirtLine
  * 概要          :垂直直線を表すクラス
  * 作成者        :中西輝
  * 作成日        :2026.5.12
