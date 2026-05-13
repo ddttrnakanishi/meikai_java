@@ -76,13 +76,19 @@ public class Day {
 	 * コンストラクタ   	　:Day
 	 * コンストラクタの説明   :同一クラス内のコンストラクトの呼び出し。
 	 * 						　;クラスのインスタンスが生成される際のコンストラクタを作成。
+	 * 						　;年の値が0以下の時は1に強制的にする。
 	 * パラメータの説明 	　:年
 	 * 作成者             　　:中西輝
 	 * 作成日             　　:2026.5.7
 	 */
 	public Day(int year) { 
+		//年が0以下の場合
+		if(year <= NUMBER_ZERO) {
+			//年を1に設定
+			year = NUMBER_ONE;
+		}
 		//フィールドに年を設定
-		this.year = NUMBER_ONE;
+		this.year = year;
 		//フィールドに1を設定
 		this.month = NUMBER_ONE;
 		//フィールドに1を設定
