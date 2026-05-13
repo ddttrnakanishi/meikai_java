@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"Question13_4","l":"Day"},{"p":"Question13_4","l":"human"},{"p":"Question13_4","l":"HumanInformationTester"},{"l":"すべてのクラスおよびインタフェース","u":"allclasses-index.html"}];updateSearchResults();
