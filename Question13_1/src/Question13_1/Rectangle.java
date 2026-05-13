@@ -1,6 +1,6 @@
 package Question13_1;
 /*
- * クラス名      :AbstLine
+ * クラス名      :Rectangle
  * 概要          :長方形を表すクラス
  * 作成者        :中西輝
  * 作成日        :2026.5.12 
