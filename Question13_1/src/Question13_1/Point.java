@@ -17,14 +17,14 @@ public  class Point extends Shape {
 		//何も行わない
 	}
 	/*
-	 * 関数名　　：toStoring
+	 * 関数名　　：toString
 	 * メソッド　：点に関する図形情報を表す文字列を返却する抽象メソッド
 	 * パラメータ：なし
 	 * 返り値　　：Point
 	 * 作成者　　：中西輝
 	 * 作成日    ：2026.5.12
 	 */
-	@Override public String toStoring() {
+	@Override public String toString() {
 		//返却
 		return "Point";
 	}

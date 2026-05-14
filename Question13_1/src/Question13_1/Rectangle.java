@@ -32,7 +32,7 @@ public class Rectangle extends Shape{
 	 * 作成日    ：2026.5.12
 	 */
 	@Override
-	public String toStoring() {
+	public String toString() {
 		//入力された幅と高さを返却
 		return "Rectangle(width:" + width + ", heigth:" + heigth + ")";
 	}

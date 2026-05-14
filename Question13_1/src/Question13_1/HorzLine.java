@@ -23,7 +23,7 @@ public class HorzLine extends AbstLine{
 	 * 作成日    ：2026.5.12
 	 */
 	@Override
-	public String toStoring() {
+	public String toString() {
 		//入力された長さを返却
 		return "HorzLine(length:" + getLength() + ")";
 	}

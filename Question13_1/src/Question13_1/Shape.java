@@ -7,14 +7,14 @@ package Question13_1;
  */
 public abstract class Shape {
 	/*
-	 * 関数名　　：toStoring
+	 * 関数名　　：toString
 	 * メソッド　：図形情報を表す文字列を返却する抽象メソッド
 	 * パラメータ：なし
 	 * 返り値　　：なし
 	 * 作成者　　：中西輝
 	 * 作成日    ：2026.5.12
 	 */
-	public abstract String toStoring();
+	public abstract String toString();
 	/*
 	 * 関数名　　：draw
 	 * メソッド　：図形を描画するための抽象メソッド
