@@ -9,7 +9,7 @@ package Question12_1;
  */
 public class Mileage extends Car{
 	//走行距離を表すdouble型のrunMileageを初期化 
-	protected double runMileage = 0;
+	private double runMileage = 0;
 	/*
 	 * コンストラクタ   :Mileage
 	 * コンストラクタの説明   :クラスのインスタンスが生成される際のコンストラクタを作成
