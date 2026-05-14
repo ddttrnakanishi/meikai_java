@@ -22,14 +22,12 @@ public class Car {
 	private static double y = 0;
 	//残り燃料を表すdouble型のfuelを初期化 
 	private double fuel = 0;
-	//走行距離を表すdouble型のMileageを初期化 
-	protected static double Mileage = 0;
 
 
 	/*
 	 * コンストラクタ   :Car
 	 * コンストラクタの説明   :クラスのインスタンスが生成される際のコンストラクタを作成
-	 * パラメータの説明 :名前、幅、高さ、長さ、残り燃料、走行距離
+	 * パラメータの説明 :名前、幅、高さ、長さ、残り燃料
 	 * 作成者           :中西輝
 	 * 作成日           :2026.5.11
 	 */
@@ -103,8 +101,6 @@ public class Car {
 		System.out.println("車高：" + height + "mm");
 		//""の中の文字と車長の文字を表示して改行	
 		System.out.println("車長：" + length + "mm");
-		//""の中の文字と走行距離の文字を表示して改行	
-		System.out.println("走行距離：" + Mileage + "m");
 
 	}
 	/*
