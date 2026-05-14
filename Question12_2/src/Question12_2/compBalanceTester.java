@@ -15,6 +15,18 @@ public class compBalanceTester {
 	 * 日付　　　：2026.5.12
 	 */
 	private static int compBalance(Account a, Account b) {
+		//変数aTotalの初期化
+		long aTotal = 0;
+		//もしaがTimeAccountなら
+		if (a instanceof TimeAccount) {
+			// sumBalance()を呼ぶ
+			aTotal = ((TimeAccount) a).sumBalance();
+		} 
+		//それ以外
+		else {
+			// getBalance()を呼ぶ
+			aTotal = b.getBalance();
+		}
 		//変数bTotalの初期化
 		long bTotal = 0;
 		//もしbがTimeAccountなら
@@ -28,12 +40,12 @@ public class compBalanceTester {
 			bTotal = b.getBalance();
 		}
 		//aの預金残高よりｂの預金残高が少ないとき
-		if (a.getBalance() > bTotal) {
+		if (aTotal > bTotal) {
 			//1を返却
 			return 1;
 		} 
 		//aの預金残高よりｂの預金残高が多いとき	
-		else if (a.getBalance() < bTotal) {
+		else if (aTotal < bTotal) {
 			//-1を返却
 			return -1;
 		}
