@@ -30,7 +30,7 @@ public class ShapeTester {
 			//0以下の時繰り返す
 		}while(howMany <= 0);
 		//howManyの値のshape型のインスタンスを作成
-		Shape[] p = new Shape[howMany];
+		Shape[] figureArray = new Shape[howMany];
 		//変数inputNumberの初期化
 		int inputNumber = 0;
 		//変数iを0から始めて1づつ増やしていきhowManyになるまで繰り返す
@@ -46,7 +46,7 @@ public class ShapeTester {
 			//inputNumberの結果を基に表示する
 			switch(inputNumber) {
 			//1の時、点を生成する
-			case 1 : p[i] = new Point();
+			case 1 : figureArray[i] = new Point();
 			//飛び出す
 			break;
 			//2の時、""の中の文字を表示
@@ -54,7 +54,7 @@ public class ShapeTester {
 			//長さを入力
 			int inputLine = STANDARDINPUT.nextInt();
 			//入力された数だけの水平直線を生成する
-			p[i] = new HorzLine(inputLine);
+			figureArray[i] = new HorzLine(inputLine);
 			//飛び出す
 			break;
 			//3の時、""の中の文字を表示
@@ -62,7 +62,7 @@ public class ShapeTester {
 			////長さを入力
 			int inputLine2 = STANDARDINPUT.nextInt();
 			//入力された数だけの垂直直線を生成する
-			p[i] = new VirtLine(inputLine2);
+			figureArray[i] = new VirtLine(inputLine2);
 			//飛び出す
 			break;
 			//4の時、""の中の文字を表示
@@ -74,15 +74,15 @@ public class ShapeTester {
 			//高さを入力
 			int inputHeigth = STANDARDINPUT.nextInt();
 			////入力された数だけの長方形を生成する
-			p[i] = new Rectangle(inputWidth, inputHeigth);
+			figureArray[i] = new Rectangle(inputWidth, inputHeigth);
 			//飛び出す
 			break;
 			}
 		}
 		//配列pの結果を一つずつ見ていく
-		for(Shape s :p) {
+		for(Shape elementVariable :figureArray) {
 			//一つずつ指定された図を表示する
-			s.print();
+			elementVariable.print();
 			//改行
 			System.out.println();
 		}

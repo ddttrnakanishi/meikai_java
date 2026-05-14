@@ -55,7 +55,7 @@ public abstract class TriangleSize extends IsoscelesTriangle{
 		 */
 		public String toString() {
 			//入力された長さを返却
-			return toStoring();
+			return toString();
 		}
 	}
 

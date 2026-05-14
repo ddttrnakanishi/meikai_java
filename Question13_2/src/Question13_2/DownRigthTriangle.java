@@ -24,7 +24,7 @@ public class DownRigthTriangle extends TriangleSize{
 	 * 作成日    ：2026.5.13
 	 */
 	@Override
-	public String toStoring() {
+	public String toString() {
 		//入力された長さを返却
 		return "DownRigthTriangle(length:" + getLength() + ")";
 	}
