@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 import Question12_1.Car;
+import Question12_1.Mileage;
 /*
  * クラス名            :CarTester　
  * 概要                :各情報を入力し入力した値をもとにクラスCar型のmyCarを作成し
@@ -49,16 +50,14 @@ public class CarTester {
 			fuel = standardInput.nextDouble();
 			//入力された値が負の数である場合繰り返す
 		}while(fuel < 0);
-		//走行距離の初期化
-		double Mileage =0;
 		//入力した値をもとにクラスCar型のmyCarを作成
-		Car myCar = new Car(name, width,height, length, fuel, Mileage);
+		Car myCar = new Car(name, width,height, length, fuel);
 		//trueである限り繰り返す
 		while(true) {
 			//""の中の文字と現在地と残りの年長の値を表示して改行
 			System.out.println("現在地(" + myCar.getX() + ", " + myCar.getY() + ")・残りの燃料 " + myCar.getFuel());
 			//""の中の文字と走行距離を表示
-			System.out.println("走行距離" + myCar.getMileage());
+			System.out.println("走行距離：" + Mileage.getMileage() + "m");
 			//""の中の文字を表示
 			System.out.print("移動しますか[0…No/1…Yes] :");
 			//入力値が0の場合

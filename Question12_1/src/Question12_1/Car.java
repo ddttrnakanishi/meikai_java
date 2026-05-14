@@ -17,13 +17,13 @@ public class Car {
 	//長さを表すint型のlengthを初期化 
 	private int length = 0;
 	//現在位置のx座標を初期化 
-	private double x = 0;
+	private static double x = 0;
 	//現在位置のy座標を初期化 
-	private double y = 0;
+	private static double y = 0;
 	//残り燃料を表すdouble型のfuelを初期化 
 	private double fuel = 0;
 	//走行距離を表すdouble型のMileageを初期化 
-	private double Mileage = 0;
+	protected static double Mileage = 0;
 
 
 	/*
@@ -33,7 +33,7 @@ public class Car {
 	 * 作成者           :中西輝
 	 * 作成日           :2026.5.11
 	 */
-	public Car(String name,int width,int height,int length,double fuel, double mileage){
+	public Car(String name,int width,int height,int length,double fuel){
 		//フィールドに仮引数の値を代入
 		this.name = name;
 		//フィールドに仮引数の値を代入
@@ -46,8 +46,6 @@ public class Car {
 		this.fuel = fuel;
 		//初期位置を(x,y) = (0.0,0.0)に設定する
 		x = y = 0.0;
-		//フィールドに仮引数の値を代入
-		this.Mileage = mileage;
 
 
 	}
@@ -59,7 +57,7 @@ public class Car {
 	作成者　　：中西輝
 	日付　　　：2026.5.11
 	 */
-	public double getX() {
+	public static double getX() {
 		//xの値を返却
 		return x;
 	}
@@ -71,7 +69,7 @@ public class Car {
 	作成者　　 :中西輝
 	日付　　　：2026.5.11
 	 */
-	public double getY() {
+	public static double getY() {
 		//yの値を返却
 		return y;
 	}
@@ -87,20 +85,7 @@ public class Car {
 		//残り燃料の値を返却
 		return fuel;
 	}
-	/*
-	関数名　　：getM
-	メソッド　：走行距離を取得するためのメソッド
-	パラメータ：なし
-	返り値　　：Mileage
-	作成者　　：中西輝
-	日付　　　：2026.5.11
-	 */
-	public double getMileage() {
-		//xとyの値を足したものをMileageに代入
-		Mileage = x + y ;
-		//Mileageの値を返却
-		return Mileage;
-	}
+
 	/*
 	 * 関数名           :putSpec
 	 * メソッドの説明   :各情報の表示
@@ -155,4 +140,5 @@ public class Car {
 			return true;
 		}
 	}
+
 }
