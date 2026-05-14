@@ -24,7 +24,7 @@ public class ShapTester {
 	 */
 	public static void main(String[] args) {
 
-		//howManyの値のshape型のインスタンスを作成
+		//NUMBERTWOの値のshape型のインスタンスを作成
 		Shape[] p = new Shape[NUMBERTWO];
 		
 		//""の中の文字を表示
