@@ -4,16 +4,16 @@ import java.util.Scanner;
 /*
  * クラス名            :PlayerTester
  * 概要                :各プレイヤーの出す手をテストし受け取り勝敗を付けるクラス。
- * 作成者              :中西輝
+ * @author             :中西輝
  * 作成日              :2026.5.15
  */
 public class PlayerTester {
 	/*
 	 * 関数名           :main
 	 * メソッドの説明   :各プレイヤーの出す手をテストし受け取り勝敗を付けるクラス。
-	 * パラメータの説明 :なし
-	 * 返り値           :なし
-	 * 作成者           :中西輝
+	 * @param           :なし
+	 * @return          :なし
+	 * @author          :中西輝
 	 * 作成日           :2026.5.15
 	 */
 	public static void main(String[] args) {

@@ -5,7 +5,7 @@ import java.util.Scanner;
  * クラス名            :HumanPlayer
  * 概要                :人間の出す手を表すクラス。
  * 					　 ;プレイヤーの概念を表す抽象クラスの派生
- * 作成者              :中西輝
+ * @author             :中西輝
  * 作成日              :2026.5.15
  */
 public class HumanPlayer extends Player{
@@ -16,9 +16,9 @@ public class HumanPlayer extends Player{
 	/*
 	 * 関数名　　：getHandOut
 	 * メソッド　：出す手の値の文字をを取得するメソッド
-	 * パラメータ：なし
-	 * 返り値　　：人間の出す手
-	 * 作成者　　：中西輝
+	 * @param    ：なし
+	 * @return　 ：人間の出す手
+	 * @author　 ：中西輝
 	 * 作成日    ：2026.5.15
 	 */
 	
@@ -29,9 +29,9 @@ public class HumanPlayer extends Player{
 	/*
 	 * 関数名　　：decideHand
 	 * メソッド　：出す手の値の文字を決めて表示するメソッド
-	 * パラメータ：なし
-	 * 返り値　　：なし
-	 * 作成者　　：中西輝
+	 * @param    ：なし
+	 * @return　 ：なし
+	 * @author　 ：中西輝
 	 * 作成日    ：2026.5.15
 	 */
 	public void decideHand() {

@@ -5,7 +5,7 @@ import java.util.Random;
  * クラス名            :ComputerPlayer1
  * 概要                :コンピュータの出す手を表すクラス。
  * 					　 ;プレイヤーの概念を表す抽象クラスの派生
- * 作成者              :中西輝
+ * @author             :中西輝
  * 作成日              :2026.5.15
  */
 public class ComputerPlayer2 extends Player{
@@ -16,9 +16,9 @@ public class ComputerPlayer2 extends Player{
 	/*
 	 * 関数名　　：getHandOut
 	 * メソッド　：出す手の値の文字をを取得するメソッド
-	 * パラメータ：なし
-	 * 返り値　　：コンピュータの出す手
-	 * 作成者　　：中西輝
+	 * @param    ：なし
+	 * @return　 ：コンピュータの出す手
+	 * @author　 ：中西輝
 	 * 作成日    ：2026.5.15
 	 */
 	@Override
@@ -29,9 +29,9 @@ public class ComputerPlayer2 extends Player{
 	/*
 	 * 関数名　　：decideHand
 	 * メソッド　：出す手の値の文字を決めて表示するメソッド
-	 * パラメータ：なし
-	 * 返り値　　：なし
-	 * 作成者　　：中西輝
+	 * @param    ：なし
+	 * @return　 ：なし
+	 * @author　 ：中西輝
 	 * 作成日    ：2026.5.15
 	 */
 	public void decideHand() {
