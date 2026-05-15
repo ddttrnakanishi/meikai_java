@@ -30,14 +30,22 @@ public class Question15_4 {
 		System.out.print("浮動小数点数値 :");
 		//浮動小数点数値の入力
 		x = standardInput.nextDouble();
-		//""の中の文字を表示
-		System.out.print("小数点以下の桁数 :");
-		//桁数の入力
-		p = standardInput.nextInt();
-		//""の中の文字を表示
-		System.out.print("全体の桁数 :");
-		//桁数の入力
-		w = standardInput.nextInt();
+		//繰り返し
+		do {
+			//""の中の文字を表示
+			System.out.print("小数点以下の桁数 :");
+			//桁数の入力
+			p = standardInput.nextInt();
+			//pが0以下の場合繰り返す
+		}while(p <= 0);
+		//繰り返し
+		do {
+			//""の中の文字を表示
+			System.out.print("全体の桁数 :");
+			//桁数の入力
+			w = standardInput.nextInt();
+			//wが0以下の場合繰り返す
+		}while(w <= 0);
 		//printDoubleメソッドの呼び出し
 		printDouble(x, p, w);
 	}
