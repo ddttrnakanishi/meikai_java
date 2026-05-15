@@ -12,12 +12,14 @@ public abstract class Player {
 	 * 関数名　　：getHandOut
 	 * メソッド　：出す手の値の文字をを取得するメソッド
 	 * パラメータ：なし
-	 * 返り値　　：なし
+	 * 返り値　　：出す手の値の文字
 	 * 作成者　　：中西輝
 	 * 作成日    ：2026.5.13
 	 */
-	public abstract int getHandOut();
-		
+	public int getHandOut() {
+	//返却
+    return this.getHandOut();
+	}
 	/*
 	 * 関数名　　：printResult
 	 * メソッド　：出す手の値をを取得するメソッド
