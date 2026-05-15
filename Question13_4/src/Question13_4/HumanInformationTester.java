@@ -77,7 +77,7 @@ public class HumanInformationTester {
 			//birthdayDateが0未満、31より大きい時繰り返し
 		}while(birthdayDate <= 0 || birthdayDate > 31);
 		//入力した値をもとにクラスHuman型のmyInformationを作成
-		human myInformation = new human(nameInformation, heightInformation, weightInformation, new Day(birthdayYear,birthdayMonth,birthdayDate));
+		Human myInformation = new Human(nameInformation, heightInformation, weightInformation, new Day(birthdayYear,birthdayMonth,birthdayDate));
 
 		//""の中の文字と名前の文字を表示して改行
 		System.out.println("名前 :" + nameInformation);

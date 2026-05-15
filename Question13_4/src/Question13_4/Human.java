@@ -1,11 +1,11 @@
 package Question13_4;
 /*
- * クラス名            :human
+ * クラス名            :Human
  * 概要                :コンストラクタの設定とHumanInformationTesterで入力された物を表示する
  * @author　　　　　　 :中西輝
  * 作成日              :2026.5.13
  */
-public class human {
+public class Human {
 	//名前を表すString型のnameInformationを初期化
 		private String nameInformation;
 		//身長を表すdouble型のheightInformationを初期化
@@ -21,7 +21,7 @@ public class human {
 		 * @author          　　　:中西輝
 		 * 作成日                 :2026.5.13
 		 */
-		human(String nameInformation, double heightInformation, double weightInformation, Day birthdayNumber){
+		Human(String nameInformation, double heightInformation, double weightInformation, Day birthdayNumber){
 			//フィールドに仮引数の文字を代入
 			this.nameInformation = nameInformation;
 			//フィールドに仮引数の値を代入
