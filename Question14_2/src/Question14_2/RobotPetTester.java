@@ -34,7 +34,7 @@ public class RobotPetTester {
 		// 新しい配列を作成しそれぞれの名前を決める
 		Pet[] a = {
 				new Pet("中西", "マイク"),
-				new RobotPet("ドラえもん", "のび太"),
+				new RobotPetChange("ドラえもん", "のび太"),
 		};
 		//名前を一つずつ見ていく
 		for(Pet p : a) {
@@ -48,13 +48,13 @@ public class RobotPetTester {
 		//randomCollar1に0-2の値を代入
 		int randomCollar1 = randamNumber.nextInt(3);
 		//ランダムな値が代入された値に対する文字を生成する
-		RobotPet workNumber = new RobotPet(null, null);
+		RobotPetChange workNumber = new RobotPetChange(null, null);
 		//文字を表示する
 		workNumber.work(randomCollar1);	
 		//randomCollar2に0-4の値を代入
 		int randomCollar2 = randamNumber.nextInt(5);
 		//ランダムな値が代入された値に対する文字を生成する
-		RobotPet changeNumber = new RobotPet(null, null);
+		RobotPetChange changeNumber = new RobotPetChange(null, null);
 		//文字を表示する
 		changeNumber.changeSkin(randomCollar2);
 	}
