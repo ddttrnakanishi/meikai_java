@@ -32,7 +32,7 @@ public class Parallelogram extends Shape implements Plane2D{
 		 * 作成日    ：2026.5.13
 		 */
 		@Override
-		public String toStoring() {
+		public String toString() {
 			//入力された幅と高さを返却
 			return "Parallelogram(width:" + width + ", heigth:" + heigth + ")";
 		}

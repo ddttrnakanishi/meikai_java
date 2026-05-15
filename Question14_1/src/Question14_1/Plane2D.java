@@ -10,7 +10,7 @@ public interface Plane2D {
 	 * 関数名　　：getArea
 	 * メソッド　：面積を取得するメソッド
 	 * @param    ：なし
-	 * @return　 ：なし
+	 * @return　 ：面積
 	 * @author 　：中西輝
 	 * 作成日    ：2026.5.13
 	 */

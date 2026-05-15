@@ -8,14 +8,14 @@ package Question14_1;
  */
 public abstract class Shape {
 	/*
-	 * 関数名　　：toStoring
+	 * 関数名　　：toString
 	 * メソッド　：図形情報を表す文字列を返却する抽象メソッド
 	 * @param    ：なし
-	 * @return 　：なし
+	 * @return 　：文字列
 	 * @author 　：中西輝
 	 * 作成日    ：2026.5.13
 	 */
-	public abstract String toStoring();
+	public abstract String toString();
 	/*
 	 * 関数名　　：draw
 	 * メソッド　：図形を描画するための抽象メソッド
