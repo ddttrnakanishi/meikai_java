@@ -52,12 +52,24 @@ public class Question15_4 {
 	/*
 	 * 関数名　　：printDouble
 	 * メソッド　：浮動小数点数値を小数点以下p桁、全体をw桁で表示する
+	 * 	　　　　 ：小数点以下の桁数が0の場合強制的に1にする
+	 * 	　　　　 ：全体の桁数が0の場合強制的に1にする
 	 * @param    ：浮動小数点数値、小数点以下の桁数、全体の桁数
 	 * @return 　：なし
 	 * @author　 ：中西輝
 	 * 作成日    ：2026.5.15
 	 */
 	private static void printDouble(double x, int p, int w){
+		//小数点以下の桁数が0の場合
+		if(p <= 0) {
+			//小数点以下の桁数を1にする
+			p = 1;
+		}
+		//全体の桁数が0の場合
+		if(w <= 0) {
+			//全体の桁数を1にする
+			w = 1;
+		}
 		//浮動小数点数値を小数点以下p桁、全体をw桁で表示する
 		System.out.printf(String.format("%%%d.%df", w , p), x);
 	}
