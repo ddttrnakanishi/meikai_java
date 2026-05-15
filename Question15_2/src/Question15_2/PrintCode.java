@@ -2,7 +2,7 @@ package Question15_2;
 
 import java.util.Scanner;
 /*
- * クラス名            :ScanString
+ * クラス名            :PrintCode
  * 概要                :文字を入力して文字コードで表示する
  * @author             :中西輝
  * 作成日              :2026.5.14
