@@ -27,14 +27,6 @@ public class Question15_3 {
 		System.out.print("文字列s2 :");
 		//文字を入力
 		String inputString2 = standardInput.next();
-
-		//変数iを0から始めて1ずつ増やしていき文字の長さ分繰り返す
-		for(int i = 0; i < inputString1.length(); i++) {
-			//""の中の文字とiの値と文字を表示して改行
-			System.out.print(inputString1.charAt(i));
-		}
-		//改行
-		System.out.println();
 		//inputString1にinputString2が含まれているのか確認する
 		int idx = inputString1.indexOf(inputString2);
 		//含まれていない時
@@ -42,15 +34,19 @@ public class Question15_3 {
 			//""の中の文字を表示して改行
 			System.out.println("s1中にs2は含まれません。");
 		}
-		//iを0から始めて1ずつ増やしていき含まれている箇所まで繰り返す
-		for(int i = 0; i < idx; i++) {
-			//空白の表示
-			System.out.print(' ');
-		}
-		//変数iを0から始めて1ずつ増やしていき文字の長さ分繰り返す
-		for(int i = 0; i < inputString2.length(); i++) {
-			//""の中の文字とiの値と文字を表示して改行
-			System.out.print(inputString2.charAt(i));
+		//それ以外
+		else {
+			//文字を表示して改行
+			System.out.println(inputString1);
+			//iを0から始めて1ずつ増やしていき含まれている箇所まで繰り返す
+			for(int i = 0; i < idx; i++) {
+				//空白の表示
+				System.out.print(' ');
+			}
+
+			//文字を表示して改行
+			System.out.println(inputString2);
 		}
 	}
 }
+
