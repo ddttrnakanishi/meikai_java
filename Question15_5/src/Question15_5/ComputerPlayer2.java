@@ -2,7 +2,7 @@ package Question15_5;
 
 import java.util.Random;
 /*
- * クラス名            :ComputerPlayer1
+ * クラス名            :ComputerPlayer2
  * 概要                :コンピュータの出す手を表すクラス。
  * 					　 ;プレイヤーの概念を表す抽象クラスの派生
  * @author             :中西輝
