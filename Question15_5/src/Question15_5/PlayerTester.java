@@ -27,9 +27,9 @@ public class PlayerTester {
 			//人間プレイヤーのインスタンスを参照
 			p[0] = new HumanPlayer();
 			//コンピュータプレイヤーのインスタンスを参照
-			p[1] = new ComputerPlayer1();
+			p[1] = new ComputerPlayer("コンピュータ1");
 			//コンピュータプレイヤーのインスタンスを参照
-			p[2] = new ComputerPlayer2();
+			p[2] = new ComputerPlayer("コンピュータ2");
 
 
 			//配列pの結果を一つずつ見ていく
@@ -43,8 +43,8 @@ public class PlayerTester {
 			 * 全ての値が同じとき
 			 * 全ての値が違うとき
 			 */
-			if(HumanPlayer.handOut == ComputerPlayer1.randomHand && HumanPlayer.handOut == ComputerPlayer2.randomHand 
-					|| HumanPlayer.handOut != ComputerPlayer1.randomHand && HumanPlayer.handOut != ComputerPlayer2.randomHand && ComputerPlayer1.randomHand != ComputerPlayer2.randomHand) {
+			if(p[0].getHandOut() == p[1].getHandOut() && p[0].getHandOut() == p[2].getHandOut() 
+					|| p[0].getHandOut() != p[1].getHandOut() && p[0].getHandOut() != p[2].getHandOut() && p[1].getHandOut() != p[2].getHandOut()) {
 				//""の中の文字を表示して改行
 				System.out.println("引き分けです。");
 			}
@@ -53,9 +53,9 @@ public class PlayerTester {
 			 * 人間が1の時他が0以外のとき
 			 * 人間が2の時他が1以外のとき
 			 */
-			else if(HumanPlayer.handOut == 0 && ComputerPlayer1.randomHand != 2 && ComputerPlayer2.randomHand != 2
-					|| HumanPlayer.handOut == 1 && ComputerPlayer1.randomHand != 0 && ComputerPlayer2.randomHand != 0
-					|| HumanPlayer.handOut == 2 && ComputerPlayer1.randomHand != 1 && ComputerPlayer2.randomHand != 1){
+			else if(p[0].getHandOut() == 0 && p[1].getHandOut() != 2 && p[2].getHandOut() != 2
+					|| p[0].getHandOut() == 1 && p[1].getHandOut() != 0 && p[2].getHandOut() != 0
+					|| p[0].getHandOut() == 2 && p[1].getHandOut() != 1 && p[2].getHandOut() != 1){
 				//""の中の文字を表示して改行
 				System.out.println("人間の勝ちです。");
 			}
