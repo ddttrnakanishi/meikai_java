@@ -61,7 +61,7 @@ public class Question16_2 {
 		//変換できない場合
 		catch(ParseException e){
 			//getMessageを受け取り表示する
-			System.out.println(e.getMessage());
+			System.err.println(e.getMessage());
 		}
 	}
 }

@@ -30,7 +30,7 @@ public class Question16_1 {
 			//スタックトレースの表示
 			e.printStackTrace();
 			//""の中の文字と入力した文字を表示して改行
-			System.out.println("エラー//入力された文字列" + inputString + "は整数に変換できません。");
+			System.err.println("エラー//入力された文字列" + inputString + "は整数に変換できません。");
 		}
 		//返却
 		return changeString;
