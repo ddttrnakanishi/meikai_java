@@ -59,7 +59,7 @@ public class Question16_3 {
 			catch(InputMismatchException e) {
 				//""の中の文字を表示して改行
 				System.out.println("整数以外が入力されました");
-				//文字を保持
+				//無限ループしてしまうため文字を保持
 				STANDARDINPUT.next();
 			}
 		}
