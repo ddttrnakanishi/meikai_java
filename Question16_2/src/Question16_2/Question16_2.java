@@ -28,6 +28,8 @@ public class Question16_2 {
 		}
 		//変換できない場合
 		catch(NumberFormatException e){
+			//スタックトレースの表示
+			e.printStackTrace();
 			//""の中の文字と入力した文字を表示して改行
 			throw new ParseException("//エラー//\n入力された文字列" + inputString + "は整数に変換できません。");
 		}
