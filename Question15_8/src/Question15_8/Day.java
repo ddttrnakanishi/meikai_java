@@ -1,7 +1,5 @@
 package Question15_8;
 
-import static java.util.Calendar.*;
-
 import java.util.GregorianCalendar;
 /*
  *クラス名　：Day
@@ -232,21 +230,6 @@ public class Day {
 		}
 		//月ごとの月末を返却
 		return DAYS_IN_MONTHS[monthNumber - NUMBER_ONE];
-	}
-	/*
-	 * 関数名　　：getExecutionYear
-	 * メソッド　：プログラム実行時の日付を取得するメソッド
-	 * @param    ：なし
-	 * @return　 ：実行日の年
-	 * @author 　；中西輝
-	 * 日付　　　：2026.5.18
-	 */
-	public void getExecutionYear() {
-		//GregorianCalendarを利用して実行日の年月日をインスタンス化
-		GregorianCalendar todayNumber = new GregorianCalendar();
-		//実行日の年を取得
-		int yearNumber = todayNumber.get(YEAR);
-
 	}
 	/*
 	 * 関数名　　：setYear

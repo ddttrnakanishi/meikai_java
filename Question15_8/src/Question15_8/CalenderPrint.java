@@ -86,8 +86,6 @@ public class CalenderPrint extends Day {
 	 * 日付　　　：2026.5.18
 	 */
 	public void printExecutionCalender() {
-		//getExecutionYearの処理を行う
-		getExecutionYear(); 
 		//showCalendarの処理を行う
 		showCalendar();
 	}
