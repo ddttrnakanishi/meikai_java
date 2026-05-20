@@ -39,7 +39,7 @@ public class CalenderPrint extends Day {
 	 * @author            　　:中西輝
 	 * 作成日             　　:2026.5.18
 	 */
-	
+
 	public CalenderPrint (int yearNumber, int monthNumber) {
 		//スーパークラスのコンストラクタを参照
 		super(yearNumber, monthNumber);
@@ -104,12 +104,12 @@ public class CalenderPrint extends Day {
 		for (int i = 1; i <= MAX_MONTH; i++) {
 			//日付を更新
 			setMonth(i);
-				//""の中の文字と何月かを表示して改行
-				System.out.println("\n<" + i + "月>");
-				//howCalendarの処理を行う
-				showCalendar();
-			}
+			//""の中の文字と何月かを表示して改行
+			System.out.println("\n<" + i + "月>");
+			//howCalendarの処理を行う
+			showCalendar();
 		}
+	}
 	/*
 	 * 関数名　　：printInputCalender
 	 * メソッド　：入力された年の月のカレンダーを表示するメソッド

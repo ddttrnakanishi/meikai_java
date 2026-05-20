@@ -241,15 +241,13 @@ public class Day {
 	 * @author 　；中西輝
 	 * 日付　　　：2026.5.18
 	 */
-	public int getExecutionYear() {
+	public void getExecutionYear() {
 		//GregorianCalendarを利用して実行日の年月日をインスタンス化
 		GregorianCalendar todayNumber = new GregorianCalendar();
 		//実行日の年を取得
 		int yearNumber = todayNumber.get(YEAR);
-		//実行日の年を返却
-		return yearNumber;
+
 	}
-	
 	/*
 	 * 関数名　　：setYear
 	 * メソッド　：年を設定するためのメソッド

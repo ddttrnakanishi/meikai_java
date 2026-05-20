@@ -6,7 +6,7 @@ package Question15_8;
  *日付　　　：2026.5.18
  */
 public class CalendarOutput {
-	
+
 	/*
 	 *関数名　　      ：main
 	 *メソッドの説明  ：コマンドライン引数で入力された年、月の値を基にカレンダーを表示する
