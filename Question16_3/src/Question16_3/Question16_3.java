@@ -37,11 +37,11 @@ public class Question16_3 {
 				//繰り返し
 				do {
 					//整数値を表示
-					System.out.print("整数値:");
+					System.out.print("整数:");
 					//inputStringに数値を入力
 					inputString = STANDARDINPUT.nextInt();
-					//inputStringが0以下の場合繰り返す
-				}while(inputString <= NUMBERZERO);
+					//inputStringが0未満の場合繰り返す
+				}while(inputString < NUMBERZERO);
 
 				//変数dividedNumberの宣言
 				int  dividedNumber = inputString;
@@ -80,6 +80,6 @@ public class Question16_3 {
 		//""の中の文字を表示
 		System.out.println("整数を入力してください");
 		//tryParseIntの処理の結果を表示して改行
-		System.out.println(tryParseInt(inputString) + "は桁です");
+		System.out.println("入力した値は" + tryParseInt(inputString) + "桁です");
 	}
 }
