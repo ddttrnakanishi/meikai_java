@@ -2,12 +2,12 @@ package Ex1_1;
 
 import java.util.Random;
 /*
- *クラス名	：Card
+ *クラス名	：CardClass
  *クラス概要：多次元配列を使用しカードの情報を取得したり変更したりするクラス
  *@auter	：中西輝
  *日付　　　：2026.5.19
  */
-public class Card {
+public class CardClass {
 	//ランダムな値を入れる変数を作る
 	Random RANDOMNUMBER = new Random();
 	//カードの情報を持つ多次元配列の作成
@@ -26,13 +26,13 @@ public class Card {
 	//要素数が5の配列の作成（手札を五枚にする）
 	private String[] handOfCards = new String[DRAWCARD];
 	/*
-	 * コンストラクタ   	　:Card
+	 * コンストラクタ   	　:CardClass
 	 * コンストラクタの説明   :ONEDRAWメソッドの結果の情報を各配列に代入する
 	 * @param           	　:なし
 	 * @author            　　:中西輝
 	 * 作成日             　　:2026.5.19
 	 */
-	public Card() {
+	public CardClass() {
 		//変数iを0から始めて1ずつ増やしていき5になるまで繰り返す
 		for(int i = 0; i < DRAWCARD; i++) {
 			//五枚の各カードにoneDrawで得た情報を代入
@@ -40,42 +40,43 @@ public class Card {
 		}
 	}
 	/*
-	 * 関数名　　：ONEDRAW
+	 * 関数名　　：oneDraw
 	 * メソッド　：カードを一枚引くメソッド
 	 * @param    ：なし
-	 * @return　 ：memoryArray
+	 * @return　 ：カード情報
 	 * @author 　：中西輝
 	 * 日付　　　：2026.5.19
 	 */
 	private String oneDraw() {
-		//変数suitNumberに0-3のランダムな数を代入
-		int suitNumber = RANDOMNUMBER.nextInt(CARDSUIT);
-		//変数randomCardに0-12のランダムな数を代入
-		int randomCard = RANDOMNUMBER.nextInt(CARDNUMBER);
 		//文字列memoryArrayの初期化
 		String memoryArray = null;
 		//trueである限り繰り返す
-		while(true) {
+		while(memoryArray == null) {
+			//変数suitNumberに0-3のランダムな数を代入
+			int suitNumber = RANDOMNUMBER.nextInt(CARDSUIT);
+			//変数randomCardに0-12のランダムな数を代入
+			int randomCard = RANDOMNUMBER.nextInt(CARDNUMBER);
 			//cardDeck[suitNumber][randomCard]がnullではないとき
 			if(cardDeck[suitNumber][randomCard] != null) {
 				//memoryArrayにcardDeck[suitNumber][randomCard]を代入
 				memoryArray = cardDeck[suitNumber][randomCard];
 				//cardDeck[suitNumber][randomCard]をnullにする
 				cardDeck[suitNumber][randomCard] = null;
-				//返却
-				return memoryArray;
 			}
-			//変数suitNumberに0-3のランダムな数を代入
-			suitNumber = RANDOMNUMBER.nextInt(CARDSUIT);
-			//変数randomCardに0-12のランダムな数を代入
-			randomCard = RANDOMNUMBER.nextInt(CARDNUMBER);
+			else {
+				//変数suitNumberに0-3のランダムな数を代入
+				suitNumber = RANDOMNUMBER.nextInt(CARDSUIT);
+				//変数randomCardに0-12のランダムな数を代入
+				randomCard = RANDOMNUMBER.nextInt(CARDNUMBER);
+				}
 		}
+		return memoryArray;
 	}
 	/*
 	 * 関数名　　：getHandString
 	 * メソッド　：カードの情報を取得し順番に表示するメソッド
 	 * @param    ：なし
-	 * @return　 ：resultPrint
+	 * @return　 ：カード情報の結果
 	 * @author 　：中西輝
 	 * 日付　　　：2026.5.19
 	 */
