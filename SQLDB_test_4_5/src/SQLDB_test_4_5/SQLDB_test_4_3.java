@@ -12,7 +12,14 @@ import java.util.Scanner;
  * 作成日              :2026.6.15
  */
 public class SQLDB_test_4_3 {
-
+	/*
+	 * 関数名　　：delete
+	 * メソッド　：削除する内容を各自入力し	 DBに接続する
+	 * @param    ：なし
+	 * @return 　：なし
+	 * @author　 ：中西輝
+	 * 作成日    ：2026.6.15
+	 */
 	public static void delete() {
 
 		// DBに接続するための設定情報を用意
@@ -67,7 +74,7 @@ public class SQLDB_test_4_3 {
 	 */
 
 	private static void selectQuery(MariaDBManager manager) throws SQLException {
-		// 前後で全データを見比べられるように、シンプルな全件検索に修正しました。
+		// 前後で全データを見比べられるように、シンプルな全件検索にしました。
 		String sqlQuery = "select second_hand_id, dealear_id, type_id, car_model_id, use_sale from use_car";
 		// SQLを実行する
 		ResultSet resultSet = manager.executeQuery(sqlQuery);

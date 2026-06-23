@@ -3,7 +3,8 @@ package Question2_1;
 public class Question2_1 {
 
 	public static void main(String[] args) {
-		int x,y;
+		double x;
+		double y;
 		
 		x = 1.5;
 		y = 2.5;

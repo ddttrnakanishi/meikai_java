@@ -11,8 +11,15 @@ import java.util.Scanner;
  * 作成日              :2026.6.15
  */
 public class SQLDB_test_4_3 {
-
-	public static void delete() {
+	/*
+	 * 関数名　　：main
+	 * メソッド　：修正する内容を各自入力し	 DBに接続する
+	 * @param    ：なし
+	 * @return 　：なし
+	 * @author　 ：中西輝
+	 * 作成日    ：2026.6.15
+	 */
+	public static void main() {
 
 		// DBに接続するための設定情報を用意
 		String url = "jdbc:mariadb://localhost:3306/workbook"; 

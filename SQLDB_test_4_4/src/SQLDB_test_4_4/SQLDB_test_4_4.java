@@ -21,7 +21,7 @@ public class SQLDB_test_4_4 {
 	 * @author　 ：中西輝
 	 * 作成日    ：2026.6.15
 	 */
-	public static void search() {
+	public static void main() {
 
 		// DBに接続するための設定情報を用意
 		String url = "jdbc:mariadb://localhost:3306/workbook"; 

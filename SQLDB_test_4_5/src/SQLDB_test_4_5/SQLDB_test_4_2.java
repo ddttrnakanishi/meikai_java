@@ -9,10 +9,18 @@ import java.util.Scanner;
  * 概要                :特定ディーラーの保有する車の情報を修正する
  * 					　 :整数値以外が入力された場合は出来ないことを表示する
  * @author             :中西輝
- * 作成日              :2026.6.12
+ * 作成日              :2026.6.15
  */
 public class SQLDB_test_4_2 {
 
+	/*
+	 * 関数名　　：update
+	 * メソッド　：修正する内容を各自入力し	 DBに接続する
+	 * @param    ：なし
+	 * @return 　：なし
+	 * @author　 ：中西輝
+	 * 作成日    ：2026.6.15
+	 */
 	public static void update() {
 
 		// DBに接続するための設定情報を用意

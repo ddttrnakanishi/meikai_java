@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.Scanner;
 
 /*
- * クラス名            :SQLDB_test_4_1
+ * クラス名            :SQLDB_test_4_4
  * 概要                :検索機能として、販売されている車の情報一覧を取得する。
  * @author             :中西輝
  * 作成日              :2026.6.15
@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class SQLDB_test_4_4 {
 
 	/*
-	 * 関数名　　：main
+	 * 関数名　　：search
 	 * メソッド　：検索する内容を各自入力し	 DBに接続する
 	 * @param    ：なし
 	 * @return 　：なし
@@ -191,15 +191,15 @@ public class SQLDB_test_4_4 {
 		// データがある限り繰り返す
 		while (resultSet.next()) {
 			// 列のデータを取得
-			String carDealears = resultSet.getString("d.dealears");
+			String carDealears = resultSet.getString("dealears");
 			// 列のデータを取得
-			String carManufactures = resultSet.getString("m.manufactures");
+			String carManufactures = resultSet.getString("manufactures");
 			// 列のデータを取得
-			String carTypes = resultSet.getString("t.types");
+			String carTypes = resultSet.getString("types");
 			// 列のデータを取得
-			String carModels = resultSet.getString("c.car_models");
+			String carModels = resultSet.getString("car_models");
 			// 列のデータを取得
-			int useSale = resultSet.getInt("u.use_sale");
+			int useSale = resultSet.getInt("use_sale");
 
 			// 取得した情報を出力
 			System.out.println(carDealears + " , " + carManufactures + " , " + carTypes + " , " + carModels + " , " + useSale + "円");
